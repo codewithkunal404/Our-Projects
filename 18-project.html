@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            background:slateblue;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .wrap{
+            width: 80%;
+            height: 90vh;
+            z-index: 10;
+          
+            
+            background-color:white;
+            border-radius: 50px 50px 50px 50px;
+            margin: auto;
+            margin-top: 5vh;
+            box-shadow: 0px 0px 10px black;
+
+        }
+        .wrap .head{
+            height: 15%;
+            width: 100%;
+          
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 50px 50px 0px 0px;
+        }
+        .cname{
+            width: 30%;
+            height: 80px;
+            text-align: center;
+            border-radius: 50px 0px 0px 50px;
+            
+        }
+        .head .menubar{
+            width: 70%;
+            height: 80px;
+            text-align: center;
+            border-radius: 0px 50px 50px 0px;
+        }
+        .cname i{
+            font-size: 1.5em;
+            color: slateblue;
+            margin-top: 15px;
+
+
+        }
+        .companyname{
+            font-size: 2em;
+            color: black;
+            font-weight: bolder;
+            
+        }
+        .companyname a{
+            color: slateblue;
+        }
+        .menubar ul li{
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            padding: 10px 20px;
+            position: relative;
+            overflow: hidden;
+            
+        
+            
+        }
+        
+        .menubar ul{
+            padding: 25px 0px;
+        }
+        .menubar ul li .animate{
+            content: "";
+            background-color: slateblue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            border-radius: 0% 0% 50% 50% ;
+            transform: translateY(-60px);
+            transition: 0.50s;
+
+
+        }
+       
+        .menubar ul li a{
+            z-index: 10;
+            position: relative;
+            font-weight: 600;
+            font-size: 16px;
+            color: slateblue;
+            
+        }
+        
+        .menubar ul li:hover .animate{
+            transform: translateY(-10px);
+            transition: 0.50s;
+
+
+            
+        }
+        .menubar ul li:hover a{
+            color: white;
+        }
+
+        
+        .wrap .content{
+            width: 100%;
+            height: 85%;
+            border-radius: 0px 0px 50px 50px;
+            background: url(wave.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-y:-20px;
+
+          
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .wrap .content .left{
+            width: 60%;
+            height: 100%;
+            border-radius: 0px 0px 0px 50px ;
+        
+        }
+        
+        .content .text{
+            text-align: center;
+            height: auto;
+            width: 100%;
+            margin-top: 50px;
+        }
+      
+       
+        .text button{
+            width:25%;
+            border-radius: 30px;
+            height: 50px;
+
+            font-size: 15px;
+            border: 3px solid slateblue;
+            background:none;
+            color: slateblue;
+            text-shadow: 0.5px 0.5px 0.5px black;
+
+
+            transition: 0.60s;
+            margin-top: 20px;
+
+        }
+        .text h1{
+            color: white;
+            font-size: 35px;
+            letter-spacing: 3px;
+            text-shadow: 0px 0px 0.3px black;
+
+
+        }
+        .text h2{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: slateblue;
+            font-family: 'Lobster', cursive;
+        }
+        
+        .text p{
+            font-weight: bolder;
+            color: slateblue;
+
+        }
+        .text button:hover{
+            background-color: slateblue;
+            color: whitesmoke;
+            text-shadow: 0px 1px 0px black;
+            box-shadow: 0px 0px 8px slateblue;
+            transition: 0.60s;
+
+        }
+        
+        .social{
+            width:10%;
+            margin-top: 10%;
+            height: 70px;
+            background-color: white;
+
+            position: fixed;
+            transform: translateX(-90px);
+            text-align: right;
+            transition: 0.80s;
+            border-radius: 0% 50px 50px 0%;
+        }
+        .social:hover{
+            transform: translateX(-10px);
+
+            transition: 0.80s;
+        }
+        .social1:hover{
+            transition: 0.80s;
+            transform: translateX(-10px);
+        }
+        .social2:hover{
+            transition: 0.80s;
+            transform: translateX(-10px);
+        }
+        .social3:hover{
+            transition: 0.80s;
+            transform: translateX(-10px);
+        }
+        .social i{
+            color: green;
+            font-size: 2.5em;
+            border-radius: 50%;
+            text-align: center;
+            
+            padding: 10px 10px;
+            margin-top: 5px;
+            margin-right: 5px;
+            transition: 0.60s;
+
+        }
+        .social i:hover{
+            text-shadow: 2px 2px 2px black;
+            transition: 0.60s;
+        }
+        .social1{
+            width:10%;
+            margin-top: 15%;
+            height: 70px;
+            transition: 0.80s;
+         background-color: white;
+
+
+            position: fixed;
+            transform: translateX(-90px);
+            text-align: right;
+            border-radius: 0% 50px 50px 0%;
+        }
+        .social1 i{
+            color: rgb(	66, 103 ,178);
+            font-size: 2.5em;
+            border-radius: 50%;
+            text-align: center;
+            
+            padding: 10px 20px;
+            margin-top: 5px;
+            margin-right: 5px;
+            transition: 0.60s;
+
+        }
+        .social1 i:hover{
+            transition: 0.60s;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .social2{
+            width:10%;
+            margin-top: 20%;
+            height: 70px;
+            transition: 0.80s;
+            background-color: white;
+
+
+            position: fixed;
+            transform: translateX(-90px);
+            text-align: right;
+            border-radius: 0% 50px 50px 0%;
+        }
+        .social2 i{
+            color: red;
+            font-size: 2.5em;
+            border-radius: 50%;
+            text-align: center;
+            
+            padding: 10px 10px;
+            margin-top: 5px;
+            margin-right: 5px;
+            transition: 0.60s;
+
+        }
+        .social2 i:hover{
+            text-shadow: 2px 2px 2px black;
+            transition: 0.60s;
+        }
+        
+        .social3{
+            width:10%;
+            margin-top: 25%;
+            height: 70px;
+            transition: 0.80s;
+            background-color: white;
+
+
+            position: fixed;
+            transform: translateX(-90px);
+            text-align: right;
+            border-radius: 0% 50px 50px 0%;
+        }
+        .social3 i{
+            color: rgba(29, 161, 242);
+            font-size: 2.5em;
+            border-radius: 50%;
+            text-align: center;
+            
+            padding: 10px 10px;
+            margin-top: 5px;
+            margin-right: 5px;
+            transition: 0.60s;
+
+        }
+        .social3 i:hover{
+            transition: 0.60s;
+            text-shadow: 1px 1px 1px black;
+        }
+
+
+
+
+
+        .wrap .content .right{
+            width: 40%;
+            height: 100%;
+            border-radius: 0px 0px 50px 0px;
+            
+        
+        }
+        .wrap .content .right .card{
+            width: 70%;
+            height: 60vh;
+            margin: auto;
+            margin-top: 20px;
+            background-color: rgba(105, 90, 205, 0.788);
+            box-shadow: 0px 0px 10px white;
+            border-radius: 20px;
+            padding: 10px 0px;
+            position: relative;
+        }
+        .wrap .content .right .user{
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            position: absolute;
+           top: 0;
+           display: none;
+           left: 0%;
+            background-color: white;
+            border: 3px solid slateblue;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px white;
+            border-radius: 20px;
+            padding: 10px 0px;
+        }
+        
+
+        .card .top{
+            height: 20vh;
+            background: url(undraw_designer_re_5v95.svg);
+            background-position: center;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            width:45%;
+            margin: auto;
+            box-sizing: border-box;
+            border: 8px solid white;
+
+            border-radius: 50%;
+            transition: 0.90s;
+
+        }
+        .card .top:hover{
+            height: 20vh;
+            width: 50%;
+            transition: 0.90s;
+        }
+.card .mid{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    padding: 10px 0px;
+    
+    color: slateblue;
+    transition: 0.90s;
+
+}
+.card .mid:hover{
+    padding: 20px 0px;
+    transition: 0.90s;
+    cursor: pointer;
+
+}
+.mid h3{
+    color: white;
+}
+
+
+.card .bottom{
+    width: 100%;
+    height: 30vh;
+    border-radius: 0px 0px 20px 20px ;
+    text-align: center;
+
+}
+
+     
+
+.card .bottom i{
+    font-size: 2em;
+    padding: 20px 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: 0.90s;
+    color: white;
+}
+.card .bottom i:hover{
+   padding: 20px 20px ;
+   font-size: 3em;
+    transition: 0.90s;
+    text-shadow: 2px 2px 2px black;
+
+}
+  
+.undraw1{
+    background: url(undraw_firmware_re_fgdy.svg);
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 15%;
+    top: 60%;
+    transition: 0.80s;
+
+}
+.undraw2{
+    background: url(undraw_revenue_re_2bmg.svg);
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 45%;
+    transition: 0.80s;
+    top: 55%;
+}
+.undraw1:hover{
+    width: 250px;
+    height:250px;
+    transition: 0.80s;
+}
+.undraw2:hover{
+    width: 250px;
+    height:250px;
+    transition: 0.80s;
+}   
+.darkmode{
+    background-color:white ;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: 0.40s;
+    margin-left: 10px ;
+    margin-top: 20px;
+
+    text-align: center;
+}
+.lightmode{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;  margin-left: 10px ;
+    margin-top: 20px;
+}
+
+.darkmode i{
+    font-size: 2em;
+    padding: 15px 10px;
+    color: slateblue;
+}
+.darkmode:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+.lightmode i{
+    font-size: 2em;
+    padding: 15px 15px;
+    color: slateblue;
+}
+.lightmode:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.781);
+    height: 60px;  margin-left: 10px ;
+    margin-top: 20px;
+    width: 60px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    
+    border-radius: 50%;
+}
+.red:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+.blue{
+    background-color: rgba(0, 0, 255, 0.712);
+    height: 60px;
+    width: 60px;    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;  margin-left: 10px ;
+    margin-top: 20px;
+}
+.blue:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+.skyblue{
+    background-color: rgba(30, 143, 255, 0.808);
+    height: 60px;
+    width: 60px;    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;  margin-left: 10px ;
+    margin-top: 20px;
+}
+.skyblue:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+.pink{
+    background-color: rgba(255, 105, 180, 0.856);
+    height: 60px;
+    width: 60px;    border: 5px solid white;
+    box-sizing: border-box;
+
+    border-radius: 50%;  margin-left: 10px ;
+    margin-top: 20px;
+}
+.pink:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+
+.login{
+    background-color:white;
+    height: 60px;
+    width: 60px;    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;  margin-left: 10px ;
+    margin-top: 20px;
+}
+.login:hover{
+    box-shadow: 0px 0px 10px 2px black;
+    cursor: pointer;
+}
+.login i{
+    font-size: 2em;
+    padding: 10px 10px;
+    color: slateblue;
+}
+
+.user{
+    text-align: center;  margin-left: 10px ;
+    margin-top: 20px;
+}
+.user h2{
+    color: slateblue;
+    
+}
+.user i{
+    font-size: 3em;
+    color: white;
+    border-radius: 50%;
+
+    padding: 30px 30px ;
+    background: slateblue;
+}
+td h3{
+    color: slateblue;
+}
+input{
+    width: 100%;
+    background-color: whitesmoke;
+    border: 2px solid slateblue;
+
+    height: 40px;
+    font-size: 18px;
+    text-indent: 10px;
+    border-radius: 5px;
+}
+table{
+    margin: auto;
+   padding: 20px 0px;
+}
+td{
+    padding: 10px 10px ;
+}
+ .loginbtn{
+    width: 50%;
+    background: slateblue;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.loginbtn:hover{
+    box-shadow: 0px 0px 10px black;
+}
+ 
+.slider{
+    background-color: white;
+    position: fixed;
+    height: 80%;
+    width: 80px;
+    right: 10px;
+    display: block;
+    transform: translateX(90px);
+    border-radius: 20px 0px 0px 20px ;
+
+}
+.lock{
+    width: 60px;
+    height: 100px;
+    position: fixed;
+    right: 80px;
+    top: 40%;
+}
+.lock i{
+    font-size: 5em;
+    margin-top: 10px;
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+
+       
+    </style>
+</head>
+<body >
+    <div class="undraw1">
+
+    </div>
+    <div class="undraw2">
+       
+    </div>
+
+   <div class="slider" id="slide" onmouseleave="document.getElementById('slide').style.transform='translateX(90px)'">
+       <div class="lock" title="Menubar" onclick="document.getElementById('slide').style.transform='translateX(10px)'"><i class="fas fa-grip-lines-vertical"></i></div>
+
+    <div class="darkmode" title="Darkmode" onclick="document.getElementById('wrap1').style.backgroundColor='whitesmoke'" ><i class="fas fa-sun"></i></div>
+    <div class="lightmode" title="Lightmode" onclick="document.getElementById('wrap1').style.backgroundColor='black'"><i class="fas fa-moon"></i></div>
+    <div class="login"  title="Signin" onclick="document.getElementById('card12').style.display='block'" ondblclick="document.getElementById('card12').style.display='none'"><i class="fas fa-user"></i></div>
+    <div class="red" onclick="document.getElementById('card11').style.backgroundColor='rgba(255, 0, 0, 0.781)'"></div>
+    <div class="blue" onclick="document.getElementById('card11').style.backgroundColor='rgba(0, 0, 255, 0.712)'"></div>
+    <div class="skyblue" onclick="document.getElementById('card11').style.backgroundColor='rgba(30, 143, 255, 0.808)'"></div>
+    <div class="pink" onclick="document.getElementById('card11').style.backgroundColor='rgba(255, 105, 180, 0.856)'"></div>
+
+   </div>
+    <div class="social" title="whatsapp"> <a href="#">     <i class="fab fa-whatsapp"></i></a>      </div>
+    <div class="social1" title="facebook"><a href="#">   <i class="fab fa-facebook-f"></i></a>      </div>
+    <div class="social2" title="youtube"> <a href="#">  <i class="fab fa-youtube"></i></a>      </div>
+    <div class="social3" title="twitter"> <a href="#">  <i class="fab fa-twitter"></i></a>      </div>
+
+   
+    <div class="wrap" id="wrap1" >
+      
+
+        <div class="head">
+            <div class="cname"><span class="companyname"><i class="fas fa-american-sign-language-interpreting"></i>&nbsp; <a href="portfolio.html">WEB DESIGNER</a></span></div>
+            <div class="menubar">
+                <ul>
+                    <li><a href="#">HOME</a><span class="animate"></span></li>
+                    <li><a href="#">ABOUTUS</a><span class="animate"></span></li>
+                    <li><a href="#">BLOG</a><span class="animate"></span></li>
+                    <li><a href="#">PROJECTS</a><span class="animate"></span></li>
+                    <li><a href="#">CONTACTME</a><span class="animate"></span></li>
+                </ul>
+            </div>
+
+        
+    
+        </div>
+        <div class="content">
+
+            <div class="left">
+              <div class="text">
+                <h1>WELCOME!</h1>
+                <br>
+                <h2>I AM KUNAL &nbsp;WEB DESIGNER</h2>
+                <p>PROJECT WORK-FRONTEND & BACKEND PROJECTS <br> Our Technologies -HTML5,CSS3,BOOTSTRAP,JQUERY,JAVASCRIPT</p>
+            
+                <button>CONTACTME</button>
+              </div>
+            </div>
+            <div class="right">
+                <div class="card" id="card11">
+                    <div class="top"></div>
+                    <div class="mid"><h3>CODE WITH KUNAL <br> WEB DESIGNER</h3></div>
+                    <div class="bottom">
+
+
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-bootstrap"></i>
+                        <br>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-npm"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="user"  id="card12" >
+                        <i class="fas fa-user"></i>
+                        <br>
+                        <br>
+
+                        <h2>USER LOGIN</h3>
+                            <br>
+
+                          <form >
+                            <table border="0" width="80%"  >
+                                <tr><td width="30%"><h3>UserID:</h3></td><td width="70%"><input type="text" name="user" placeholder="Login ID" ></td></tr>
+                                <tr><td width="30%"><h3>Password:</h3></td><td width="70%"><input type="pass" name="user" placeholder=" Password"></td></tr>
+                                <tr><td colspan="2"><input class="loginbtn" type="submit" value="Login"></td></tr>
+                            </table>
+                          </form>
+                       
+                </div>
+            </div>
+        </div>
+
+ 
+
+    </div>
+    
+</body>
+</html>
