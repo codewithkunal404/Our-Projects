@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Poppins:wght@300&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+   <style>
+        *{
+            margin:0;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+        }
+  .bg1{
+      background-color: whitesmoke;
+      
+  }
+  .bg2{
+      background-color: blueviolet;
+    
+  }
+  .bg3{
+      background-color: rgba(105, 90, 205, 0.836);
+  }
+
+  .bg4{
+      background-color: royalblue;
+  }
+  .bg5{
+
+    background-color: tomato;
+  }
+        .head{
+            height: 80px;
+        }
+
+h1{
+    padding: 20px 20px;
+font-family: 'Poppins', sans-serif;
+color: whitesmoke;
+letter-spacing: 2px;
+}
+span{
+    color: lightcoral;
+}
+  
+.logo{
+    width: 20%;
+    height: 80px;
+    margin-left: 20px;
+
+}  
+  
+
+.menu{
+    width: 75%;
+    height: 80px;
+
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.menu ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.menu ul li{
+    
+    margin-left: 50px;
+    font-family:  'Poppins', sans-serif;
+    display: block;
+  
+}
+
+.menu ul li a:hover{
+  
+
+    border-bottom: 3px solid whitesmoke;
+    color: lightcoral;
+    transition: 0.30s;
+}
+
+.menu ul li a{
+    
+    padding: 15px 0px;
+    color: whitesmoke;
+  
+    text-shadow: 2px 2px 2px black;
+}
+
+a{
+    font-size: 17px;
+}
+
+
+.wrapper{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.col1{
+    width: 100%;
+    height: 90vh;
+   background-image: url(https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+   background-position: center;
+   background-size: cover;
+    background-repeat: no-repeat;
+   
+
+    
+ 
+   
+
+
+}
+
+.topnav{
+    height: 20px;
+    background-color: rgba(87, 82, 82, 0.774);
+    padding:15px 50px;
+
+    
+}
+
+.screen{
+    width: 100%;
+    height: 90vh;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.glass{
+    width: 24%;
+    height: 80vh;
+    margin-right: 100px;
+    margin-top: 40px;
+    
+   
+}
+.nst1{
+    width: 100%;
+    height:10vh;
+    background-color: rgba(105, 90, 205, 0.534);
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
+    border-left: 5px solid whitesmoke;
+   
+}
+
+h3{
+    font-family:'Poppins', sans-serif;
+  
+    font-size: 27px;
+    padding: 20px 5px;
+    text-align: left;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+}
+
+i{
+    color: lightcoral;
+}
+
+.nst1:hover{
+    border-bottom: 2px solid whitesmoke;
+    box-shadow: 2px 2px 2px slateblue;
+    background-color: rgba(95, 79, 199, 0.904);
+    color: white;
+    transition: 0.50s;
+}
+.tag{
+    font-size: 54px;
+    color: lightcoral;
+    width: 25%;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+.topic{
+    width: 75%;
+}
+
+.footer{
+    background-color: rgb(105, 90, 205);
+    height: 25px;
+    
+}
+
+h4{
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 14px;
+    font-family:'Poppins', sans-serif;
+    letter-spacing: 1px;
+    
+
+}
+
+.dev{
+    width: 30%;
+    height:30vh;
+    padding: 20px 20px ;
+ 
+    margin-top: 130px;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 15% 5% 15% 5%;
+    box-shadow: 1px 1p 1px black;
+}
+
+.dev .devname{
+    font-size: 50px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.t1 i{
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    font-size: 15px;
+    margin-left: 17px;
+}
+.work{
+    width: 30%;
+    height: 20px;
+
+    
+    
+}
+.login{
+    width: 30%;
+    height: 20px;
+
+   
+
+}
+.reg{
+    width:50%;
+ 
+    height:20px;
+    border-left: 1px solid whitesmoke;
+    padding:  0px  20px;
+  
+}
+
+.tt{
+    color: whitesmoke;
+
+}
+.social i:hover{
+    color: lightcoral;
+}
+.tt:hover{
+    color: lightcoral;
+}
+#ct{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ct:hover{
+    color: lightcoral;
+}
+
+.image{
+
+    height: 20vh;
+    
+    padding:  20px;
+    
+}
+.img1{
+    width:13.53%;
+   
+    margin-left: 10px;
+    height: 20vh;
+    
+
+}
+.img1 i{
+    padding: 30px 60px;
+    
+}
+.img1:hover{
+    background-color: rgba(105, 90, 205, 0.651);
+    transition: 0.50s;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px black;
+  
+}
+.img1 i:hover{
+    text-shadow: 2px 2px 2px black;
+
+    color: whitesmoke;
+}
+
+
+
+/* 
+sublist */
+
+.sublist {
+
+  display: none;
+  transition: 0.50s;
+   
+}
+
+.li1{
+ 
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.listh:hover .sublist{
+    height: 50vh;
+    width: 15%;
+  
+    display: block;
+   background-color: rgb(105, 90, 205);
+    position: absolute;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px black;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
+
+
+.lo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+    
+        
+
+    </div>
+   
+
+
+    <div class="wrapper ">
+       
+
+  <div class="col1 bg4">
+
+
+ <div class="screen">
+
+
+
+    <header class="topnav ">
+
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='ct' ></span>
+        
+        <div class="work fr">
+            
+            <div class="login fl"><span class="tt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp; <a class="lo" href="loginpage.html">Login</a></span></div>
+            <div class="reg fr"> <span  class="tt"><i class="fas fa-user-plus" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a class="lo" href="loginpage.html">Registration</a></span></div>
+        </div>
+        <div class="social fl ">
+            <div class="t1 fl"><i class="fab fa-whatsapp"></i></div>
+            <div class="t1 fl"><i class="fab fa-facebook"></i></div>
+            <div class="t1 fl"><i class="fab fa-youtube"></i></div>
+            <div class="t1 fl"><i class="fab fa-instagram"></i></div>
+            <div class="t1 fl"><i class="fab fa-twitter"></i></div>
+        </div>
+       
+    </header>
+
+    <header class="head bg3">
+
+        <div class="logo fl"><h1 > <span>Visio </span>nary &nbsp;<i class="fas fa-braille "></i></h1></div>
+          <div class="menu fr">
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Aboutus</a></li>
+               <li class="listh"><a href="grid.html">Templates</a> 
+            
+            <div class="sublist">
+                
+                 <div class="li1"><a href="#">Templates 1</a></div>   
+                   <div class="li1"><a href="#">Templates 2</a></div>
+                   <div class="li1"><a href="#">Templates 3</a></div>
+                   <div class="li1"><a href="#">Templates 4</a></div>
+                   <div class="li1"><a href="#">Templates 5</a></div>
+                   <div class="li1"><a href="#">Templates 6</a></div>
+                   <div class="li1"><a href="#">Templates 7</a></div>
+                   
+                  
+                
+            </div>
+            
+            </li>
+               <li  class="listh"><a href="#">Animations</a>
+            
+                <div class="sublist">
+                
+                    <div class="li1"><a href="#">Animation 1</a></div>   
+                      <div class="li1"><a href="#">Animation 2</a></div>
+                      <div class="li1"><a href="#">Animation 3</a></div>
+                      <div class="li1"><a href="#">Animation 4</a></div>
+                      <div class="li1"><a href="#">Animation 5</a></div>
+                      <div class="li1"><a href="#">Animation 6</a></div>
+                      <div class="li1"><a href="#">Animation 7</a></div>
+                      
+                     
+                   
+               </div>
+            
+            </li>
+               <li class="listh"><a href="#">Graphics</a>
+                <div class="sublist">
+                
+                    <div class="li1"><a href="#">Graphics 1</a></div>   
+                      <div class="li1"><a href="#">Graphics 2</a></div>
+                      <div class="li1"><a href="#">Graphics 3</a></div>
+                      <div class="li1"><a href="#">Graphics 4</a></div>
+                      <div class="li1"><a href="#">Graphics 5</a></div>
+                      <div class="li1"><a href="#">Graphics 6</a></div>
+                      <div class="li1"><a href="#">Graphics 7</a></div>
+                      
+                     
+                   
+               </div>
+            </li>
+               <li><a href="#">Contactus</a></li>
+            
+           </ul>
+         
+        
+          </div>
+            </header>
+
+            <div class="dev fl">
+
+                <span class="devname">This is <span> Kunal</span> a Web <span> <br> Designer</span></span>
+            </div>
+      
+            <div class="glass fr">
+                <div class="nst1"> <div class="tag fl"><i class="fab fa-html5"></i></div><div class="topic fr"><h3>HTML</h3></div></div>
+                <div class="nst1"><div class="tag fl"><i class="fab fa-css3"></i></div><div class="topic fr"><h3>Css 3</h3></div></div>
+                <div class="nst1"><div class="tag fl"><i class="fab fa-js-square"></i></div><div class="topic fr"><h3>Javascript</h3></div></div>
+                <div class="nst1"><div class="tag fl"><i class="fab fa-bootstrap"></i></div><div class="topic fr"><h3>Bootstrap</h3></div></div>
+                <div class="nst1"><div class="tag fl"><i class="fab fa-react"></i></div><div class="topic fr"><h3>React</h3></div></div>
+                <div class="nst1"><div class="tag fl"><i class="fab fa-node-js"></i></div><div class="topic fr"><h3>NodeJs</h3></div></div>
+                <div class="nst1"><div class="tag fl"><i class="fab fa-angular"></i></div><div class="topic fr"><h3>AngularJs</h3></div></div>
+
+                
+            </div>
+
+           
+        
+    </div>
+   
+   
+</div>
+
+
+
+  </div>
+
+
+
+    </div>
+    <div class="image">
+        <div class="img1 fl"><i class="fab fa-html5 fa-5x"></i></div>
+        <div class="img1 fl"><i class="fab fa-css3    fa-5x"></i></div>
+        <div class="img1 fl"><i class="fab fa-js-square   fa-5x"></i></div>
+        <div class="img1 fl"><i class="fab fa-bootstrap   fa-5x"></i></div>
+        <div class="img1 fl"><i class="fab fa-react   fa-5x"></i></div>
+        <div class="img1 fl"><i class="fab fa-node-js   fa-5x"></i></div>
+        <div class="img1 fr"><i class="fab fa-angular   fa-5x"></i></div>
+       
+    </div>
+    
+<div class="footer">
+    <h4> CopyRight &copy;Visionary.com 2021-22</h4>
+  </div>
+
+
+</body>
+</html>
