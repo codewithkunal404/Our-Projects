@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html{
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .container{
+            height: 100vh;
+            
+            background:url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        }
+
+        .screen{
+            height: 80vh;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar{
+            height: 80px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        .cname{
+            height: 80px;
+            background-color:black;
+            width: 40%;
+
+        }
+        .menu{
+            height: 80px;
+            background-color: black;
+            width:60%;
+
+   
+        }
+        span{
+            color: red;
+            text-shadow: 1px 1px 1px black;
+        }
+        h1{
+            color:white;
+            font-size: 25px;
+            text-shadow: 1px 1px 1px black;
+           text-align: center;
+           padding: 20px 0px;
+
+            
+        }
+
+        .menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 140px;
+            
+        }
+      
+
+        a{
+            font-size: 18px;
+            color: white;
+            transition: 0.40s;
+
+        }
+       
+        a:hover{
+            border-bottom: 2px solid red;
+            padding: 10px 0px;
+            transition: 0.40s;
+        }
+       
+       
+        .c{color: rgb(212, 81, 81);
+
+           font-size: 35px;
+           margin-top: 100px;
+
+          }
+        p
+        {
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            font-size: 3em;
+        }
+
+
+        .bottom1{
+
+            height: 80vh;
+            background-color: white;
+            
+
+        }
+
+        .deal{
+            width: 80%;
+            margin: auto;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px 20px;
+
+
+        }
+
+        .car{
+            width: 30%;
+            margin-top: 30px;
+            height: 60vh;
+            background-color: white;
+           box-shadow: 0px 0px 12px 0px black;
+
+        }
+
+        .image1{
+            height: 50%;
+            background:url(https://demo.phpjabbers.com/free-web-templates/car-rental-website-template-181/assets/images/offer-1-370x270.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        
+        .image2{
+            height: 50%;
+            background:url(https://demo.phpjabbers.com/free-web-templates/car-rental-website-template-181/assets/images/offer-2-370x270.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+
+
+        .image3{
+            height: 50%;
+            background:url(https://demo.phpjabbers.com/free-web-templates/car-rental-website-template-181/assets/images/offer-3-370x270.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        
+        .price{
+            height: 50%;
+            padding: 10px 20px;
+        }
+
+        .blue{
+            color: blue;
+            font-size: 20px;
+            
+            
+        }
+        h4{
+            color: gray;
+        }
+        .text{
+            width: 80%;
+            
+            height: 5vh;
+            margin-top: 20px;
+            
+        }
+        .text h2{
+            font-size: 2em;
+        }
+        
+        .bottom2{
+            height: 80vh;
+            margin-top: 150px;
+            background-color:white;
+
+        }
+        .info{
+            width: 80%;
+            height: 60vh;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 20px;
+        }
+        
+        .content2{
+            width: 50%;
+            height: 60vh;
+            background-color: white;
+            padding: 0px 10px;
+        }
+
+
+        .content2 h4{
+            text-align: justify;
+        }
+      
+
+        .content2 ul li{
+            list-style: square;
+            padding: 10px 10px;
+            list-style-position: inside;
+        }
+    
+
+        .image4{
+            width: 45%;
+            height:60vh;
+            background:url(https://demo.phpjabbers.com/free-web-templates/car-rental-website-template-181/assets/images/about-1-570x350.jpg) ;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .content2 button{
+            width: 90px;
+            height: 40px;
+            background-color: rgb(238, 94, 94);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        transition: 0.50s;
+
+        }
+    .content2 button:hover{
+        color: white;
+        background-color: gray;
+        transition: 0.50s;
+    }
+    .para{
+        height: 70vh;
+        background: url(https://demo.phpjabbers.com/free-web-templates/car-rental-website-template-181/assets/images/other-image-fullscren-1-1920x900.jpg) 100% fixed no-repeat;
+    }
+
+    .bottom3{
+        height: 80vh;
+        margin-top: 60px;
+    }
+    .happy{
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 60vh;
+        justify-content: space-between;
+
+        margin: auto;
+    }
+
+    .client{
+        width: 30%;
+        height:50vh;
+        background-color: white;
+        margin-top: 50px;
+    }
+    .gray{
+        background-color: rgb(177, 161, 161);
+        height: 50%;
+        text-align: center;
+    }
+    .details{
+        height: 50%;
+        padding: 10px 30px;
+    }
+
+    .details h3{
+        font-weight: 100;
+
+    }
+
+    .gray i{
+        width: 100px;
+        margin-top: 40px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    background-color: #f33f3f;
+    color: #fff;
+    font-size: 32px;
+}
+footer{
+    height: 50px;
+    margin-top: 30px;
+    background-color: black;
+
+}
+footer h4{
+    text-align: center;
+    padding: 10px;
+}
+    
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+     <div class="screen">
+     <div class="navbar">
+
+        <div class="cname"><h1>CAR RENTAL <span>WEBSITE</span></h1></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fleet</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">Contactus</a></li>
+
+            </ul>
+        </div>
+
+
+     </div>
+
+     <div class="content">
+
+     <h1 class="c">
+
+        Find your car today!
+     </h1>
+    <p >Lorem ipsum <span>dolor sit amet</span>, consectetur adipisicing.</p>
+    
+    </div>
+    </div>
+    </div>
+
+    <div class="bottom1">
+        
+
+        <div class="deal">
+
+            <div class="text"><h2>Offers</h2></div>
+
+            
+
+            
+            
+
+            <div class="car">
+
+                <div class="image1"></div>
+                <div class="price">
+                   <span class="blue"> Lorem ipsum dolor sit amet, consectetur</span>
+                   <br>
+                   <h4>from $120 per weekend <br><br>
+                    Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</h4>
+      
+                </div>
+            </div>
+            <div class="car">
+                <div class="image2"></div>
+                <div class="price">
+                   <span class="blue"> Lorem ipsum dolor sit amet, consectetur</span>
+                   <br>
+                   <h4>from $120 per weekend <br><br>
+                    Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</h4>
+      
+                </div>
+                
+
+            </div>
+            <div class="car">
+
+                <div class="image3"></div>
+                <div class="price">
+                   <span class="blue"> Lorem ipsum dolor sit amet, consectetur</span>
+                   <br>
+                   <h4>from $120 per weekend <br><br>
+                    Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</h4>
+      
+                </div>
+               
+
+            </div>
+
+
+        </div>
+
+        
+
+        
+    </div>
+
+    <div class="bottom2">
+
+        <div class="info">
+
+       
+
+            <div class="content2">
+                 <div class="text"><h2>Aboutus</h2></div>
+                 <br>
+                 
+                 <br>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, esse consequatur alias repellat in excepturi inventore ad asperiores tempora ipsa. Accusantium tenetur voluptate labore aperiam molestiae rerum excepturi minus in pariatur praesentium, corporis, aliquid dicta.
+
+                 <ul>
+                     <li>  Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur an adipisicing elit</li> 
+                        <li>It aquecorporis nulla aspernatur</li>
+                <li>It aquecorporis nulla aspernatur</li>
+
+                 </ul>
+                 
+                 <br>
+                 
+
+                 <button>Read more</button>
+
+
+            </div>
+            <div class="image4">
+                
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="para">
+
+        <p>Today cars!</p>
+        <br>
+        <br>
+        <h1>Lorem ipsum dolor sit,<span> amet consectetur</span> adipisicing elit.</h1>
+
+    </div>
+    
+    <div class="bottom3">
+
+
+        <div class="happy">
+        <div class="text"><h2>Happy client</h2></div>
+
+
+            <div class="client">
+                <div class="gray">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="details">
+                    <h3><i>" Lorem, ipsum dolor sit amet consectetur sed eligendi nemo assumenda optio maxime enim consequuntur!"</i></h3>
+                </div>
+            </div>
+            <div class="client">
+                <div class="gray">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="details">
+                    <h3><i>" Lorem, ipsum dolor sit amet consectetur sed eligendi nemo assumenda optio maxime enim consequuntur!"</i></h3>
+                </div>
+            </div>
+            <div class="client">
+                <div class="gray">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="details">
+                    <h3><i>" Lorem, ipsum dolor sit amet consectetur sed eligendi nemo assumenda optio maxime enim consequuntur!"</i></h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer><h4>COPYRIGHT © 2021-22 COMPANY NAME - TEMPLATE BY: kunal chaudhary</h4></footer>
+
+  
+</body>
+</html>
