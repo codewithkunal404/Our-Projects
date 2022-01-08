@@ -72,7 +72,7 @@
 
 
 >## <a href="https://codewithkunal404.github.io/Our-Projects/10-project.html">10_project</a> ////// <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/10-project.html">SourceCode</a>👇
-<img src="https://github.com/codewithkunal404/Our-Projects/blob/main/src/Screenshot%20(22).png" width="400px">
+<img src="https://github.com/codewithkunal404/Our-Projects/blob/main/src/zom.png" width="400px">
 
 
 
