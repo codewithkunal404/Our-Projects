@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Poppins:wght@300&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0%;
+        text-decoration: none;
+        list-style: none;
+    }
+
+
+    /* 
+    blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40; */
+  
+.tophead{
+    height: 60px;
+    background-color:#343a40;
+    
+}
+    .tophead .social{
+        width: 20%;
+        height:60px;
+       
+        padding: 0px 20px;
+     
+    }
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.social .t1{
+    width: 10%;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: whitesmoke;
+    padding: 0px 20px;
+}
+
+.social .t1:hover{
+    color: rgba(0, 128, 0, 0.473);
+}
+
+.work{
+    width: 30%;
+   
+    height: 60px;
+    margin-right: 100px;
+    padding: 0px 50px;
+}
+.weblink{
+    width: 45%;
+    height: 60px;
+   
+    
+    padding: 20px 0px;
+}
+.number{
+    width: 54%;
+    height: 60px;
+    padding: 20px 0px;
+  
+   border-left: 1px solid whitesmoke;
+    
+    
+    margin-left: 2px;
+}
+   
+
+
+
+span{
+    
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+.top2nav{
+    height: 100px;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+ 
+   
+}
+
+.logo{
+    width: 30%;
+    height: 100px;
+    
+  
+}
+.menu{
+    width: 40%;
+    height: 100px;
+   
+}
+.search{
+    width: 30%;
+    height: 100px;
+    
+
+}
+.cname{
+    font-size: 50px;
+    color:  #28a746de;
+    font-family:'Poppins', sans-serif; 
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+}
+.cname2{
+    font-size: 50px;
+    color:  black;
+    font-family:'Poppins', sans-serif; 
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+
+}
+.top2nav .logo i{
+    color:  #28a746de;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+   
+}
+
+.item{
+    width: 20%;
+    height: 100px;
+    padding: 40px 20px;
+}
+.item a{
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+   
+}
+
+.item a:hover{
+    color: green;text-decoration: none;
+    border-bottom: 2px solid green;
+  
+}
+
+.form{
+    padding: 30px 40px;
+
+}
+
+
+.form input{
+    height: 50px;
+    width: 80%;
+    border-radius: 50px;
+    text-align: center;
+     border: none;
+     background: none;
+   background-color: rgba(0, 128, 0, 0.274);
+}
+
+
+.article{
+    width: 100%;
+    height: 100vh;
+    background: url(https://demo.themefisher.com/bexer/images/slider/banner-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article .text{
+padding: 100px 90px;
+}
+
+h2{
+   font-size: 70px;
+   color: rgba(0, 128, 0, 0.616);
+   text-transform: capitalize;
+  
+}
+
+h1{
+    font-size: 80px;
+    text-transform: capitalize;
+    color: rgba(0,0,0,0.79);
+}
+h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgba(0,0,0,0.79);
+    font-weight: 700;
+}
+
+p{
+    width: 40%;
+    text-align: right;
+    color: #343a40a6;
+}
+
+button{
+    height: 50px;
+    border-radius: 50px;
+    background: none;
+    width: 10%;
+    border:2px solid black;
+
+}
+button:hover{
+    background-color: rgba(67, 212, 67, 0.938);
+    color: white;
+    transition: 0.30s;
+    text-shadow: 1px 1px 1px black;
+   
+}
+.box{
+    width: 80%;
+    height: 50vh;
+    
+    margin: auto;
+    margin-top: 100px;
+    
+}
+.box .card{
+    width: 24%;
+    height: 50vh;
+    background-color: whitesmoke;
+    margin-left: 10px;
+    box-shadow: 2px 2px 20px black
+}
+.icon{
+    height: 150px;
+    width: 150px;
+   margin-top: 10px;
+   margin-left: 50px;
+}
+
+.icon i{
+    text-align: center;
+    color: rgba(58, 211, 58, 0.521);
+   padding: 50px 40px;
+   text-shadow: 1px 4px 1px black;
+}
+
+.content{
+    height: 50%;
+    padding: 20px 28px;
+   
+}
+
+.c1{
+    font-size: 18px;
+    
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: none;
+    font-weight: bolder;
+}
+
+
+.card:hover{
+    background-color: rgba(78, 68, 68, 0.925);
+
+
+}
+.card:hover   .content .c1 , .c2 {
+    color: white;
+   
+
+
+}
+.card:hover .icon i {
+    color: white;
+    text-shadow: 10px 1px 1px black;
+}
+
+.card:hover h6{
+    color: white;
+}
+
+
+h6{
+    text-align: center;
+}
+
+
+.bottom{
+    
+    width: 100%;
+    height: 70vh;
+}
+
+.bottom .baner1{
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+}
+
+
+.baner1{
+    background: url(https://demo.themefisher.com/bexer/images/about/about-us.png);
+    background-repeat: no-repeat;
+    
+
+}
+
+.baner2{
+  
+    width: 50%;
+    height: 70vh;
+    padding: 10px 250px;
+}
+
+hr{
+    height: 5px;
+  
+   
+    background-color: rgb(40, 207, 40);
+    border-radius: 50px;
+   
+}
+
+.btn{
+  width: 20%;
+  background-color: green;
+  height: 5vh;
+}
+
+.rate{
+
+    width: 70%;
+    height: 25vh;
+    background-color: #333638;
+
+}
+
+.r1{
+    width: 25%;
+    height:25vh;
+    padding: 50px 30px;
+}
+.r1 i{
+    color: rgb(32, 185, 32);
+    text-shadow: 1px 1px 1px black;
+}
+.r1 i:hover{
+    font-size: 40px;
+    
+}
+.point{
+    font-size: 2em;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+}
+
+.ttt{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.bottom2{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+ 
+}
+.GG{
+    color: rgb(84, 206, 84);
+}
+
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #333638;
+   
+}
+
+.footer .center{
+    width:70% ;
+  
+    height: 50vh;
+    margin: auto;
+
+   
+}
+
+.footer .block1{
+
+    height: 100%;
+    width: 50%;
+
+   
+
+}
+
+
+.fpp{
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 20px;
+
+}
+.pp{
+    width: 70%;
+    text-align: justify;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: white;
+}
+.footer .block2{
+    width: 50%;
+    height: 100%;
+   
+}
+
+h5{
+    margin-top: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.block2 ul li a{
+    color: white;
+  
+}
+
+
+.butn{
+    height: 50px;
+    width: 30%;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+<div class="tophead">
+
+<div class="social fl">
+
+    <div class="t1 fl"><i class="fab fa-whatsapp"></i></div>
+    <div class="t1 fl"><i class="fab fa-facebook"></i></div>
+    <div class="t1 fl"><i class="fab fa-youtube"></i></div>
+    <div class="t1 fl"><i class="fab fa-instagram"></i></div>
+     <div class="t1 fl"><i class="fab fa-twitter"></i></div>
+</div>
+<div class="work fr">
+
+    <div class="weblink fl"><span>&nbsp;&nbsp;&nbsp;&nbsp;softDesign.com</span></div>
+    <div class="number fr"><span>&nbsp;&nbsp;&nbsp;&nbsp;Telno- +9099188 223</span></div>
+</div>
+
+</div>
+
+<div class="top2nav">
+    <div class="logo fl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-innosoft fa-5x"></i>&nbsp;&nbsp;&nbsp;<span class="cname">Soft<span class="cname2">Design</span></span></div>
+    <div class="menu fl">
+
+        <div class="item fl"><a href="#">Home</a></div>
+        <div class="item fl"><a href="#">About</a></div>
+        <div class="item fl"><a href="#">Project</a></div>
+        <div class="item fl"><a href="#">Coderun</a></div>
+        <div class="item fr"><a href="#">Contactus</a></div>
+    </div>
+    <div class="search fr">
+
+        <form class="form">
+        &nbsp;&nbsp;<i class="fas fa-search fa-1x"></i>&nbsp;&nbsp; <input type="text" placeholder="Search Here">
+        </form>
+    </div>
+    
+
+  
+  </div>
+  <div class="article">
+      <div class="text">
+
+        <h3>Code with kunal </h3>
+        <h1>A Prefect</h1>
+        <h2>Web Designer</h2>
+
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe libero veritatis optio sed laborum rem vero voluptatibus consequuntur, deserunt, repellendus in nemo!</p>
+
+        <button>
+            <h6>More Details</h6>
+        </button>
+         <br> <br>
+        <div class="box">
+            <div class="card fl">
+              <div class="icon"><i class="fas fa-gem fa-3x"></i></div>
+              <div class="content">
+                  <span class="c1">Business Solution</span><br>
+                  <br>
+                  
+                  <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+   
+              </div>
+            </div>
+            <div class="card fl">
+                <div class="icon"><i class="fas fa-chart-bar fa-3x"></i></div>
+                <div class="content">
+                    <span class="c1">Business Solution</span><br>
+                    <br>
+                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                    
+            
+                </div>
+              </div>
+              <div class="card fl">
+                <div class="icon"><i class="far fa-lightbulb fa-3x"></i></div>
+                <div class="content">
+                    <span class="c1">Business Solution</span><br>
+                    <br>
+                    
+                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+                 
+                </div>
+              </div>
+              <div class="card fl">
+                <div class="icon"><i class="fas fa-tachometer-alt fa-3x"></i></div>
+                <div class="content">
+                    <span class="c1">Business Solution</span><br>
+                    <br>
+                    
+                    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+               
+              </div>
+            
+        </div>
+
+
+        
+      </div>
+
+  </div>
+  <div class="bottom">
+
+    <div class="baner1 fl"></div>
+    <div class="baner2 fr">
+       <hr>
+       
+       <h3 class="aboutus">&nbsp;&nbsp;&nbsp;&nbsp;About us</h3>
+       <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur asperiores tenetur illum omnis nulla at quo ipsa minus animi voluptatem tempora, molestiae suscipit reprehenderit ad maxime itaque quis necessitatibus corporis nostrum exercitationem et. Veritatis quisquam consequatur nemo fugit a corrupti magnam ipsabr
+         <br>   aperiam. blanditiis. Alias, quidem earum aperiam ea quia fuga harum nostrum est dolores similique cum. Ex facilis, necessitatibus possimus est veniam nulla libero quia sapiente molestias velit rerum. Beatae culpa, a ipsa ab sit, autem optio officia dolorem fugiat ad distinctio assumenda, hic vel.
+       </h6>
+        <br>
+        
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div class="rate">
+
+    <div class="r1 fl"> <i class="fa fa-bullseye icon-lg fa-5x"></i>&nbsp;&nbsp;&nbsp;<span class="point">50+</span>
+   <br> <span class="ttt">Projects done</span></div>
+    <div  class="r1 fl"><i class="fa fa-calendar icon-lg fa-5x"></i>&nbsp;&nbsp;&nbsp;<span class="point">25+</span>
+        <br><span class="ttt">Year experience</span></div>
+    <div  class="r1 fl"><i class="fa fa-trophy icon-lg fa-5x"></i>&nbsp;&nbsp;&nbsp;<span class="point">250+
+        <br><span class="ttt">Awards win</span>
+    </div>
+    <div  class="r1 fr"> <i class="far fa-smile fa-5x"></i>&nbsp;&nbsp;&nbsp;<span class="point">250+
+            <br><span class="ttt">Happy Customers</span>
+    </div>
+
+
+
+   
+  </div>
+
+<br>
+<br>
+<br>
+ 
+  <div class="bottom2">
+
+    <table border="0" width="100%">
+        <tr>  <td colspan="2"><h4>
+            <hr>
+            &nbsp;&nbsp;&nbsp;Why We Choose Us </h4></td>
+        </tr>
+        <tr>
+            <td colspan="2"> <h3> <br>&nbsp;&nbsp;why they choose <br>&nbsp;&nbsp;softdesigner</h3>
+                <br>
+                <br>
+         </td>
+        </tr>
+        <tr>
+            <td  width="40%" valign="top">
+               <table border="0" width="100%"  >
+
+<tr><td width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class=" GG fas fa-snowflake fa-5x"></i></td><td  width="70%"  ><h3>&nbsp;&nbsp;Creative Design</h3>
+<h6>Lorem ipsum dolor sit ametconsectetur dignissimos quidem deserunt eaque totam laboriosam veniam reiciendis. Hic, rerum assumenda voluptate voluptatum culpa accusantium, quod placeat, iste qui eos enim fugiat quasi nulla?</h6></td></tr>
+<tr><td width="30%" colspan="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="GG fa fa-code fa-5x >/i></td><td  width="70%"></td><td colspan="1"><h3>&nbsp;&nbsp;Coding</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur dignissimos quidem deserunt eaque totam laboriosam veniam reiciendis. Hic, rerum assumenda voluptate voluptatum culpa accusantium, quod placeat, iste qui eos enim fugiat quasi nulla?</h6></td></tr>
+    
+               </table>
+            </td>
+            <td width="60%" valign="top">
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://cdn.pixabay.com/photo/2016/01/19/14/47/laptop-1148958__340.jpg" width="70%" >
+            </td>
+        </tr>
+        
+    </table>
+
+
+</div>
+
+<div class="footer">
+
+    <div class="center">
+
+        <div class="block1 fl"><i class="fpp fab fa-innosoft fa-5x"></i>&nbsp;&nbsp;&nbsp;<span class="cname">Soft<span class="fpp">Design</span></span> <br>
+        <p class="pp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veniam tenetur beatae at architecto! Exercitationem beatae error dolores fugiat, vitae molestiae debitis repellendus doloribus alias, aperiam, facere tempora voluptates maiores!</p></div>
+       
+
+        <div class="block2 fr">
+
+            
+              <h5>Contactus: +78782 07323 <br>
+                  Email-id: softdesignerinfo@gmail.com</h5>
+
+
+                  <br>
+
+                  <ul>
+                      <li><a href="#">services</a></li>
+                      <li><a href="#">Awards</a></li>
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">Connections</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                      <li><a href="#">Contactus</a></li>
+                  </ul>
+         
+                  <br>
+                 <button class="butn">Subscribe</button>
+
+    </div>
+
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
