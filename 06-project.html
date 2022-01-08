@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .wrapper{
+
+        width: 400px;
+        height: 200px;
+        box-shadow: 0px -1px 12px 3px black;
+        border-radius: 10px;
+        left: 50%;
+        transition: 0.60s;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+    }
+
+   
+    .imagebox img{
+        width: 100%;
+        height: 100%;
+        border-radius: 19px;
+       
+        transform: translateY(-60px);
+        box-shadow:0px -1px 12px 3px black;
+    }
+
+    .imagebox{
+    padding: 0 20px;
+    }
+    .content h1{
+        opacity: 0;
+        font-size: 20px;
+        text-align: center;
+        transition: 0.30s;
+        transform: translateY(-300px);
+      
+        
+    }
+    .wrapper:hover{
+        height: 500px;
+        transition: 0.60s;
+    }
+
+    .wrapper:hover > .content h1{
+        opacity: 1;
+        color: rgb(63, 58, 58);
+        transform: translateY(-30px);
+    }
+
+    
+   .btn {
+       text-align: center;
+       margin-top: 20px;
+       
+
+   }
+   .btn a{
+       text-decoration: none;
+       color: black;
+       font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 0px 0px 0px 1px black;
+      transition: 0.40s;
+       padding: 5px 10px;
+       border-radius: 5px ;
+       opacity: 0;
+   }
+.btn a:hover{
+    background-color: black;
+    color: white;
+}
+    
+  .wrapper:hover > .btn a{
+      opacity: 1;
+
+
+  }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="imagebox"><img src="https://cdn.pixabay.com/photo/2021/10/09/23/40/people-6695318__340.jpg" >
+       
+        </div>
+        <div class="content"> <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        </div>
+        <div class="btn"><a href="#">Learn more</a></div>
+    </div>
+</body>
+</html>
