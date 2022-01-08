@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardEditor</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        *{
+
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Exo 2', sans-serif;
+
+        }
+        body{
+            background-color: lightblue;
+        }
+        .head{
+            height: 100px;
+            width: 100%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .cname{
+            width: 30%;
+            height: 100%;
+            text-align: center;
+        }
+        .menu{
+            width: 70%;
+            height:100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .head .cname .logo{
+            font-size: 3em;
+            color: royalblue;
+            text-shadow: 0px 1px 0px black;
+
+        }
+        .cname i{
+            font-size: 3em;
+            text-shadow: 0px 1px 0px black;
+            color: royalblue;
+            margin-top: 20px;
+        }
+
+        .wrap{
+            width: 60%;
+            margin: auto;
+            height: 80vh;
+            background-color: white;
+            margin-top: 20px;
+            position: relative;
+
+           
+        }
+        .wrap .card{
+            width: 500px;
+            height: 300px;
+            display: none;
+        
+            position: absolute;
+            background-color: whitesmoke;
+            box-sizing: border-box;
+
+            left: 25%;
+            top: 25%;
+            box-shadow: 0px 0px 10px black;
+      
+
+
+        }
+        .card .left{
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+        .card .right{
+            width: 60%;
+            height: 100%;
+            float: right;
+
+
+        }
+      
+        
+        .left .photo{
+            width: 70%;
+            height: 70%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        
+      
+        
+       
+        .menu .color{
+            width: 25%;
+            height: 80px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        
+        .menu .line{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .line .c1{
+            width: 16.50%;
+            height: 100%;
+            background-color: black;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+
+        .line .c2{
+            width: 16.50%;
+            height: 100%;
+            background-color:blue;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+        .line .c3{
+            width: 16.50%;
+            height: 100%;
+            background-color: dodgerblue;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+        .line .c4{
+            width: 16.50%;
+            height: 100%;
+            background-color: tomato;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+        .line .c5{
+            width: 16.50%;
+            height: 100%;
+            background-color: magenta;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+        .line .c6{
+            width: 16.50%;
+            height: 100%;
+            background-color: maroon;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+
+
+
+        .line .c7{
+            width: 16.50%;
+            height: 100%;
+            background-color: red;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }   .line .c8{
+            width: 16.50%;
+            height: 100%;
+            background-color: yellow;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }   .line .c9{
+            width: 16.50%;
+            height: 100%;
+            background-color: green;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }   .line .c10{
+            width: 16.50%;
+            height: 100%;
+            background-color: whitesmoke;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }   .line .c11{
+            width: 16.50%;
+            height: 100%;
+            background-color: slateblue;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }   .line .c12{
+            width: 16.50%;
+            height: 100%;
+            background-color: hotpink;
+            border: 3px solid white;
+            box-sizing: border-box;
+
+        }
+
+        .line .c1:hover{
+           
+         border: 2px solid black;
+         cursor: pointer;
+         box-shadow: 0px 0px 10px black;
+         transition: 0.50s;
+         
+
+        }.line .c2:hover{
+           
+         cursor: pointer;
+         border: 2px solid black;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c3:hover{
+           
+         cursor: pointer;
+         cursor: pointer;
+         border: 2px solid black;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c4:hover{
+           
+         cursor: pointer;
+         border: 2px solid black;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c5:hover{
+           
+         cursor: pointer;
+         border: 2px solid black;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c6:hover{
+           
+         cursor: pointer;
+         border: 2px solid black;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c7:hover{
+           
+         cursor: pointer;
+         border: 2px solid black;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c8:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         border: 2px solid black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }.line .c9:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         border: 2px solid black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }.line .c10:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         border: 2px solid black;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line .c11:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         border: 2px solid black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }.line .c12:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         border: 2px solid black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }
+
+          .menu .textcolor{
+              width: 35%;
+              height: 80%;
+              margin-top: 10px;
+              margin-left: 10px;
+              background-color: rgba(0, 0, 0, 0.884);
+             
+          }
+          pre{
+              color: black;
+              font-size: 18px;
+              
+          }
+       .menu .line1{
+           height: 50%;
+           width:100%;
+        display: flex;
+        flex-wrap: wrap;
+           }
+
+        .text11{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+        .text11 i{
+            color: red;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text12{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text12 i{
+            color: blue;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text13{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text13 i{
+            color: green;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text14{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text14 i{
+            color: whitesmoke;
+            font-size: 30px;
+            text-shadow: 1px 0px 1px black;
+            margin-top: 5px;
+         
+        }
+        .text15{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text15 i{
+            color: yellow;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text16{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text16 i{
+            color: royalblue;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+
+        .text17{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text17 i{
+            color: magenta;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text18{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text18 i{
+            color: tomato;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text19{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text19 i{
+            color: skyblue;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text20{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text20 i{
+            color: goldenrod;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text21{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text21 i{
+            color: hotpink;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text22{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text22 i{
+            color: lightseagreen;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text23{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text23 i{
+            color: lime;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text24{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text24 i{
+            color: darkmagenta;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text25{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text25 i{
+            color: lightcoral;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text26{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text26 i{
+            color: darkolivegreen;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text27{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text27 i{
+            color: darkviolet;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text28{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text28 i{
+            color: midnightblue;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text29{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text29 i{
+            color: rebeccapurple;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text30{
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            box-sizing: border-box;
+        }
+
+
+        .text30 i{
+            color: navy;
+            font-size: 30px;
+            margin-top: 5px;
+         
+        }
+        .text11:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black;
+            cursor: grab;
+        }
+        .text12:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text13:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text14:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text15:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text16:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text17:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text18:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text19:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } .text20:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        } 
+
+        .text21:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text22:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text23:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text24:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text25:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text26:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text27:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text28:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text29:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }.text30:hover{
+            box-shadow: 0px 0px 10px black;
+            border: 1px solid black; cursor: grab;
+        }
+
+        .styles{
+            width: 10%;
+            height: 80%;
+            margin-top: 10px;
+            margin-left: 5px;
+
+        }
+        .s1{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .s1 .bold{
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .bold:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .italic:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+        .bold i{
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: black;
+
+        }
+
+        .s1 .italic{
+            width: 50%;
+            height: 100%;
+            text-align: center; 
+            box-sizing: border-box;
+        }
+        .italic i{
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: black;
+
+        }
+        .s1 .UP{
+            width: 50%;
+            height: 100%;
+            text-align: center; 
+            box-sizing: border-box;
+        }
+        .UP i{
+            font-size: 1.8em;
+            margin-top: 6px;
+            color: black;
+
+        }
+
+        .UP:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+
+
+
+        .s1 .LOw{
+            width: 50%;
+            height: 100%;
+            text-align: center; 
+            box-sizing: border-box;
+        }
+        .LOw i{
+            font-size: 1.3em;
+            margin-top: 8px;
+            color: black;
+
+        }
+
+        .LOw:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .shadow{
+            width: 25%;
+            height: 80%;
+            margin-left: 10px;
+            margin-top:  10px;
+
+        }
+
+
+
+
+
+        .shadow .line20{
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .line20 .c11{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid black;
+            box-sizing: border-box;
+
+        }
+
+        .line20 .c22{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid blue;
+            box-sizing: border-box;
+
+        }
+        .line20 .c33{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid dodgerblue;
+            box-sizing: border-box;
+
+        }
+        .line20 .c44{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid tomato;
+            box-sizing: border-box;
+
+        }
+        .line20 .c55{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid magenta;
+            box-sizing: border-box;
+
+        }
+        .line20 .c66{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid maroon;
+            box-sizing: border-box;
+
+        }
+
+
+
+        .line20 .c77{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid red;
+            box-sizing: border-box;
+
+        }   .line20 .c88{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid yellow;
+            box-sizing: border-box;
+
+        }   .line20 .c99{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid green;
+            box-sizing: border-box;
+
+        }   .line20 .c1010{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid gray;
+            box-sizing: border-box;
+
+        }   .line20 .c1111{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid slateblue;
+            box-sizing: border-box;
+
+        }   .line20 .c1212{
+            width: 16.50%;
+            height: 100%;
+            border: 5px solid hotpink;
+            box-sizing: border-box;
+
+        }
+
+        .line20 .c11:hover{
+           
+         cursor: pointer;
+         box-shadow: 0px 0px 10px black;
+         transition: 0.50s;
+         
+
+        }.line20 .c22:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c33:hover{
+           
+         cursor: pointer;
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c44:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c55:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c66:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c77:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c88:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }.line20 .c99:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }.line20 .c1010:hover{
+           
+         cursor: pointer;
+         transition: 0.50s;
+         box-shadow: 0px 0px 10px black;
+  
+          }.line20 .c1111:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }.line20 .c1212:hover{
+           
+         box-shadow: 0px 0px 10px black;
+         transition: 0.50s;
+         cursor: pointer;
+  
+          }
+          .sidebar{
+              position: fixed;
+              width: 10%;
+              height: 90%;
+              top: 100px;
+              text-align: center;
+
+          }
+          .sidebar1{
+              position: fixed;
+              width: 10%;
+              height: 90%;
+              top: 100px;
+              right: 0%;
+              text-align: center;
+
+          }
+
+
+
+
+          .sidebar1 h3{
+              font-size: 20px;
+              color: royalblue;
+          }
+         
+
+          .sidebar1  button{
+              width: 80%;
+              height: 6%;
+              font-size: 18px;
+              border: none;
+              color: blue;
+              margin-top: 5px;
+              border-radius: 20px 10px 10px 20px;
+          }
+          .sidebar1  button:hover{
+              
+            box-shadow: 0px 0px 10px 3px royalblue;  background-color: royalblue;
+            color: white;
+          }
+
+
+
+
+          .sidebar3{
+              position: fixed;
+              width: 9%;
+              height: 90%;
+              top: 100px;
+              right: 10%;
+              text-align: center;
+
+          }
+
+
+
+
+          .sidebar3 h3{
+              font-size: 20px;
+              color: royalblue;
+          }
+         
+
+          .sidebar3  button{
+              width: 80%;
+              height: 6%;
+              font-size: 18px;
+              border: none;
+              color: blue;
+              margin-top: 5px;
+              border-radius: 20px ;
+          }
+          .sidebar3  button:hover{
+              
+            box-shadow: 0px 0px 10px 3px royalblue;  background-color: royalblue;
+            color: white;
+          }
+
+
+
+          .sidebar h3{
+              font-size: 20px;
+              color: royalblue;
+          }
+         
+
+          .sidebar  button{
+              width: 80%;
+              height: 6%;
+              font-size: 18px;
+              border: none;
+              color: blue;
+              margin-top: 5px;
+              border-radius: 20px 10px 10px 20px;
+          }
+          .sidebar  button:hover{
+              
+            box-shadow: 0px 0px 10px 3px royalblue;
+            background-color: royalblue;
+            color: white;
+          }
+
+
+
+
+          .sidebar2{
+              position: fixed;
+              width: 10%;
+              height: 90%;
+              top: 100px;
+              left: 9%;
+              text-align: center;
+
+          }
+
+
+
+
+          .sidebar2 h3{
+              font-size: 20px;
+              color: royalblue;
+          }
+         
+
+          .sidebar2  button{
+              width: 80%;
+              height: 6%;
+              font-size: 18px;
+              border: none;
+              color: blue;
+              margin-top: 5px;
+              border-radius: 20px;
+          }
+          .sidebar2  button:hover{
+              
+            box-shadow: 0px 0px 10px 3px royalblue;  background-color: royalblue;
+            color: white;
+          }
+
+          .re{
+              width:60px;
+              height: 60px;
+              border-radius: 50%;
+              border: 1px solid blue;
+              text-align: center;
+              position: fixed;
+              left: 30%;
+              bottom: 10%;
+
+          }
+          .re i{
+              font-size: 2.5em;
+              margin-top: 10px;
+          }
+.re:hover{
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+
+
+.re1{
+              width:60px;
+              height: 60px;
+              border: 1px solid blue;
+              text-align: center;
+              position: fixed;
+              left: 65%;
+              bottom: 10%;
+
+          }
+          .re1 i{
+              font-size: 2.5em;
+              margin-top: 10px;
+          }
+.re1:hover{
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+}
+    </style>
+    
+</head>
+<body>
+
+
+    <div class="sidebar">
+   <br>
+
+
+            <h3>Card Shadow</h3>
+
+               <br>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px blue'" >BLUE</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px yellow'" >YELLOW</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px slateblue'" >SLATEBLUE</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px red'" >RED</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px gray'" >GRAY</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px green'" >GREEN</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px royalblue'" >ROYALBLUE</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px maroon'" >MAROON</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px tomato'" >TOMATO</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px navy'" >NAVY</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px skyblue'" >SKYBLUE</button>
+                   <button onclick="document.getElementById('card11').style.boxShadow='0px 0px 50px 10px black'" >BLACK</button>
+
+
+        </div>
+
+        <div class="sidebar2">
+            <br>
+         
+         
+                     <h3>Photo Shadow</h3>
+         
+                        <br>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px blue'" >BLUE</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px yellow'" >YELLOW</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px slateblue'" >SLATEBLUE</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px red'" >RED</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px gray'" >GRAY</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px green'" >GREEN</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px royalblue'" >ROYALBLUE</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px maroon'" >MAROON</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px tomato'" >TOMATO</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px navy'" >NAVY</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px skyblue'" >SKYBLUE</button>
+                            <button onclick="document.getElementById('image1').style.boxShadow='0px 0px 30px 2px black'" >BLACK</button>
+         
+         
+                 </div>
+
+
+        <div class="sidebar1">
+            <br>
+         
+         
+                     <h3>Background</h3>
+         
+                        <br>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='blue'" >BLUE</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='yellow'" >YELLOW</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='slateblue'" >SLATEBLUE</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='red'" >RED</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='gray'" >GRAY</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='green'" >GREEN</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='royalblue'" >ROYALBLUE</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='maroon'" >MAROON</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='tomato'" >TOMATO</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='navy'" >NAVY</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='skyblue'" >SKYBLUE</button>
+                            <button onclick="document.getElementById('wrap11').style.backgroundColor='black'" >BLACK</button>
+                   
+         
+         
+                 </div>
+
+
+                 <div class="sidebar3">
+                    <br>
+                 
+                 
+                             <h3>Photo Border</h3>
+                 
+                                <br>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='5px'" >5px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='10px'" >10px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='15px'" >15px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='20px'" >20px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='25px'" >25px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='30px'" >30px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='40px'" >40px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='45px'" >45px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='50px'" >50px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='55px'" >55px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='60px'" >60px</button>
+                                    <button onclick="document.getElementById('image1').style.borderRadius='50%'" >50%</button>
+                           
+                 
+                 
+                         </div>
+
+
+
+    <div class="head">
+        <div class="cname"><i class="fab fa-pinterest"></i> <span class="logo">&nbsp;CardEditor</span></div>
+        <div class="menu">
+            <div class="color">
+                <div class="line">
+                    <div class="c1" onclick="document.getElementById('card11').style.backgroundColor='black'"></div>
+                    <div class="c2"     onclick="document.getElementById('card11').style.backgroundColor='blue'"></div>
+                    <div class="c3"    onclick="document.getElementById('card11').style.backgroundColor='dodgerblue'"></div>
+                    <div class="c4"    onclick="document.getElementById('card11').style.backgroundColor='tomato'"></div>
+                    <div class="c5"    onclick="document.getElementById('card11').style.backgroundColor='magenta'"></div>
+                    <div class="c6"    onclick="document.getElementById('card11').style.backgroundColor='maroon'"></div>
+                </div>
+                <div class="line">
+                    <div class="c7"    onclick="document.getElementById('card11').style.backgroundColor='red'"></div>
+                    <div class="c8"    onclick="document.getElementById('card11').style.backgroundColor='yellow'"></div>
+                    <div class="c9"    onclick="document.getElementById('card11').style.backgroundColor='green'"></div>
+                    <div class="c10"    onclick="document.getElementById('card11').style.backgroundColor='whitesmoke'"></div>
+                    <div class="c11"    onclick="document.getElementById('card11').style.backgroundColor='slateblue'"></div>
+                    <div class="c12"    onclick="document.getElementById('card11').style.backgroundColor='hotpink'"></div>
+                </div>
+
+            </div>
+ <div class="textcolor">
+   <div class="line1">
+       
+    <div class="text11" onclick="document.getElementById('TEX').style.color='red'"><i class="fas fa-font"></i></div>
+    <div class="text12" onclick="document.getElementById('TEX').style.color='blue'"><i class="fas fa-font"></i></div>
+    <div class="text13" onclick="document.getElementById('TEX').style.color='green'"><i class="fas fa-font"></i></div>
+    <div class="text14" onclick="document.getElementById('TEX').style.color='white'"><i class="fas fa-font"></i></div>
+    <div class="text15" onclick="document.getElementById('TEX').style.color='yellow'"><i class="fas fa-font"></i></div>
+    <div class="text16" onclick="document.getElementById('TEX').style.color='royalblue'"><i class="fas fa-font"></i></div>
+    <div class="text17" onclick="document.getElementById('TEX').style.color='magenta'"><i class="fas fa-font"></i></div>
+    <div class="text18" onclick="document.getElementById('TEX').style.color='tomato'"><i class="fas fa-font"></i></div>
+    <div class="text19" onclick="document.getElementById('TEX').style.color='skyblue'"><i class="fas fa-font"></i></div>
+    <div class="text20" onclick="document.getElementById('TEX').style.color='goldenrod'"><i class="fas fa-font"></i></div>
+    
+
+    
+
+    
+</div>
+  <div class="line1">
+       
+    <div class="text21" onclick="document.getElementById('TEX').style.color='hotpink'"><i class="fas fa-font"></i></div>
+    <div class="text22" onclick="document.getElementById('TEX').style.color='lightseagreen'"><i class="fas fa-font"></i></div>
+    <div class="text23" onclick="document.getElementById('TEX').style.color='lime'"><i class="fas fa-font"></i></div>
+    <div class="text24" onclick="document.getElementById('TEX').style.color='darkmagenta'"><i class="fas fa-font"></i></div>
+    <div class="text25" onclick="document.getElementById('TEX').style.color='lightcoral'"><i class="fas fa-font"></i></div>
+    <div class="text26" onclick="document.getElementById('TEX').style.color='darkolivegreen'"><i class="fas fa-font"></i></div>
+    <div class="text27" onclick="document.getElementById('TEX').style.color='darkviolet'"><i class="fas fa-font"></i></div>
+    <div class="text28" onclick="document.getElementById('TEX').style.color='midnightblue'"><i class="fas fa-font"></i></div>
+    <div class="text29" onclick="document.getElementById('TEX').style.color='rebeccapurple'"><i class="fas fa-font"></i></div>
+    <div class="text30" onclick="document.getElementById('TEX').style.color='navy'"><i class="fas fa-font"></i></div>
+    
+
+    
+
+    
+</div>
+
+         
+      
+    </div>
+
+    <div class="styles">
+
+        <div class="s1">
+            <div class="bold" onclick="document.getElementById('TEX').style.fontWeight='bold'"><i class="fas fa-bold"></i></div>
+            <div class="italic" onclick="document.getElementById('TEX').style.fontStyle='italic'"><i class="fas fa-italic"></i></div>
+
+        </div>
+        <div class="s1">
+            <div class="UP" onclick="document.getElementById('TEX').style.textTransform='Uppercase'"><i class="fas fa-font"></i></div>
+            <div class="LOw" onclick="document.getElementById('TEX').style.textTransform='Lowercase'"><i class="fas fa-font"></i></div>
+
+        </div>
+    </div>
+
+    <div class="shadow">
+
+        <div class="line20">
+            <div class="c11" onclick="document.getElementById('card11').style.border=' 5px solid black'"></div>
+            <div class="c22"     onclick="document.getElementById('card11').style.border=' 5px solid blue'"></div>
+            <div class="c33"    onclick="document.getElementById('card11').style.border='5px solid dodgerblue'"></div>
+            <div class="c44"    onclick="document.getElementById('card11').style.border='5px solid tomato'"></div>
+            <div class="c55"    onclick="document.getElementById('card11').style.border='5px solid magenta'"></div>
+            <div class="c66"    onclick="document.getElementById('card11').style.border='5px solid maroon'"></div>
+        </div>
+        <div class="line20">
+            <div class="c77"    onclick="document.getElementById('card11').style.border='5px solid red'"></div>
+            <div class="c88"    onclick="document.getElementById('card11').style.border='5px solid yellow'"></div>
+            <div class="c99"    onclick="document.getElementById('card11').style.border='5px solid green'"></div>
+            <div class="c1010"    onclick="document.getElementById('card11').style.border='5px solid gray'"></div>
+            <div class="c1111"    onclick="document.getElementById('card11').style.border='5px solid slateblue'"></div>
+            <div class="c1212"    onclick="document.getElementById('card11').style.border='5px solid hotpink'"></div>
+        </div>
+
+
+
+    </div>
+    </div>
+    <div class="wrap" id="wrap11">
+
+        <div class="re" onclick="refresh()">
+            <i class="fas fa-redo"></i>
+        </div>
+
+        <div class="re1" onclick="document.getElementById('card11').style.display='block'">
+            <i class="fas fa-id-card"></i>
+        </div>
+
+
+        <div class="card" id="card11">
+            <div class="left">
+                <div class="photo">
+                    <img id="image1" src="https://180dc.org/wp-content/uploads/2017/08/Akash-Kumar-Passport-Size-Photo.jpg" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="right">
+                <pre id="TEX">
+                    
+                    <U>WEB DESIGNER</U>
+
+NAME  : John Doe
+DOB   : 12/09/2000
+PHONE NO :  9028333342
+EmailID : johndoe23@gmail.com
+ENROLLNO: 3627227276 
+
+            www.Codeeditor.com&nbsp;<i class="fab fa-pinterest"></i>
+
+                  <i class="fab fa-cotton-bureau"></i>  <i class="fab fa-confluence"></i>  <i class="fab fa-html5"></i>  <i class="fab fa-github"> </i> <i class="fab fa-css3-alt"></i>  <i class="fab fa-node-js"></i>
+                  
+                    
+                 </pre>         
+                    
+                  
+
+               
+
+            </div>
+
+
+
+           
+        </div>
+    </div>
+    <script>
+        function refresh(){
+              window.location.reload("Refresh");
+            }
+      </script>
+</body>
+</html>
