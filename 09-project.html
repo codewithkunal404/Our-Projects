@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            overflow: hidden;
+            background-color: rgb(41, 35, 51);
+        }
+        body::before{
+            content: "";
+            width: 600px;
+            height: 600px;
+            background-color: rgb(238, 68, 238);
+            position: absolute;
+            clip-path: circle(50% at 50% 50%);
+            bottom: 0%;
+            right: 0%;
+            transform: translate(-50px,40px);
+            
+        }
+        body::after{
+            content: "";
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-color: slateblue;
+            clip-path: circle(50% at 50% 50%);
+
+            top: 0%;
+            left: 0%;
+            transform: translate(300px,10px);
+            z-index: -1;
+        }
+        .card{
+            width: 400px;
+            height: 70vh;
+            background:rgba(196, 192, 192, 0.062);
+            transform: translate(-50%,-50%);
+            left: 40%;
+            top: 20%;
+            position: absolute;
+            box-shadow: 15px 15px 25px 15px rgba(0, 0, 0, 0.432);
+            border-radius: 20px;
+            overflow: hidden;
+          
+            
+
+        }
+       
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 4em;
+        }
+        .content{
+            width: 70%;
+            height: 400px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            transform: translateY(500px);
+            opacity: 0;
+            transition: 0.90s;
+
+        }
+
+        .card:hover .content{
+            transform: translateY(0px);
+            transition: 0.90s;
+            opacity: 1;
+
+
+            
+        }
+        p{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+        
+        button{
+            width: 50%;
+            height: 50px;
+            color:black;
+            background: none;
+            border: 3px solid whitesmoke;
+            border-radius: 50px;
+            color: whitesmoke;
+
+            transition: 0.90s;
+            font-size: 18px;
+
+
+        }
+        h2{
+            font-size: 5em;
+            color: rgba(128, 128, 128, 0.267);
+        }
+        button:hover{
+            background: white;
+            color: black;
+            transition: 0.90s;
+        }
+        h3{
+            font-size: 25em;
+            color: rgba(128, 128, 128, 0.342);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h3>
+            01
+        </h3>
+        <div class="content">
+
+            <h1>Card</h1>
+            <br>
+            <br>
+
+            <p> deleniti recusandae, sequi nobis necessitatibus animi dolorum esse libero dolore Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tempore.</p>
+            <br>
+            <br>
+            <button>Click Me</button>
+           
+
+        </div>
+    </div>
+
+
+    
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare":1, 
+	});
+	
+</script>
+</html>
