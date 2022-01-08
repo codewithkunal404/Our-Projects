@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layer</title>
+    <style>
+
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+
+            width: 360px;
+            height: 640px;
+            margin-top: 40px;
+            transform: rotate(-40deg) skew(20deg) scale(0.6);
+            position: relative;
+           }
+
+        .container img{
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            transition: 0.70s;
+
+        }
+
+         .container:hover img:nth-child(5){
+            transform: translate(110px,-90px);
+            transition: 0.70s;
+        }
+        .container:hover img:nth-child(4){
+            transform: translate(80px,-70px);
+            transition: 0.70s;
+            opacity: .9;
+
+        }
+        .container:hover img:nth-child(3){
+            transform: translate(50px,-50px);
+            transition: 0.70s;
+            opacity: .7;
+
+        }
+        .container:hover img:nth-child(2){
+            transform: translate(30px,-30px);
+            transition: 0.70s;
+            opacity: .4;
+
+        }
+       
+        .container:hover img:nth-child(1){
+            transition: 0.70s;
+            opacity: .3;
+            box-shadow: 0px 0px 10px black;
+            transform: translate(  10px,-10px);
+
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLhX0n8vCm2U-N9N5XKaQg7j3Oq73GCUN8y9fGw4AQyNxJNpxmXWSn6Vbg7w-APtVOcI&usqp=CAU" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLhX0n8vCm2U-N9N5XKaQg7j3Oq73GCUN8y9fGw4AQyNxJNpxmXWSn6Vbg7w-APtVOcI&usqp=CAU" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLhX0n8vCm2U-N9N5XKaQg7j3Oq73GCUN8y9fGw4AQyNxJNpxmXWSn6Vbg7w-APtVOcI&usqp=CAU" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLhX0n8vCm2U-N9N5XKaQg7j3Oq73GCUN8y9fGw4AQyNxJNpxmXWSn6Vbg7w-APtVOcI&usqp=CAU" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLhX0n8vCm2U-N9N5XKaQg7j3Oq73GCUN8y9fGw4AQyNxJNpxmXWSn6Vbg7w-APtVOcI&usqp=CAU" >
+    </div>
+    
+</body>
+</html>
