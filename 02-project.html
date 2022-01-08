@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block-navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Outfit', sans-serif;
+            text-decoration: none;
+        }
+        body{
+            background:  url(https://images.pexels.com/photos/1102912/pexels-photo-1102912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .wrap{
+            background: url(https://images.pexels.com/photos/775200/pexels-photo-775200.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            height: 100vh;
+            background-position: center;
+            background-size: 500px 900px;
+            background-repeat: no-repeat;
+            margin: auto;
+            box-shadow: 0px 0px 10px gray;
+        }
+        .sc{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100vh;
+        }
+        .head{
+            width: 100%;
+            height: 90px;
+            background-color: rgba(0, 0, 0, 0.5);
+            
+        }
+        .cname{
+            width: 100%;
+            height:90px;
+            text-align: center;
+           
+        }
+        .menu{
+            width: 100%;
+            height: auto;
+            
+        }
+        .topnav{
+            height: 40px;
+            background-color: rgb(85, 77, 77);
+        }
+        .topnav .leftnav{
+            width: 50%;
+            height: 40px;
+            float: left;
+
+        }
+        .topnav .rightnav{
+            width: 50%;
+            text-align: center;
+            height: 40px;
+            float: right;
+        }
+      .head .cname h1 a{
+        font-size: 28px;
+          color: white;
+          display: block;
+            padding: 20px 0px;
+          text-shadow: 1px 1px 1px black;
+        
+      }
+        .head .cname h1  .logo{
+            font-size: 28px;
+            background-color: white;
+            padding: 10px 10px;
+            border-radius: 50%;
+            border: 3px solid green;
+            color: green;
+            text-shadow: 1px 1px 1px black;
+        }
+        .menu ul li{
+            display: block;
+            font-size: 19px;
+            font-weight: bold;
+            padding: 20px 10px;
+            text-align: center;
+            margin-top: 5px;
+            background-color:rgba(0, 128, 0, 0.651);
+            border-left: 5px solid yellowgreen;
+            transition: 0.90s;
+
+
+           
+        }
+        .menu ul {
+            padding: 30px 0px;
+
+        }
+        .menu ul li a{
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+        .menu ul li:hover{
+            border-left: 20px solid yellowgreen;
+            border-radius: 0px 50px 50px 0px;
+            transition: 0.90s;
+            background-color: green;
+        }
+        .menu ul li a:hover{
+           color: greenyellow;
+        }
+        .topnav .leftnav  a i{
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            padding: 10px 10px;
+            
+        }
+        .topnav .leftnav a i:hover{
+            color: yellow;
+        }
+        .rightnav ul  li{
+            display: inline;
+            font-size: 18px;
+        ;
+
+
+        }
+        .rightnav ul li a{
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+        .rightnav ul li a:hover{
+            color: yellow;
+            
+        }
+        .rightnav ul {
+            padding: 5px ;
+
+        }
+        .line {
+            color: white;
+        }
+        .content{
+            width: 60%;
+            height: 20vh;
+            text-align: center;
+            float: left;
+            margin-top: 450px;
+            margin-left:20%;
+
+        }
+        .content h1{
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            font-size: 20px;
+        }
+        .content  h1 .yellow{
+            color: yellowgreen;
+            text-shadow: 1px 1px 1px black;
+            
+        }
+        button{
+            width: 40%;
+            height: 50px;
+            font-size: 18px;
+            color: greenyellow;
+            background:black;
+            transition: 0.90s;
+
+        }
+        button:hover{
+            border-radius: 50px;
+            transition: 0.90s;
+            border: 3px solid yellowgreen;
+            box-shadow: 0px 0px 10px greenyellow;
+
+        }
+
+      
+            
+        
+        @media (max-width:880px) {
+        .wrap{
+                width: 100%;
+                background-size: cover;
+            }
+        .sc{
+            width: 100%;
+
+        }
+    }
+     
+    @media (min-width:1260px) {
+        .wrap{
+                width: 40%;
+                background-size: cover;
+
+            }
+            .sc{
+                width: 100%;
+            }
+        }
+
+        @media (min-width:1300px) {
+            .wrap{
+                width: 40%;
+                background-size: cover;
+
+            }
+            
+            .sc{
+                width: 100%;
+            }
+        }
+  
+            
+        
+       
+    </style>
+</head>
+<body>
+  <div class="sc">
+    <div class="wrap">
+        <div class="sc">
+            <div class="topnav">
+<div class="leftnav">
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+   <a href="#"> <i class="lni lni-whatsapp"></i></a>
+   <a href="#"> <i class="lni lni-facebook-filled"></i></a>
+   <a href="#"> <i class="lni lni-twitter-original"></i></a>
+    <a href="#"><i class="lni lni-instagram-original"></i></a>
+    <a href="#"><i class="lni lni-youtube"></i></a>
+</div>
+<div class="rightnav">
+    <ul>
+        <li><a href="#">Login</a></li> &nbsp;&nbsp; <Span class="line">I</Span>&nbsp;&nbsp;
+        <li><a href="#">Registration</a></li>
+    </ul>
+</div>
+            </div>
+<div class="head">
+    <div class="cname">
+      <h1>  <a href="#">THE GREEN WORLD &nbsp;&nbsp;<i class="lni lni-leaf logo"></i></a></h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Aboutus</a></li>
+            <li><a href="#">Contactus</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Programs</a></li>
+        </ul>
+    </div>
+
+</div>
+ <div class="content">
+    <h1>SAVE <span class="yellow">THE GREEN</span> WORLD</h1>
+    <br>
+    <button>CLICK ME</button>
+</div>
+        </div> 
+
+       
+    </div>
+  </div>
+    
+</body>
+</html>
