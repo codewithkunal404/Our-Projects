@@ -10,4 +10,4 @@
 # Projects::
 >## <a href="https://codewithkunal404.github.io/Our-Projects/01-project.html">01_project</a> ////// <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/01-project.html">SourceCode</a>
 
->## <a href="https://codewithkunal404.github.io/Our-Projects/02-project.html">01_project</a> ////// <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/02-project.html">SourceCode</a>
+>## <a href="https://codewithkunal404.github.io/Our-Projects/02-project.html">02_project</a> ////// <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/02-project.html">SourceCode</a>
