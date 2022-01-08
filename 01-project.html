@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+            margin-top: 20vh;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .card
+        {
+            width: 340px;
+            height: 340px;
+            background:url(https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 90px;
+            
+             transform: scale(0.9) ;
+            position: relative;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+            transform-style: preserve-3d;
+        }
+        .card2
+        {
+            width: 340px;
+            height: 340px;
+            background:url(https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 90px;
+            
+             transform: scale(0.9) ;
+            position: relative;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+            transform-style: preserve-3d;
+
+        }
+
+        .content{
+            position: absolute;
+            width: 80%;
+            height: 70%;
+            left: 10%;
+            top: 40%;
+            background: rgba(255, 255, 255, 0.678);
+            box-shadow: 10px 10px 10px black;
+            text-align: center;
+            transform: translateZ(0px)  scaleY(0);
+
+            transition: 0.90s;
+            transform-origin: top; 
+            padding: 0px 5px;
+            transform-style: preserve-3d;
+         }
+       
+       
+            .card:hover .content{
+            transform:translateZ(60px)  scaleY(1);
+            transition: 0.90s;
+
+
+        }
+        
+        .card2:hover .content{
+            transform:translateZ(60px)  scaleY(1);
+            transition: 0.90s;
+
+
+
+        }
+        p{
+            font-size: 11px;
+        }
+
+        button{
+            width: 30%;
+            height: 40px;
+            border-radius: 30px;
+            background: slateblue;
+            color: white;
+            border: none;
+            box-shadow: 5px 5px 5px black;
+            font-size: 15px;
+            transform: translateZ(40px);
+            transition: 0.50s;
+
+        }
+        button:hover{
+            background:white;
+            color: darkblue;
+            transition: 0.50s;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="content">
+            <h1>Lorem</h1>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem!
+            </p>
+            <button>
+                clickme
+            </button>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="content">
+            <h1>Lorem</h1>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, molestias! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem!
+            </p>
+
+            <button>
+                clickme
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".card"), {
+		max: 25,
+		speed: 400,
+        
+       
+	});
+    VanillaTilt.init(document.querySelector(".card2"), {
+		max: 25,
+		speed: 400,
+        
+       
+	});
+	
+</script>
+    
+</body>
+</html>
