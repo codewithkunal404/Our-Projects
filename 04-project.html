@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<style>
+
+/* deafault setting */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* background colors */
+.bg1{
+    background-color: whitesmoke;
+}
+.bg2{
+    background-color: blueviolet;
+}
+.bg3{
+    background-color: aquamarine;
+}
+.bg4{
+    background-color: yellowgreen;
+}
+.bg5{
+    background-color: slateblue;
+}
+.bg6{
+    background-color: aliceblue;
+}
+.bg6{
+    background-color: antiquewhite;
+}
+.bg7{
+    background-color: blue;
+}
+
+.bg8{
+    background-color: gray;
+}
+.bg9{
+    background-color: lightgray;
+}
+.bg10{
+    background-color: brown;
+}
+.bg11{
+    background-color: #255f7ec4;
+
+}
+
+
+
+.head{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.cname{
+    width: 30%;
+    height: 80px;
+
+}
+.navbar{
+    width: 60%;
+    height: 80px;
+}
+
+.head .t{
+    width: 10%;
+    height: 80px;
+    background-color:   #255f7ec4;
+
+}
+
+.t i{
+    color: white;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-left: 10px;
+  opacity: 0;
+}
+
+span{
+    font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 90px;
+
+    
+
+}
+.cname i{
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 30px;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 150px;
+
+
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: dodgerblue;
+
+}
+
+@media (max-width:768px) {
+
+    .navbar{
+        display: none;
+      
+    }
+   
+    .cname{
+        width: 80%;
+        
+    }
+    .t i{
+        opacity:1;
+    }
+    .head .t {
+        width: 20%;
+    }
+
+   
+    
+}
+
+@media (max-width:1368px) {
+
+    .navbar{
+        display: none;
+      
+    }
+   
+    .cname{
+        width: 80%;
+        
+    }
+    .t i{
+        opacity:1;
+    }
+    .head .t {
+        width: 20%;
+    }
+    
+}
+
+
+
+
+svg{
+    position: relative;
+    top: 380px;
+}
+.wrapper{
+    margin-top: 80px;
+    height: 80vh;
+    width: 100%;
+    background: url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/hero-bg.jpg) 100% fixed no-repeat;
+    background-position: center;
+    position: relative;
+
+
+ 
+}
+
+.content h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.content p{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.content{
+    width: 50%;
+    height: 300px;
+   float: left;
+   margin-left: 350px;
+   margin-top: 20vh;
+   position: absolute;
+
+}
+.content button{
+    width: 30%;
+    height: 40px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    margin-left: 35%;
+    transition: 0.90s;
+
+}
+
+.screen{
+    height: 80vh;
+    background-color: #1e43568a;
+   width: 100%;
+   position: absolute;
+
+
+}
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+    transition: 0.90s;
+}
+
+
+.card{
+    height: 500px;
+    position: relative;
+    margin-top: 100px;
+
+    
+}
+.bottom{
+    height: 400px;
+    width: 90%;
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.c1{
+
+    width: 20%;
+    height: 390px;
+    margin: auto;
+    box-shadow: 0px 0px 30px 0px rgb(212, 203, 203);
+    position: relative;
+
+}
+.sc{
+    width: 100%;
+    height: 390px;
+    background-color: rgba(116, 171, 226, 0.274);
+    opacity: 0;
+    position: absolute;
+    transition: 0.30s;
+
+}
+
+
+.c1:hover .sc{
+    opacity: 1;
+    transition: 0.30s;
+}
+
+.icon{
+    height: 40%;
+    position: relative;
+
+
+}
+.text{
+    height: 60%;
+}
+.icon .ic{
+    height: 80px;
+    width: 80px;
+    background-color: rgba(226, 108, 108, 0.466);
+    position: relative;
+    border-radius: 50%;
+    left: 100px;
+    top: 30px;
+}
+.icon .ic2{
+    height: 80px;
+    width: 80px;
+    background-color:rgba(127, 218, 127, 0.562);
+    position: relative;
+    border-radius: 50%;
+    left: 100px;
+    top: 30px;
+}
+.ic2 i{
+    font-size: 35px;
+    color:lightseagreen;
+    position: absolute;
+    left: 23.5px;
+    top: 23.1px;
+
+}
+.icon .ic3{
+    height: 80px;
+    width: 80px;
+    background-color:rgba(211, 209, 76, 0.486);
+    position: relative;
+    border-radius: 50%;
+    left: 100px;
+    top: 30px;
+}
+.ic3 i{
+    font-size: 35px;
+    color:rgb(30, 65, 47);
+    position: absolute;
+    left: 22.5px;
+    top: 22.1px;
+
+}
+.icon .ic4{
+    height: 80px;
+    width: 80px;
+    background-color:rgba(30, 167, 167, 0.486);
+    position: relative;
+    border-radius: 50%;
+    left: 100px;
+    top: 30px;
+}
+.ic4 i{
+    font-size: 35px;
+    color:blue;
+    position: absolute;
+    left: 22.5px;
+    top: 22.1px;
+
+}
+.ic i{
+    font-size: 35px;
+    color: red;
+    position: absolute;
+    left: 23.1px;
+    top: 23.1px;
+    
+}
+
+.text h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text p{
+    text-align: justify;
+}
+.text{
+    padding: 0px 20px;
+}
+
+
+.article{
+    height: 60vh;
+    margin-bottom: 15vh;
+    position: relative;
+
+}
+.data{
+position: absolute;
+width: 90%;
+margin-top: 50px;
+height: 55vh;
+top: 2vh;
+left: 10vh;
+display: flex;
+flex-wrap: wrap;
+
+}
+.left{
+    width: 40%;
+    height: 100%;
+    background:url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/why-us.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+.left .play{
+
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color:rgba(121, 250, 250, 0.50);
+    clip-path: circle(50% at 50% 50%);
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+.play i{
+    position: absolute;
+    font-size: 25px;
+    left: 35px;
+    top: 28px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.wave
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 34%;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid white;
+    background: none;
+
+    transform: translate(-50%,-50%);
+    animation: waves 1.5s linear infinite ;
+}
+
+
+
+
+@keyframes waves {
+    0%{
+        height: 20px;
+        width: 20px;
+    }
+    20%
+    {
+        height: 30px;
+        width: 30px;
+    }
+    40%
+    {
+        height: 40px;
+        width: 40px;
+    }
+    60%
+    {
+        height: 50px;
+        width: 50px;
+    }
+    80%
+    {
+        height: 60px;
+        width: 60px;
+    }
+100%
+    {
+        height: 80px;
+        width: 80px;
+        opacity: 0;
+
+    }
+}
+
+
+.right
+{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.box{
+    width: 80%;
+    height: 50vh;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
+.b1{
+    width: 100%;
+    height: 48%;
+    margin-top: 10px;
+}
+
+.feature{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.feature h1{
+    text-align: center;
+}
+.feature  .box1{
+    width: 50%;
+    height: 50vh;
+    background: url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/features-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+}
+.feature  .box3{
+    width: 50%;
+    height: 50vh;
+    background: url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/features-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+}
+.feature  .box4{
+    width: 50%;
+    height: 50vh;
+    background: url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/features-3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    
+}
+.feature  .box5{
+    width: 50%;
+    height: 50vh;
+    background: url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/features-4.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    
+}
+.feature .box2{
+
+    width: 50%;
+    height: 50vh;
+}
+.heading{
+    height: 200px;
+    width: 100%;
+    
+}
+.heading p{
+    text-align: center;
+}
+.heading h1{
+    text-align: center;
+}
+.box2 ul  li{
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 20px;
+    line-height: 20px;
+}
+.box2 h1{
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.heading hr{
+    height: 2px;
+    background-color: rgb(23, 34, 187);
+    margin: auto;
+    width: 10%;
+    
+
+}
+.box1:hover{
+background-size: 510px 510px;
+transition: 0.30s;
+}
+.box3:hover{
+    background-size: 510px 510px;
+    transition: 0.30s;
+    }
+
+    .box4:hover{
+        background-size: 510px 510px;
+        transition: 0.30s;
+        }
+        
+    .box5:hover{
+        background-size: 510px 510px;
+        transition: 0.30s;
+        }
+
+
+        .helpdesk{
+            width: 80px;
+            height:80px;
+            background-color: yellow ;
+            z-index: 1;
+            
+            position: fixed;
+            right: 80px;
+            bottom: 80px;
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            
+        }
+        .helpdesk:hover{
+            background-color: rgb(83, 149, 204);
+            transition: 0.40s;
+
+        }
+        .helpdesk:hover i{
+            text-shadow: 1px 1px 1px black;
+            color: white;
+        }
+        .helpdesk i{
+            font-size: 40px;
+            margin-left: 20px;
+            margin-top: 20px;
+            
+        }
+
+        .social{
+            width: 200px;
+            height: 400px;
+          position: fixed;
+
+          z-index: 1;
+          top: 190px;
+          left: 10px;
+        }
+
+        .s1{
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            background-color: yellow;
+            position: relative;
+            
+
+        }
+        .s1:hover{
+       
+           
+            background-color: rgb(83, 149, 204);
+            color: white;
+            transition: 0.40s;
+         
+            
+
+        }
+        .s2:hover{
+       
+           
+            background-color: rgb(83, 149, 204);
+            color: white;
+            transition: 0.40s;
+         
+            
+
+        }
+        .s3:hover{
+       
+           
+            background-color: rgb(83, 149, 204);
+            color: white;
+            transition: 0.40s;
+         
+            
+
+        }
+        .s4:hover{
+       
+           
+            background-color: rgb(83, 149, 204);
+            color: white;
+            transition: 0.40s;
+         
+            
+
+        }
+        .s2{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+
+            margin-top: 30px;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            
+
+        }
+        .s3{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+
+            margin-top: 30px;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            
+
+        }
+        .s4{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+
+            margin-top: 34px;
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            
+
+        }
+        .s1 i{
+            font-size: 20px;
+            margin-left: 18px;
+            margin-top: 18px;
+            text-shadow: 0px 0px 30px rgb(250, 235, 235);
+            position: absolute;
+
+        }
+        .s2 i{
+            font-size: 20px;
+            margin-left: 18px;
+            margin-top: 18px;
+            text-shadow: 0px 0px 30px rgb(250, 235, 235);
+
+
+        }
+        .s3 i{
+            font-size: 20px;
+            margin-left: 13px;
+            margin-top: 18px;
+            text-shadow: 0px 0px 30px rgb(250, 235, 235);
+
+        }
+        .s4 i{
+            font-size: 20px;
+            margin-left: 18px;
+            margin-top: 18px;
+            text-shadow: 0px 0px 30px rgb(250, 235, 235);
+
+
+
+        }
+
+        .footer{
+            height: 80vh;
+            background-color: #0d2735;;
+        }
+
+        .topf{
+            height: 30%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .topb{
+            height: 60%;
+       
+            background: url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/hero-bg.jpg) 100% fixed no-repeat;
+            background-size: cover;
+            padding: 0px 200px;
+        }
+        .blur{
+            height: 100%;
+           background-color: #0d27359a;
+           display: flex;
+           justify-content: space-between;
+        }
+
+        .topb ul{
+            margin-top: 80px;
+        }
+        .topb ul li{
+            color: white;
+            font-size: 20px;
+            list-style-type: square;
+            text-shadow: 1px 1px 1px black;
+        }
+        .topb2{
+            height: 10%;
+            background-color: #0d2735;
+        }
+        .tl{
+            width: 50%;
+            height: 100%;
+        }
+        .tr{
+            width: 50%;
+            height: 100%;
+        }
+        .tl h1{
+            text-align: center;
+            color: #a2cce3;
+            text-shadow: 1px 1px 1px black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        .tl p{
+            text-align: center;
+            color:white;
+            text-shadow: 1px 1px 1px black;
+
+
+        }
+
+        .search{
+            width: 96%;
+            height: 60px;
+            background:none;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ss1{
+            width: 60%;
+            height: 100%;
+            border-radius: 50px 0px 0px 50px;
+        }
+.ss1 form input{
+    width: 98%;
+    height: 55px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid white;
+
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 3px;
+    background:none;
+    border: none;
+}
+.ss1 form input:hover{
+    background-color: white;
+    color: black;
+    transition: 0.50s;
+}
+.ss2 button{
+    background-color: #a2cce3;
+    width: 200px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 7px;
+    font-size: 18px;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    
+}
+.ss2 button:hover{
+    background-color: #4390b9;
+    color: white;
+}
+
+.topb2 h4{
+ text-align: center;
+ color: white;
+ margin-top: 20px;
+}
+
+
+@media (max-width:768px) {
+
+svg{
+    display: none;
+}
+    
+.bottom{
+    height: 400px;
+    width: 90%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.card{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+}
+.c1{
+
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 30px 0px rgb(212, 203, 203);
+    position: relative;
+    flex-direction: column;
+
+}
+.content button{
+    width: 40%;
+
+
+}
+.social{
+    width: 100px;
+   
+}
+.data{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 2vh;
+    left: 0vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+}
+
+@media (max-width:1368px) {
+
+    .content{
+        width: 50%;
+        height: 300px;
+       float: left;
+       margin-left: 250px;
+       margin-top: 20vh;
+       position: absolute;
+    
+    }
+    svg{
+        display: none;
+    }
+
+
+
+    
+}
+</style> 
+</head>
+<body>
+    <div class="head bg11">
+        <div class="cname bg11">
+         <span>ZoomUI</span>&nbsp;&nbsp; <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="navbar bg11">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">Contactus</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Setting</a></li>
+            </ul>
+
+        </div>
+
+        <div class="t"><i class="fas fa-bars"></i></div>
+        
+    </div>
+    <div class="wrapper">
+        <div class="screen">
+       
+    
+      
+        </div>
+
+      
+
+            
+
+        <div class="helpdesk"><i class="fas fa-headset"></i></div>
+
+
+        <div class="social">
+
+            <div class="s1"><i class="fab fa-whatsapp"></i></div>
+            <div class="s2"><i class="fab fa-facebook-f"></i></div>
+            <div class="s3"><i class="fab fa-youtube"></i></div>
+            <div class="s4"><i class="fab fa-twitter"></i></div>
+        </div>
+
+        <div class="content">
+            <h1>Lorem ipsum dolor sit amet consectetur .</h1>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae esse quo accusamus dolores cuploremo et rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate pariatur ducimus provident quis rem adipisci, aspernatur iste voluptatem id nisi, odit ipsa quas error amet quia debitis hic minus.
+            </p>
+            <br>
+            <button>Show more</button>
+        </div>
+
+   
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="lightblue" fill-opacity="1"  d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,208C672,181,768,107,864,96C960,85,1056,139,1152,149.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                     <path fill="white" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,160C384,149,480,139,576,154.7C672,171,768,213,864,213.3C960,213,1056,171,1152,165.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                 </svg>  
+       
+        
+    
+      
+
+    
+       
+    
+    </div>
+
+    <div class="card ">
+
+        <div class="bottom ">
+            <div class="c1">
+                <div class="sc">
+                  
+                </div>
+                <div class="icon">
+                    <div class="ic"><i class="fab fa-dribbble"></i></div>
+                </div>
+                <div class="text">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cumque architecto libero sapiente, provident distinctio hic iure quas voluptas reiciendis.</p>
+                </div>
+            </div>
+            <div class="c1">
+              <div class="sc">
+                  
+              </div>
+              <div class="icon">
+                <div class="ic2"><i class="far fa-file-alt"></i></div>
+            </div>
+            <div class="text">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cumque architecto libero sapiente, provident distinctio hic iure quas voluptas reiciendis.</p>
+            </div>
+            </div>
+            <div class="c1">
+                <div class="sc">
+                  
+                </div>
+                <div class="icon">
+                    <div class="ic3"><i class="fas fa-tachometer-alt"></i></div>
+                </div>
+                <div class="text">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cumque architecto libero sapiente, provident distinctio hic iure quas voluptas reiciendis.</p>
+                </div>
+            </div>
+            <div class="c1">
+                <div class="sc">
+                  
+                </div>
+                <div class="icon">
+                    <div class="ic4"><i class="fas fa-globe-asia"></i></div>
+                </div>
+                <div class="text">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cumque architecto libero sapiente, provident distinctio hic iure quas voluptas reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="article">
+        <div class="data">
+            <div class="left">
+                <span class="wave"></span>
+
+                <div class="play">
+                <i class="fas fa-play"></i></div>
+            </div>
+            <div class="right">
+               <div class="box">
+                   <div class="b1">
+                       <h1>Lorem ipsum dolor sit amet.</h1>
+                       <p>Lorem, ipsum dolor sit amet
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ab quisquam, vitae unde cumque veritatis quae tenetur nostrum eaque sit?  consectetur adipisicing elit. Reiciendis unde in expedita eveniet quisquam quo dicta itaque nostrum, hic sequi.</p>
+                   </div>
+                   <div class="b1">
+                       <h1>Lorem ipsum dolor sit amet.</h1>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis illum vero architecto nemo maxime qui, quam eos totam provident. Ab dolorem earum officia, cumque dignissimos distinctio maiores laborum veritatis sapiente repudiandae facilis quo iusto iure culpa necessitatibus dolores voluptatibus.</p>
+                   </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Feature</h1>
+        <hr>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint accusamus iure, hic veniam corporis non distinctio obcaecati tempora minima ex? Molestias aspernatur ducimus eum ipsa praesentium assumenda illo accusantium.</p>
+
+    </div>
+    
+    <div class="feature">
+
+
+        <div class="box1"></div>
+        <div class="box2">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas, fugiat beatae nulla a eos blanditiis doloremque voluptatem quae eaque.</p>
+         <br>   <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            
+            </ul>
+        </div>
+
+    </div>
+ 
+    
+    <div class="feature">
+
+
+        <div class="box3"></div>
+        <div class="box2">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas, fugiat beatae nulla a eos blanditiis doloremque voluptatem quae eaque.</p>
+         <br>   
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia illo culpa nostrum ipsum, voluptate odio illum rerum numquam cupiditate nihil officiis mollitia enim ullam eligendi porro laborum ea id consectetur quae sed et cumque corrupti voluptatum! Facere asperiores officia blanditiis ab mollitia, tenetur, cumque voluptatem molestias repudiandae dicta distinctio sapiente.</p>
+        </div>
+
+    </div>
+   
+    
+    <div class="feature">
+
+
+        <div class="box4"></div>
+        <div class="box2">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti soluta laborum, corporis cumque fugiat nesciunt exercitationem voluptate non mollitia asperiores eius modi nihil eaque, officiis ullam ducimus itaque repellat!
+        </p>
+        </div>
+
+    </div>
+    <div class="feature">
+
+
+        <div class="box5"></div>
+        <div class="box2">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti soluta laborum, corporis cumque fugiat nesciunt exercitationem voluptate non mollitia asperiores eius modi nihil eaque, officiis ullam ducimus itaque repellat!
+        </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="topf">
+            <div class="tl"><h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam inventore ex amet minima explicabo molestias debitis expedita sequi, atque culpa.</p></div>
+            <div class="tr">
+                <div class="search">
+                    <div class="ss1"><form >
+                        <input type="text" placeholder="Subscribe Here" >
+                    </form></div>
+                    <div class="ss2">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topb">
+
+          <div class="blur">
+            <ul>
+                <li>Useful Links</li>
+                   <li>  Home</li>
+                    <li> About us</li></li>
+                    <li> Services</li>
+                    <li> Terms of service</li>
+                    <li> Privacy policy</li>
+            </ul>
+            <ul>
+                <li>Useful Links</li>
+                   <li>  Home</li>
+                    <li> About us</li></li>
+                    <li> Services</li>
+                    <li> Terms of service</li>
+                    <li> Privacy policy</li>
+            </ul>
+            <ul>
+                <li>Useful Links</li>
+                   <li>  Home</li>
+                    <li> About us</li></li>
+                    <li> Services</li>
+                    <li> Terms of service</li>
+                    <li> Privacy policy</li>
+            </ul>
+            <ul>
+                <li>Useful Links</li>
+                   <li>  Home</li>
+                    <li> About us</li></li>
+                    <li> Services</li>
+                    <li> Terms of service</li>
+                    <li> Privacy policy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="topb2">
+            <h4>Copyright &copy; 2021-22 by kunal chaudhary</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>
