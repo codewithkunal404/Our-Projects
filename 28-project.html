@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            font-family: 'Raleway', sans-serif;
+
+            text-decoration: none;
+            list-style: none;
+        }
+        .wrap{
+            height: 90vh;
+            width: 100%;
+            background: rgb(236, 39, 39);
+
+        }
+
+        .nav{
+            height: 80px;
+            background-color: whitesmoke;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .cname{
+            width:30%;
+        height: 80px;
+    }  
+    .cname h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+            
+        .menu{
+            width: 70%;
+            height: 80px;
+        }
+
+        span{
+            color: red;
+            text-shadow: 1px 1px 1px black;
+        }
+        .menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 130px;
+
+
+
+        }
+
+      a{
+          font-size: 18px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          color: black;
+      }
+      a:hover{
+          color: red;
+          transition: 0.40s;
+
+      }
+      .content{
+          width: 70%;
+          height: 70vh;
+          margin: auto;
+          margin-top: 40px;
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .sidepar{
+          width:50%;
+          height: 70vh;
+
+      }
+
+    .banner{
+        background: url(https://demo.themezy.com/system/resources/demo_themes/000/000/097/img/main_device_image.png);
+        width: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+    .sidepar{
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    }
+    .sidepar h1{
+        color: white;
+        margin-top: 50px;
+    }
+    .sidepar p{
+        text-align: justify;
+        color: whitesmoke;
+        width: 70%;
+    }
+    .sidepar button{
+        width: 30%;
+        height: 40px;
+        background:none;
+        color: white;
+        border: 1px solid white;
+
+    }
+
+    .sidepar button:hover{
+        background-color: white;
+        color: red;
+        transition: 0.40s;
+    }
+    .bottom1{
+        width: 70%;
+        height: 70vh;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .text{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .content1{
+        width: 50%;
+        height: 70vh;
+    }
+    .bottom1 button{
+        width: 30%;
+        height: 40px;
+        color: red;
+        border:2px solid red;
+        background: none;
+        font-weight: bold;
+    }
+    .bottom1 button:hover{
+        color: white;
+        background-color: red;
+        transition: 0.40s;
+    }
+    .banner2{
+        width: 400px;
+        height:400px;
+        background: url(https://demo.themezy.com/system/resources/demo_themes/000/000/097/img/about-img.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-size: cover;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .bottom2{
+        width: 100%;
+        background-color: whitesmoke;
+        height: 70vh;
+        margin-top: 50px;
+
+    }
+    .feature{
+        width: 70%;
+        height: 70vh;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+
+    }
+    .col1{
+
+        width: 32%;
+        height:35vh;
+        clear: both;
+
+    }
+    .col1 i{
+        font-size:4em;
+        color: red;
+        text-shadow: 1px 1px 1px black;
+       
+        padding: 20px 135px;
+    }
+    .col1 h2{
+        text-align: center;
+    }
+ 
+   .col1 p{
+       text-align: justify;
+       padding: 0px 20px;
+
+   }
+   .client{
+       height: 25vh;
+       background-color: red;
+       margin-top: 80px;
+       margin-bottom: 100px;
+   }
+   .pack{
+       width: 70%;
+       margin: auto;
+       height: 25vh;
+
+       
+
+   }
+   .pack img{
+       margin-left: 50px;
+       margin-top: 50px;
+   }
+   footer{
+       height: 50px;
+      background-color: whitesmoke;
+      color: red;
+      text-align: center;
+      padding: 20px 0px;
+   }
+   
+   #loading{
+    width: 100%;
+    height: 100vh;
+    background:  #fff url(https://i.pinimg.com/originals/58/e4/a4/58e4a4e4fa041a11f796a2014b1bcfa4.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    position: fixed;
+    z-index: 9999999;
+   
+}
+
+    </style>
+</head>
+<body onload="myfunction()">
+
+    <div id="loading">
+        
+
+    </div>
+
+
+    <div class="wrap">
+        <div class="nav">
+            <div class="cname"><h1>UI DES <span>IGN</span></h1></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">ABOUTUS</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">CONTACTUS</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="sidepar">
+                <h1>WE CREATE <br> AWESOME <br> WEB TEMPLATE</h1>
+                <br>
+                
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text printer took a galley of type and scrambled it to make a type specimen.</p>
+                <br>
+                <br>
+                <button>Read More</button>
+            </div>
+            <div class="banner"></div>
+
+            
+        </div>
+    </div>
+
+    <h1 class="text">ABOUTUS</h1>
+
+    <div class="bottom1">
+
+        <div class="content1">
+            <br>
+            <br>
+            <br>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h3>
+            
+            <br>
+            <br>
+            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore in perferendis laborum sed, eveniet debitis ipsam voluptates qui totam commodi asperiores, sequi, sint repudiandae rerum nisi suscipit similique dolorum pariatur aperiam voluptatibus natus ea porro? Accusamus dolorum a omnis dolor quae aliquid fugiat aperiam neque dolore? Voluptatum sed molestiae nobis dolorem. Nihil explicabo vero doloremque! Officiis quae doloremque error praesentium consectetur minus vel eaque cupiditate earum explicabo dolores impedit modi ab quaerat et quam, distinctio reiciendis, nostrum magnam perspiciatis sequi in. Corporis ab quod, eius at voluptates quae, hic omnis iusto, repellat dignissimos optio soluta dicta id! Non, obcaecati! Repellendus vel voluptas natus eum quas alias iure voluptate harum modi totam fuga atque, facere odit. Excepturi alias omnis consequuntur cum adipisci aliquam rerum quidem, veritatis consequatur accusantium eos dolor eum provident, sequi porro, soluta labore? Enim atque nihil eligendi obcaecati consectetur explicabo nam! Ad aliquid dolor recusandae esse nobis enim sit libero, ducimus autem voluptates ab, labore, quis inventore deleniti earum at tempore ipsum? Ipsum esse, aliquam at quo velit recusandae, alias vel ratione praesentium excepturi earum incidunt unde. Fugiat accusantium perferendis hic quas minus exercitationem culpa ipsum. Unde quasi laborum eum, non tempore consectetur! Saepe doloribus odit minima natus!</h5>
+            <br>
+            <button>CONTACT US</button>
+        </div>
+        <div class="banner2"></div>
+
+
+    </div>
+
+    <h1 class="text">SERVICES</h1>
+
+    <div class="bottom2">
+
+        <div class="feature">
+
+         
+             <div class="col1">
+                 
+            <i class="fab fa-android"></i>
+            <h2>Android</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti accusantium eligendi adipisci corrupti, optio pariatur distinctio ad quia illo!</p>
+        </div>
+             <div class="col1">
+
+                <i class="fab fa-html5"></i>
+                <h2>DESIGN</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti accusantium eligendi adipisci corrupti, optio pariatur distinctio ad quia illo!</p>
+             </div>
+             <div class="col1">
+
+                <i class="fab fa-dropbox"></i>
+                <h2>CONCEPT</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti accusantium eligendi adipisci corrupti, optio pariatur distinctio ad quia illo!</p>
+             </div>
+             
+             <div class="col1">
+
+                <i class="fab fa-slack"></i>
+                <h2>USER RESEARCH</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti accusantium eligendi adipisci corrupti, optio pariatur distinctio ad quia illo!</p>
+             </div>
+             <div class="col1">
+
+                <i class="fa fa-users"></i>
+                <h2>USER EXPERIENCE</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti accusantium eligendi adipisci corrupti, optio pariatur distinctio ad quia illo!</p>
+             </div>
+             <div class="col1">
+
+                <i class="fab fa-apple"></i>
+                <h2>APPLE IOS</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti accusantium eligendi adipisci corrupti, optio pariatur distinctio ad quia illo!</p>
+             </div>
+
+        </div>
+    </div>
+    <h1 class="text">CLIENTS</h1>
+  
+    <div class="client">
+        <div class="pack">
+
+            <img src="https://demo.themezy.com/system/resources/demo_themes/000/000/097/img/client_logo2.png" width="200px">
+            <img src="https://demo.themezy.com/system/resources/demo_themes/000/000/097/img/client_logo3.png" width="200px">
+            <img src="https://demo.themezy.com/system/resources/demo_themes/000/000/097/img/client_logo5.png" width="200px">
+            <img src="https://demo.themezy.com/system/resources/demo_themes/000/000/097/img/client_logo1.png" width="200px">
+
+        </div>
+
+    </div>
+<footer>
+  <h5>  <b>COPYRIGT &COPY; 2021-22 TEMPLATE BY KUNAL CHAUDHARY</b></h5>
+</footer>
+   
+<script>
+    var preloader= document.getElementById("loading");
+
+
+    function myfunction(){
+      
+        preloader.style.display="none";
+        
+    }
+</script>
+    
+</body>
+</html>
