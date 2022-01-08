@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+
+<style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            
+
+        }
+
+        .top{
+            height: 80px;
+        }
+        .navbar{
+            width: 90%;
+            height: 80px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cname{
+            width: 30%;
+            background-color: white;
+        }
+        .menu{
+            width: 70%;
+            
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 50px;
+
+        }
+        .cname i{
+            font-size: 36px;
+            margin-left: 10px;
+            margin-top: 20px;
+           color: #993300;
+
+
+        }
+        .f{
+            font-size: 28px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+
+
+        }
+
+        ul li a{
+            font-weight: bold;
+            color: black;
+        }
+        ul li a:hover{
+            color: #993300;
+        }
+
+        .banner{
+            height: 80vh;
+            background: url(https://www.templateonweb.com/upload/aedemodir/47d1e990583c9c67424d369f3414728e/img/1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .banner2{
+            width: 35%;
+            height: 50vh;
+            float: left;
+            margin-left: 100px;
+            margin-top: 120px;
+            background-color: rgba(235, 226, 226, 0.425);
+            padding: 20px 30px;
+        }
+.banner2 h1{
+    font-size: 4em;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px black;
+    
+}
+.banner2 h2{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+}
+.banner2 p{
+    font-size: 15px;
+    text-align: justify;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+
+
+
+    
+}
+.banner2 button{
+    width:40%;
+    height:60px;
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.50s;
+
+}
+.banner2 button:hover{
+    color: white;
+    background-color: #993300;
+    transition: 0.50s;
+}
+       
+
+
+
+
+
+
+.w{
+    background-color:orange;
+    box-shadow: 1px 1px 1px black;
+   padding: 20px 20px;
+   border-radius: 0px 30px 0px 30px;
+}
+
+
+.card{
+    height: 40vh;
+    display:flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.c1{
+    width: 30%;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.l{
+    width: 50%;height: 100%;
+
+
+}
+.l i{
+    font-size: 100px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: #996633;
+    text-shadow: 1px 1px 1px black;
+}
+.r{
+    width: 50%;
+    height: 100%;
+
+}
+.r a{
+    color: #996633;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.r h6{
+    text-align: left;
+}
+.r h2:hover{
+    color: #996633;
+}
+.r a:hover{
+    color: black;
+}
+
+.article{
+    height: 60vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.bottom{
+    width: 70%;
+
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.leftc{
+    width: 50%;
+}
+.rightc{
+    width: 50%;
+    background:url(https://www.templateonweb.com/upload/aedemodir/47d1e990583c9c67424d369f3414728e/img/2.jpg);
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+    position: relative;
+
+}
+.screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(141, 128, 128, 0.425);
+    opacity:0;
+    transition: 0.8
+    0s;
+
+}
+.screen h1{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 1px 1px 1px black;
+}
+.screen p{
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-shadow: 1px 1px 1px black;
+
+}
+.leftc h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.leftc h5{
+    width: 90%;
+    text-align: justify;
+}
+.rightc:hover{
+    background-size: 100%;
+    transition: 0.50s;
+}
+.rightc:hover .screen{
+    opacity: 1;
+    transition: 0.80s;
+}
+section{
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+    background: url(https://www.templateonweb.com/upload/aedemodir/47d1e990583c9c67424d369f3414728e/img/13.jpg) 100% fixed repeat;
+    margin-bottom: 50px;
+    position: relative;
+ 
+
+}
+.trans{
+    width: 50%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.5);
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     position: absolute;
+    
+
+}
+
+.trans h1{
+    text-align: center;
+    font-size: 2.5em;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 50px;
+}
+.trans h3{
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+.trans button{
+ width: 30%;
+ height: 50px;
+ margin-left: 35%;
+ margin-top: 80px;
+ border-radius: 15px;
+ font-size: 20px;
+ color: white;
+ background-color: orange;
+ border: none;
+}
+
+.trans button:hover{
+    color: white;
+    background-color: #993300;
+}
+.trans .social a {
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+
+}
+.trans .social a  i{
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.trans .social {
+    
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.social a:hover{
+animation: rotate 0.3s 2 ;
+animation-direction: alternate;
+background-color: red;
+
+
+
+}
+.social a:hover i{
+    color: white;
+  
+    
+}
+
+.social{
+    width: 50%;
+    height: 10vh;
+    margin: auto;
+  
+}
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+  
+    100%{
+        transform: rotateZ(360deg);
+    }
+
+    
+}
+footer{
+    height: 40px;
+    background-color: #993300;
+}
+footer h4{
+    color: white;
+text-align: center;
+display: block;
+text-shadow: 1px 1px 1px black;
+padding: 10px 0px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <div class="navbar">
+            <div class="cname">
+                <i class="fa fa-university"></i> &nbsp;&nbsp;<span class="f">PADEGOGY</span> 
+            </div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="#"><span class="w">Home</span></a></li>
+                    <li><a href="#">Grade</a></li>
+                    <li><a href="#">Teachers</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Aboutus</a></li>
+                    <li><a href="#">Contactus</a></li>
+                </ul>
+            </div>
+          
+            
+
+        </div>
+    </div>
+<div class="banner">
+
+    <div class="banner2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed incidunt temporibus ullam voluptatibus placeat eius sint, quisquam ex perferendis saepe repellat libero cumque amet, eos fugit excepturi quasi. Veritatis, neque!
+        </p>
+        <button>Submit</button>
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="c1">
+        <div class="l"><i class="fa fa-graduation-cap"></i></div>
+        <div class="r">
+            
+           <h2>Lorem, ipsum dolor.</h2> <br>
+        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis delectus distinctio ipsum? Suscipit officiis fuga ad, sunt laudantium vero amet exercitationem, illo magni eum eius hic iusto. Tenetur, assumenda laborum.</h6>
+       <br> <a href="#">Show more <i class="fa fa-chevron-right"></i></a>
+    
+    </div>
+    </div>
+    <div class="c1">
+        <div class="l"><i class="fa fa-bell"></i></div>
+        <div class="r">
+            
+           <h2>Lorem, ipsum dolor.</h2> <br>
+        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis delectus distinctio ipsum? Suscipit officiis fuga ad, sunt laudantium vero amet exercitationem, illo magni eum eius hic iusto. Tenetur, assumenda laborum.</h6>
+       <br> <a href="#">Show more <i class="fa fa-chevron-right"></i></a>
+    
+    </div>
+    </div>
+    <div class="c1">
+        <div class="l"><i class="fa fa-book"></i></i></div>
+        <div class="r">
+            
+           <h2>Lorem, ipsum dolor.</h2> <br>
+        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis delectus distinctio ipsum? Suscipit officiis fuga ad, sunt laudantium vero amet exercitationem, illo magni eum eius hic iusto. Tenetur, assumenda laborum.</h6>
+       <br> <a href="#">Show more <i class="fa fa-chevron-right"></i></a>
+    
+    </div>
+    </div>
+
+
+</div>
+<div class="article">
+<div class="bottom">
+    <div class="leftc">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus.</h1>
+        <h5>obis perferendis blanditiis accusantium numquam assumenda ex tempora iste. Labore, fugit. Voluptas unde velit beatae totam nesciunt. Odit neque omnis delectus aperiam vero asperiores facilis eos quo, harum dolores quam eveniet fugit doloremque perferendis optio veritatis dicta sint quis sequi nam pariatur? Officiis vel, ullam sunt perferendis quidem hic fugiat exercitationem quo earum voluptatum sit tenetur, iusto, repudiandae consequuntur at natus maiores nam. Vel quam mollitia necessitatibus ullam officiis quidem voluptates iusto obcaecati. Perferendis sequi corrupti, qui cum maiores dolorum eos quisquam possimus saepe quaerat nisi placeat sapiente quibusdam perspiciatis. Aperiam tenetur saepe eveniet voluptatibus totam quos placeat enim mollitia et, quam temporibus nisi excepturi culpa similique dolorum ducimus animi quasi expedita distinctio optio est ipsam? Obcaecati quisquam aliquam omnis facilis cum? Consequatur voluptates voluptatibus quo rem esse sed? Praesentium sit corporis recusandae suscipit asperiores est quisquam. Ex recusandae sed incidunt repellat. Aut amet reiciendis quia commodi possimus expedita blanditiis quasi consequuntur, deleniti eligendi quae in natus corrupti earum fuga ducimus! Vero cum neque deleniti tempore perferendis. Numquam, ipsum.</h5>
+    </div>
+    <div class="rightc">
+        <span class="screen">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe sed dolorem dolore deleniti voluptate aperiam sit officia necessitatibus odit in alias, asperiores eveniet soluta consequuntur, sint nisi itaque cumque nulla!</p>
+        </span>
+    </div>
+
+</div>
+</div>
+<section>
+<div class="trans">
+    <h1>GET 20% DISCOUNT ON YOUR FIRST BOOKING</h1>
+    <h3>Vestibulum lacinia arcu eget nulla Class aptent taciti sociosqu ad litora torquent
+        Per inceptos himenaeos ligula in libero dignissim lacinia nunc!
+        
+        </h3>
+        <button>Booking</button>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="social">  
+          
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </ul></div>
+
+</div>
+</section>
+<footer>
+<h4>COPYRIGHT &COPY; 2021-22 template by kunal</h4>
+</footer>
+    
+</body>
+</html>
