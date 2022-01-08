@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+body{
+    background-color: black;
+}
+       button{
+
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        width: 30%;
+        height: 15vh;
+       
+        border: none;
+        background: none;
+        transition: 5s;
+        
+       
+        
+        
+       }
+
+       button::before{
+           content: "";
+           width: 40px;
+           height: 40px;
+           position: absolute;
+           top: 0;
+           left: 0;
+           
+           border-top:  4px solid green;
+           border-left:  4px solid green;
+           transition: 5s;
+
+       }
+     button:hover::before{
+         width: 99%;
+         height: 95%;
+         transition: 0.80s;
+     }
+
+    
+      button::after 
+       {
+           content: "";
+           
+           width: 40px;
+           height: 40px;
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           
+           border-right:  5px solid green;
+           border-bottom:  5px solid green;
+           transition: 5s;
+
+       }
+       button:hover::after{
+           width: 99%;
+           height: 95%;
+           transition: 0.80s;
+       }
+       h1{
+           font-size: 3em;
+           color: green;
+        transition: 5s;
+
+           
+           
+       }
+
+       button:hover{
+      
+ 
+     background-color: green;
+       
+      transition: 5s;
+        box-shadow:1px 0px 55px 11px green, 1px 0px 84px 41px green;
+}
+       button:hover h1{
+        color: black;
+        transition: 3s;
+       }
+
+
+     
+      
+
+    </style>
+</head>
+<body>
+    
+
+    <button><h1>Geeks for Geeks</h1></button>
+   <br>
+ 
+
+</body>
+</html>
