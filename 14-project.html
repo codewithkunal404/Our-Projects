@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+
+    background-image: url(https://cdn.pixabay.com/photo/2017/09/11/17/55/tajmahal-2739828_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+}
+header nav div{
+
+    background-color: rgb(10, 10, 10);
+    color: white;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+   background:rgba(0, 0, 0, 0.3);
+    
+   
+}
+header nav div .mainhead h1{
+   margin-bottom: 20px;
+   width: 50%;
+   margin-left: 30px;
+   font-weight: 500;
+   font-size: 2em;
+   text-shadow: 3px 3px 3px black;
+ 
+   
+}
+    
+header nav div .mainhead a{
+  
+ margin-left: 50px;
+ text-decoration: none;
+
+ font-size:25px;
+ color: white;
+ text-shadow: 3px 3px 3px black;
+
+
+     
+    
+ }
+
+ header nav div .mainhead a:hover{
+     color: rgb(69, 202, 127);
+ }
+ 
+
+  .container{
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.3);
+      background-size: cover;
+  }
+ 
+  .container .text {
+      text-align: center;
+       padding-top: 200px;
+       color: white;
+  }
+  .container .text h2,h1 {
+    letter-spacing: 5px;
+    margin-top: 20px;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px black;
+}
+  .container .text h3{
+     
+
+    letter-spacing: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+    }
+  .container .text a{
+
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background: rgb(56, 104, 8);
+    padding:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    
+  }
+
+  .container .text a:hover{
+      background-color: rgb(26, 49, 2);
+      color: white;
+    
+      
+  }
+      
+ .new:after{
+    
+    content: "";
+    animation:  changetext 10s infinite linear;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    font-size:53px;
+    color: rgb(26, 182, 26);
+    text-shadow: 3px 3px 3px black;
+ }
+
+ .mainhead h1{
+
+    animation: changeoutline 2s infinite;
+ }
+
+ @keyframes changeoutline {
+     0%{
+         text-shadow: 5px 5px 5px darkgreen;
+     }
+     20%{
+         text-shadow: 5px 5px 5px darkred;
+     }
+     30%{
+        text-shadow: 5px 5px 5px rgb(16, 110, 106);
+    }
+    40%{
+        text-shadow: 5px 5px 5px rgb(172, 51, 209);
+    }
+    60%{
+        text-shadow: 5px 5px 5px rgb(31, 184, 44);
+    }
+    70%{
+        text-shadow: 5px 5px 5px rgb(219, 209, 58);
+    }
+80%{
+        text-shadow: 5px 5px 5px rgb(250, 102, 33);
+    }
+    100%{
+        text-shadow: 5px 5px 5px rgb(206, 193, 193);
+    }
+    
+     
+     
+ }
+
+ @keyframes changetext {
+     
+    0%{
+        content:"kerala";
+    }
+    20%{
+        content:"Mumbai";
+    }
+     30%{
+         content:"Kolkata";
+     }
+     40%
+     {
+         content: "Delhi";
+     }
+
+     50%{
+         content: "Uttrakhand";
+     }
+     60%{
+         content: "Uttar pradesh";
+     }
+     70%
+     {
+         content:"Lucknow" ;
+
+     }
+     80%{
+         content:"Chennai" ;
+
+        }
+
+    90%{
+        content: "Madhyapradesh";
+    }
+    100%{
+        content:"Goa" ;
+    }
+ }
+
+
+</style>
+    
+  
+</head>
+<body>
+    
+
+
+   <table width="100%" >
+    <tr><td><header>
+        <nav>
+            <div>
+           <div class="mainhead"> 
+            <h1>MERA BHARAT</h1>
+         
+            <a href="indexnew.html">HOME</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">GALLERY</a>
+            <a href="#">ABOUT</a>
+       
+           </div>
+            </div>
+        </nav>
+    
+      
+       </header>
+        
+
+
+   <div class="container">
+
+    <div class="text">
+
+
+    
+           
+            <h1>Welcome To India</h1>
+            <h2>DO COME & VISIT <span class="new"></span> </h2>
+            <h3>"India once is not enough"</h3>
+            <br><br>
+            <a href="#">LEARN MORE</a>
+            <a href="#">SIGNUP HERE</a>
+        
+       
+       
+        
+      
+    </div>
+    
+   </div>
+ </td></tr>
+ <tr><td height="40px" align="center" style="color: rgb(255, 255, 255); background-color: rgba(0,0,0,0.6);">designed by kunal chaudhary &copysr;</td></tr>
+
+   </table>
+
+
+ 
+
+    
+</body>
+</html>
