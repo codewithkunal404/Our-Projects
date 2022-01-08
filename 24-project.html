@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Poppins:wght@300&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Poppins', sans-serif;
+        text-decoration: none;
+        list-style: none;
+      
+        
+    }
+
+    .sc{
+        background-color: rgba(0, 0, 0, 0.479);
+        height: 100vh;
+    }
+
+    .tophead{
+        height: 90px;
+        background-color: white;
+        
+       
+    }
+
+    body{
+        background:url(https://static.wixstatic.com/media/c837a6_f58829a26e594ca3aa72383e19cf39b9~mv2.png/v1/fill/w_1586,h_706,al_r,q_90,usm_0.66_1.00_0.01/c837a6_f58829a26e594ca3aa72383e19cf39b9~mv2.webp);
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .tophead .logo{
+        width: 30%;
+       
+        height: 90px;
+    }
+
+    .tophead .work{
+        width: 40%;
+        height: 90px;
+   
+
+
+
+    }
+
+    .logo h1{
+        margin-left: 30px;
+        font-weight: bold;
+        
+    }
+    .logo h1 i{
+        color: #751fff;
+    }
+
+
+   
+    .work i{
+
+        margin-top: 38px;
+        
+
+
+    }
+
+    .article{
+        width: 40%;
+        height:50vh;
+        
+
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+
+    .article h1{
+
+        font-weight: 800;
+        font-size: 3.3em;
+
+    }
+    .article h4{
+        color: white;
+        text-shadow: 1px 1px 1px rgba(59, 58, 58, 0.719);
+
+    }
+
+    .article button{
+        width: 30%;
+        height: 7vh;
+        border-radius: 50px;
+        background: none;
+        transition: 0.50s;
+
+
+    }
+    .article button:hover{
+        border: 2px solid black;
+        background-color: #751fff;
+        box-shadow: 1px 0px 20px 6px #751fff;
+        transition: 0.50s;
+        color: white;
+    }
+
+    .nav{
+        height: 50px;
+        background-color:rgba(255, 255, 255, 0.616);
+        
+        
+    }
+    .nav .ns1{
+        width: 10%;
+        height: 50px;
+        
+        padding: 10px 100px;
+        
+
+    }
+    .nav .ns1 a{
+        color: black;
+    }
+   
+   .bottom1{
+     
+       width: 80%;
+      
+       margin: auto;
+       margin-top: 50px;
+     
+   }
+
+   .mr{
+       margin-right: 20px;
+   }
+   .ml{
+       margin-left: 80px;
+   }
+   .item1{
+       width:40%;
+      
+       background: url(https://static.wixstatic.com/media/c22c23_e140bfa8cd6f4cb2ac5ee6e204f64073~mv2.jpg/v1/fill/w_718,h_585,al_t,q_85,usm_0.66_1.00_0.01/c22c23_e140bfa8cd6f4cb2ac5ee6e204f64073~mv2.webp);
+       height: 60vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       transition: 0.50s;
+       border-radius: 3px;
+       
+       
+
+      
+      
+   }
+   .item2{
+       border-radius: 5px;
+       width:40%;
+      
+       background: url(https://static.wixstatic.com/media/c837a6_d84a631864a442a496670bc2d787c6a0~mv2.jpg/v1/fill/w_718,h_585,al_c,q_85,usm_0.66_1.00_0.01/c837a6_d84a631864a442a496670bc2d787c6a0~mv2.webp);
+       height: 60vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       transition: 0.50s;
+    
+
+      
+      
+   }
+
+   .item3{
+       border-radius: 5px;
+       width:40%;
+      
+       background: url(https://cdn.pixabay.com/photo/2014/05/02/21/47/laptop-336369__340.jpg);
+       height: 60vh;
+       background-repeat: no-repeat;
+       
+       background-size: cover;
+       background-position: center;
+       transition: 0.50s;
+       margin-top: 20px;
+    
+   }
+
+   .item4{
+       border-radius: 5px;
+       width:40%;
+      
+       background: url(https://cdn.pixabay.com/photo/2016/01/31/21/37/microphone-1172260__340.jpg);
+       height: 60vh;
+       background-repeat: no-repeat;
+       
+       background-size: cover;
+       background-position: center;
+       transition: 0.50s;
+       margin-top: 20px;
+    
+   }
+   .item4:hover{
+    box-shadow: 1px 0px 20px 6px black;
+    transition: 0.50s;
+   
+   }
+       
+
+   .item2:hover{
+    box-shadow: 1px 0px 20px 6px black;
+    transition: 0.50s;
+   }
+   .item3:hover{
+    box-shadow: 1px 0px 20px 6px black;
+    transition: 0.50s;
+   }
+   .item1:hover{
+    box-shadow: 1px 0px 20px 6px black;
+    transition: 0.50s;
+   }
+
+
+.deal{
+    height: 30vh;
+    width: 100%;
+   
+    margin-top: 160px;
+}
+
+.deal h3{
+    color: white;
+    margin-left: 30px;
+     text-shadow: 1px 1px 1px black;}
+.deal h1{
+    color: white;
+    margin-left: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.deal button{
+    width: 30%;
+    height: 6vh;
+    border-radius: 50px;
+    background: none;
+    margin-left: 30px;
+    border: 2px solid black;
+    transition: 0.50s;
+
+}
+.deal button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 0.50s;
+}
+.cl{
+    clear: both;
+}
+
+.bottom2{
+   
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 50px 0px;
+    
+}
+
+
+.bottom2 .cards{
+    width: 90%;
+    height: 60vh;
+ margin: auto;
+ 
+  
+}
+
+.card1{
+    
+    width: 15.5%;
+    height: 350px;
+    margin-left: 1%;
+    margin-top: 30px;
+    box-shadow: 1px 1px 20px 1px black;
+    
+    background-color: white
+}
+.bottom2 h1{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.bottom2 button{
+    margin-top: 40px;
+    margin-left: 560px;
+    width: 15%;
+    height:6vh;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid black;
+    transition: 0.30s;
+
+}
+.bottom2 button:hover{
+    background-color: #751fff;
+    color: white;
+    transition: 0.30s;
+}
+.b1{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    background:url(https://static.wixstatic.com/media/c22c23_75059a72af5e4949aecdfbda8746f4ef~mv2.jpg/v1/fill/w_354,h_354,al_c,q_80,usm_0.66_1.00_0.01/c22c23_75059a72af5e4949aecdfbda8746f4ef~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+
+}
+
+.b2{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    background:url(https://static.wixstatic.com/media/c22c23_3ab3d3acd73843deba1dece7b2254e2f~mv2.jpg/v1/fill/w_354,h_354,al_c,q_80,usm_0.66_1.00_0.01/c22c23_3ab3d3acd73843deba1dece7b2254e2f~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+
+}
+.b3{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    background:url(https://static.wixstatic.com/media/c22c23_77a52a8e6f8b4879a6548e11a3df3613~mv2.jpg/v1/fill/w_354,h_354,al_c,q_80,usm_0.66_1.00_0.01/c22c23_77a52a8e6f8b4879a6548e11a3df3613~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+
+}
+
+.b4{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    background:url(https://static.wixstatic.com/media/c22c23_527e6c6f3d944fb88c80907c2f754afb~mv2.jpg/v1/fill/w_354,h_354,al_c,q_80,usm_0.66_1.00_0.01/c22c23_527e6c6f3d944fb88c80907c2f754afb~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+
+}
+
+.b5{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    background:url(https://static.wixstatic.com/media/c22c23_0fa2a9bb97f443658acb747221ff337b~mv2.jpg/v1/fill/w_354,h_354,al_c,q_80,usm_0.66_1.00_0.01/c22c23_0fa2a9bb97f443658acb747221ff337b~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+
+}
+.b6{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    background:url(https://static.wixstatic.com/media/c22c23_35b786fdd0bb443e9ac09561af1569d3~mv2.jpg/v1/fill/w_354,h_354,al_c,q_80,usm_0.66_1.00_0.01/c22c23_35b786fdd0bb443e9ac09561af1569d3~mv2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.50s;
+
+}
+.b6:hover{
+    width: 100%;
+    height: 50%;
+    transition: 0.50s;
+}
+.b5:hover{
+    width: 100%;
+    height: 50%;
+    transition: 0.50s;
+}
+.b3:hover{
+    width: 100%;
+    height: 50%;
+    transition: 0.50s;
+}
+
+.b4:hover{
+    width: 100%;
+    height: 50%;
+    transition: 0.50s;
+}
+.b1:hover{
+    width: 100%;
+    height: 50%;
+    transition: 0.50s;
+}
+.b2:hover{
+    width: 100%;
+    height: 50%;
+    transition: 0.50s;
+}
+.price{
+    height: 50%;
+    padding: 10px 0px;
+
+
+}
+
+.price h6{
+    
+    text-align: center;
+    margin-right: 20px;
+}
+
+.price h5{
+    text-align: center;
+    color: blue;
+    
+    font-weight: bold;
+}
+del{
+    text-decoration: line-through;
+}
+
+.footer{
+    height: 50vh;
+    background-color:rgb(218, 213, 213);
+    margin-top: 30px;
+
+
+}
+
+.ff{
+    width: 25%;
+    margin-left: 80px;
+    
+    height: 40vh;
+    margin-top: 40px;
+    
+
+}
+.ff fi{
+    margin-top: 50px;
+}
+
+.ff a{
+    font-weight: bold;
+}
+</style>
+<body>
+
+ <div class="body">
+    
+       
+     <div class="sc">
+
+        <div class="tophead">
+    
+            <div class="logo fl">
+        
+                <h1>SHOPEASY <i class="fab fa-shopify fa-2x"></i></h1>
+            </div>
+            <div class="work fr">
+        
+                <i class="fas fa-user"></i> &nbsp;&nbsp;<a href="#">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <i class="fas fa-user"></i><a href="#"> Registration</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-heart"></i>&nbsp;&nbsp;<a href="#">Favourites</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-cart-arrow-down"></i>&nbsp;&nbsp;<a href="#">Shopnow</a>
+            </div>
+        </div>
+
+
+        <div class="nav">
+
+            <div class="ns1 fl"><a href="#">Home</a></div>
+            <div class="ns1 fl"><a href="#">Shopall</a></div>
+            <div class="ns1 fl"><a href="#">Aboutus</a></div>
+            <div class="ns1 fl"><a href="#">Contactus</a></div>
+            <div class="ns1 fl"><a href="#">Setting</a></div>
+            <div class="ns1 fl"><a href="#">AddToCart</a></div>
+
+
+           
+        </div>
+
+
+
+
+        <div class="article">
+            <h1>BEST offers On ALL <br>Yours Favourites items </h1>
+           <br>
+            <h4>Get more for less brands offers</h4>
+<br>
+            <button>Shop Now</button>
+        </div>
+      
+     <div class="bottom1">
+
+        <div class="item1 fl ml ">
+
+        <div class="deal">
+
+            <h3>Happy Deals</h3>
+            <h1>Up To 50% <br>OFF Now
+            </h1>
+            <button>Shop Now</button>
+        </div>
+
+        </div>
+    <div class="item2 fr mr ">
+        <div class="deal">
+
+            <h3>Happy Deals</h3>
+            <h1>Up To 50% <br>OFF Now
+            </h1>
+            <button>Shop Now</button>
+        </div>
+        <div class="cl"></div>
+    </div>
+
+    <div class="item3 fl ml ">
+        <div class="deal">
+
+            <h3>Happy Deals</h3>
+            <h1>Up To 20% <br>OFF Now
+            </h1>
+            <button>Shop Now</button>
+        </div>
+        
+
+
+    </div>
+
+    <div class="item4 fr mr ">
+        <div class="deal">
+
+            <h3>Happy Deals</h3>
+            <h1>Up To 70% <br>OFF Now
+            </h1>
+            <button>Shop Now</button>
+        </div>
+        
+
+
+    </div>
+
+
+     </div>
+     <div class="cl"></div>
+
+
+    <div class="bottom2">
+      <h1>Best Sellers</h1>
+        <div class="cards">
+     
+
+
+             <div class="card1 fl">
+                 <div class="b1"></div>
+                 <div class="price"><br><h6>Fitboot Inspire Fitness Tracker With Heart Rate Tracking</h6>
+              <br> <h5> <del>$87.00</del> $70.00</h5></div>
+             </div>
+             <div class="card1 fl">
+                <div class="b2"></div>
+                <div class="price"><br><h6>Jp Gaming laptop 15.6 inch"<br> 256gb SSD</h6>
+             <br> <h5> <del>$87.00</del> $70.00</h5></div>
+             </div>
+             <div class="card1 fl">
+                <div class="b3"></div>
+                <div class="price"><br><h6>HKI Tech Quadcopter Drone With 360 Camera & Controller</h6>
+             <br> <h5> <del>$87.00</del> $70.00</h5></div>
+             </div>
+             <div class="card1 fl">
+                <div class="b4"></div>
+                <div class="price"><br><h6>Smartphone Z Pixel Max <br> 128GB Unlocked</h6>
+             <br> <h5> <del>$87.00</del> $70.00</h5></div>
+             </div>
+             <div class="card1 fl">
+
+                <div class="b5"></div>
+                <div class="price"><br><h6>In-ear Noise <br> Isolating Wireless Earbuds</h6>
+             <br> <h5> <del>$87.00</del> $70.00</h5></div>
+             </div>
+             <div class="card1 fl">
+                <div class="b6"></div>
+                <div class="price"><br><h6>Safay GEN 2 256GB VR headset With Touch Controllers</h6>
+             <br> <h5> <del>$87.00</del> $70.00</h5></div>
+
+             <div class="cl"></div>
+
+            
+             </div>
+
+        <button>View all</button>
+
+            
+
+        </div>
+    <div class="cl"></div>
+
+
+       
+    </div>
+
+
+
+
+
+    <div class="footer">
+
+        <div class="ff fl">
+
+            <h5 class="fi">
+                Store Location</h5>
+
+                <h6 class="s">
+                    
+                        500 Terry Francois Street <br>
+                        San Francisco, CA 94158 <br>
+                        info@mysite.com <br><br>
+                        
+                        123-456-7890
+                        <br>
+                        <br>
+                        <br>
+                        <i class="fab fa-facebook-f"></i> &nbsp;<i class="fab fa-whatsapp"></i>&nbsp;<i class="fab fa-youtube"></i>&nbsp;<i class="fab fa-twitter"></i>
+                       
+                    
+
+
+
+                </h6>
+        </div>
+        <div class="ff fl">
+            <h5 class="fi">Shop</h5>
+            <br>
+            <ul><li><a href="#">Shopall</a></li></ul>
+            <ul><li><a href="#">TV</a></li></ul>
+            <ul><li><a href="#">Shoes</a></li></ul>
+            <ul><li><a href="#">Laptop</a></li></ul>
+            <ul><li><a href="#">Earburds</a></li></ul>
+            <ul><li><a href="#">Clothes</a></li></ul>
+            
+        </div>
+        <div class="ff fl">
+            <h5>Customer Support</h5>
+            <br>
+            <ul><li><a href="#">Home</a></li></ul>
+            <ul><li><a href="#">Aboutus</a></li></ul>
+            <ul><li><a href="#">Contactus</a></li></ul>
+            <ul><li><a href="#">Privacy</a></li></ul>
+            <ul><li><a href="#">Carrers</a></li></ul>
+            <ul><li><a href="#">HelpDesk</a></li></ul>
+        </div>
+       
+    </div> 
+     </div>
+
+ 
+
+     
+     
+    </div>
+
+    
+ 
+
+    
+</body>
+</html>
