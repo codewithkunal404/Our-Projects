@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineTutorial</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+.head{
+    height: 90px;
+    width: 100%;
+    background-color: #2E6171;
+}
+.head h1{
+    color: white;
+    padding: 2% 10%;
+}
+.navbar{
+    height:50px;
+    background-color:white;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.navbar .left{
+    width: 60%;
+    height: 100%;
+    text-align: center;
+
+}
+.navbar .right{
+    width: 40%;
+    height: 100%;
+    
+
+}
+.navbar .left ul li{
+    display: inline;
+    padding: 0.6%;
+    margin-left: 40px;
+    transition: 0.1s;
+    color: #2E6171;
+}
+.navbar .left ul{
+    padding: 1.3%;
+}
+.navbar .left ul li:hover{
+    border-bottom: 2px solid #2E6171;
+    box-sizing: border-box;
+
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.navbar .right ul li{
+    display: inline;
+    padding: 0.8% 8%;
+    background:white;
+    margin-left: 40px;
+    transition: 0.1s;
+    color: black;
+    border-radius: 50px;
+}
+.navbar .right ul{
+    padding: 2.5%;
+}
+.navbar .right ul li:hover{
+    background-color: #2E6171;
+    color: white;
+    cursor: pointer;
+}
+
+.banner{
+
+    width: 100%;
+    height: 90vh;
+    background: yellow;
+    position: relative;
+
+}
+.banner .sc{
+    width: 100%;
+    height: 100%;
+    background:  #31081f5d;
+    position: absolute;
+}
+.banner  h1 {
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 16%;
+    font-size: 3em;
+}
+.banner  p {
+    position: absolute;
+    color: white;
+    top:40%;
+    left: 18%;
+}
+.banner  button{
+    position: absolute;
+    top:50%;
+    width: 14%;
+    color: white;
+    height: 40px;
+    background: none;
+    left: 29%;
+    border: 3px solid white;
+    box-sizing: border-box;
+
+}
+.banner button:hover{
+    background:#2E6171;
+    transition: 0.3s;
+}
+.banner .login{
+    width: 25%;
+    height: 80vh;
+    position: fixed;
+    right: -50%;
+    top: 140px;
+    background: white;
+  
+}
+.login{
+    text-align: center;
+}
+.login .pro{
+    font-size: 7em;
+    color: #2E6171;
+    margin-top: 10vh;
+}
+.login i{
+    font-size: 30px;
+    color: #2E6171;
+    
+}
+.login h2{
+    color: #2E6171;
+}
+.login input{
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    text-indent: 20px;
+    border: 2px solid #31081F;
+    box-sizing: border-box;
+    background: none;
+    margin-top: 30px;
+    color: #2E6171;
+}
+.login .btn4{
+    width: 30%;
+    text-indent: 0px;
+    height: 40px;
+}
+.login .btn4:hover{
+    background: #2E6171;
+    color: white;
+}
+.login a{
+    color: #2E6171;
+}
+.login .cross{
+    font-size: 2em;
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+   
+}
+.register{
+    width: 25%;
+    height: 80vh;
+    position: fixed;
+    right: -50%;
+    top: 140px;
+    background: white;
+    color: #2E6171;
+    text-align: center;
+}
+.register .cross1{
+    font-size: 2em;
+    color: red;
+  
+     position: absolute;
+    right: 20px;
+    top: 20px;
+   
+   
+}
+.register input{
+    margin-top: 15px;
+}
+.register select{
+    margin-top: 15px;
+}
+.register h2{
+    margin-top: 8vh;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="head">
+        <h1><i class="fas fa-book-reader"></i>&nbsp;&nbsp;Online Tutorial</h1>
+    </div>
+    <div class="navbar">
+        <div class="left">
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Project</li>
+                <li>Contactus</li>
+                <li>Technology</li>
+                <li>Aboutus</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li class="btn1">Login</li>
+                <li class="btn2">Registration</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="banner">
+
+        <div class="login">
+            <i class="far fa-times-circle cross" title="close"></i>
+            <form>
+
+
+            <i class="fas fa-user-alt pro"></i>
+
+            <h2>Login</h2>
+
+            <i class="fas fa-user-alt"></i>&nbsp;&nbsp;<input type="text" name="uname" placeholder="Enter UserID"><br>
+                <i class="fas fa-key"></i>&nbsp;&nbsp;<input type="password" name="uname" placeholder="Enter Password"> <br>
+                <input type="submit" value="Login" class="btn4"> <br>
+ <br>
+ <br>
+                <a href="#">Forget Password?</a>
+
+            </form>
+
+        </div>
+
+
+
+        <div class="register">
+            <i class="far fa-times-circle cross1" title="close"></i>
+            <form>
+  <h2><u>Registration</u></h2>
+               First Name: <input type="text" name="name" placeholder="Enter your Name" required> <br>
+               Last Name: <input type="text" name="name" placeholder="Enter your LastName" required> <br>
+               EmailID: <input type="text" name="name" placeholder="Enter your EmailID" required> <br><br>
+               Contactno: <input type="number" name="name" placeholder="Enter your Contactno" required> <br>  <br>
+               Address: <textarea name="address" cols="30" rows="5" placeholder="Address here"></textarea> <br>
+               Gender: <input type="radio" name="gender" value="Male">Male
+               <input type="radio" name="gender" value="Female">Female
+               <input type="radio" name="gender" value="others">Others <br>
+               Qualification: <select>
+                   <option disabled selected>Qualification</option>
+                   <option value="1">high school</option>
+                   <option value="2">Intermediate</option>
+                   <option value="3">Gradation</option>
+                   <option value="4">Post -Graduation</option>
+               </select> <br>
+
+               <br> image upload: <input type="file" name=" image"  required>
+               <br>
+            
+               <input type="submit" value="register">
+
+            </form>
+
+        </div>
+        <div class="sc"></div>
+
+
+        <h1>Welcome to Online Tutorial !</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse ad <br> corrupti iure nobis molestiae fugiat porro aspernatur voluptatum fuga! </p>
+        <img src="https://images.pexels.com/photos/5483156/pexels-photo-5483156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height=100%>
+
+
+        <br>
+        <button>Contactus</button>
+
+    
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".btn1").click(function(){
+
+                $(".banner").animate({
+
+                    "width":"75%",
+                    "height":"80vh"
+                })
+                $(".login").animate({
+                    "right":"0%"
+                })
+
+                
+                $(".register").animate({
+    "right":"-50%"
+})
+
+            })
+
+            $(".btn2").click(function(){
+
+$(".banner").animate({
+
+    "width":"75%",
+    "height":"80vh"
+})
+$(".register").animate({
+    "right":"0%"
+})
+$(".login").animate({
+    "right":"-50%"
+})
+
+})
+
+
+$(".cross1").click(function(){
+
+$(".banner").animate({
+
+    "width":"100%",
+    "height":"90vh"
+})
+$(".register").animate({
+    "right":"-50%"
+})
+})
+
+
+
+            $(".cross").click(function(){
+
+$(".banner").animate({
+
+    "width":"100%",
+    "height":"90vh"
+})
+$(".login").animate({
+    "right":"-50%"
+})
+})
+        })
+
+    </script>
+</body>
+</html>
