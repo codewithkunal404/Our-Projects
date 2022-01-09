@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is heading1</h1>
+    <h1>This is heading2</h1>
+    <h1>This is heading3</h1>
+    <h1>This is heading4</h1>
+    <h1>This is heading5</h1>
+    <button id="btn1">Showall</button>
+    <button id="btn2">onoff</button>
+    
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $("h1").click( function(){
+
+            $(this).hide()
+        })
+
+        $("#btn1").click(function(){
+
+            $("h1").show()
+
+        })
+        $("#btn2").click(function(){
+            $("h1").toggle()
+        })
+    })
+
+</script>
+</html>
