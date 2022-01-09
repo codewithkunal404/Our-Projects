@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .card{
+
+            width: 560px;
+            height: 50vh;
+            border: 3px solid black;
+            margin-top: 20px;
+            margin-left: 30px;
+            text-align: center;
+          
+        }
+        
+        .photo{
+            width: 140px;
+            height: 180px;
+            margin-left: 10px;
+            position: absolute;
+            border: 2px solid black;
+            margin-top: 10px;
+
+        }
+        .tools{
+            width: 40%;
+            height: 60vh;
+            background-color: lightblue;
+            border: 2px solid blue;
+            margin-top: 20px;
+            position: absolute;
+            top: 0%;
+            right:20px;
+        }
+        input{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        span{
+            color: black;
+        }
+      
+        .value{
+            color: red;
+        }
+        .info{
+            width: 70%;
+            height: 100%;
+            float: right;
+            text-align: left;
+
+        }
+
+        #up{
+            display: none;
+        }
+       
+        .yss{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body >
+
+    <div class="card" id="card11">
+
+       <div class="photo">
+           <img id="image1" width="100%"  height="100%">
+           <br> 
+       </div>
+       <div class="info">
+           <br>
+           
+
+
+       <pre>
+   <span class="mm">Name:</span>&nbsp;<span id="A"></span>
+
+   <span class="mm">DOB:</span>&nbsp;<span id="B"></span> 
+
+   <span class="mm">Email:</span>&nbsp;<span id="C"></span> 
+
+   <span class="mm">ID:</span>&nbsp; <span id="D"></span> 
+        
+   <span class="mm">class:</span>&nbsp;<span id="E"></span> 
+
+       </pre>
+    </div>
+     
+
+    </div>
+
+
+    <div class="tools">
+      
+         <br>
+         <span class="yss">*</span> Photo Upload:<input  type="file" onchange="showpreview(event)" required>
+          <br>
+       <span class="yss">*</span>  Name: <input type="text" id="name"> <br>
+          <span class="yss">*</span>  Dob: <input type="date" id="dob" > <br>
+          <span class="yss">*</span>  Email: <input type="Email" id="email"> <br>
+          <span class="yss">*</span>  ID: <input type="text" id="id" > <br>
+         <br>
+          <span class="yss">*</span>  Class: <select  id="no">
+            <option ></option>
+
+
+             <option value="1st">1st</option>
+             <option value="2nd">2nd</option>
+             <option value="3rd">3rd</option>
+             <option value="4th">4th</option>
+             <option value="5th">5th</option>
+         </select>
+         
+
+         <br>
+          <span class="yss">*</span>  textsize: <input type="range" id="range" min="0" max="30" onclick="valueshow()"> <span class="value"></span>&nbsp;
+         <br>
+          <span class="yss">*</span>  textcolor: <input type="color" id="color" >
+         <br>
+          <span class="yss">*</span>  background: <input type="color" id="color2">
+         <br>
+          <span class="yss">*</span>  height:<input type="range" id="rangeH" min="0" max="1000" onclick="valueshow()"> <span class="value"></span>&nbsp;&nbsp;&nbsp;
+          <span class="yss">*</span>  width:<input type="range" id="rangeW" min="0" max="1000" onclick="valueshow()"> <span class="value"></span>&nbsp;
+         <br>
+         <input type="submit" value="Apply" onclick="submit()">
+         <input type="reset"  onclick="reset()">
+    </div>
+   
+</body>
+
+<script>
+
+  
+
+    function submit(){
+    a=document.getElementById('name').value;
+    b=document.getElementById('dob').value;
+    c=document.getElementById('email').value;
+    d=document.getElementById('id').value;
+    e=document.getElementById('no').value;
+    f=document.getElementById('range').value;
+    g=document.getElementById('color').value;
+    h=document.getElementById('color2').value;
+
+    document.getElementById('A').innerHTML=a;
+    document.getElementById('B').innerHTML=b;
+    document.getElementById('C').innerHTML=c;
+    document.getElementById('D').innerHTML=d;
+    document.getElementById('E').innerHTML=e;
+
+    document.getElementById('A').style.fontSize=f +"px";
+    document.getElementById('B').style.fontSize=f +"px";
+    document.getElementById('C').style.fontSize=f +"px";
+    document.getElementById('D').style.fontSize=f +"px";
+    document.getElementById('E').style.fontSize=f +"px";
+    document.getElementsByClassName('mm')[0].style.fontSize=f +"px";
+    document.getElementsByClassName('mm')[1].style.fontSize=f +"px";
+    document.getElementsByClassName('mm')[2].style.fontSize=f +"px";
+    document.getElementsByClassName('mm')[3].style.fontSize=f +"px";
+    document.getElementsByClassName('mm')[4].style.fontSize=f +"px";
+
+
+
+    document.getElementById('A').style.color=g;
+    document.getElementById('B').style.color=g;
+    document.getElementById('C').style.color=g;
+    document.getElementById('D').style.color=g;
+    document.getElementById('E').style.color=g;
+    document.getElementsByClassName('mm')[0].style.color=g;
+    document.getElementsByClassName('mm')[1].style.color=g;
+    document.getElementsByClassName('mm')[2].style.color=g;
+    document.getElementsByClassName('mm')[3].style.color=g;
+    document.getElementsByClassName('mm')[4].style.color=g;
+    
+    document.getElementsByClassName('card')[0].style.backgroundColor=h;
+
+    let height= document.getElementById('rangeH').value;
+       let width= document.getElementById('rangeW').value;
+        document.getElementById('card11').style.height=height +"px";
+        document.getElementById('card11').style.width=width +"px";
+
+    
+
+    
+    }
+
+    function showpreview(event){
+        var src=URL.createObjectURL(event.target.files[0]);
+        document.getElementById('image1').src=src;
+    }
+
+    function reset(){
+
+    document.getElementById('name').value="";
+    document.getElementById('dob').value="";
+    document.getElementById('email').value="";
+document.getElementById('id').value="";
+    document.getElementById('no').value="";
+    document.getElementById('range').value="";
+    document.getElementById('color').value="";
+
+    document.getElementById('A').style.color="black";
+    document.getElementById('B').style.color="black";
+    document.getElementById('C').style.color="black";
+    document.getElementById('D').style.color="black";
+    document.getElementById('E').style.color="black";
+    document.getElementsByClassName('mm')[0].style.color="black";
+    document.getElementsByClassName('mm')[1].style.color="black";
+    document.getElementsByClassName('mm')[2].style.color="black";
+    document.getElementsByClassName('mm')[3].style.color="black";
+    document.getElementsByClassName('mm')[4].style.color="black";
+    document.getElementsByClassName('card')[0].style.backgroundColor="white";
+        
+     document.getElementById('A').innerHTML="";
+    document.getElementById('B').innerHTML="";
+    document.getElementById('C').innerHTML="";
+    document.getElementById('D').innerHTML="";
+    document.getElementById('E').innerHTML="";
+
+
+    document.getElementById('image1').src="none";
+
+
+
+
+
+    }
+
+    function valueshow(){
+       let va= document.getElementById('range').value;
+       let va1= document.getElementById('rangeH').value;
+       let va2= document.getElementById('rangeW').value;
+       document.getElementsByClassName('value')[0].innerHTML=va +'px';
+       document.getElementsByClassName('value')[1].innerHTML=va1 +'px';
+       document.getElementsByClassName('value')[2].innerHTML=va2 +'px';
+
+      
+
+    }
+
+  
+
+</script>
+
+
+    
+   
+</script>
+</html>
