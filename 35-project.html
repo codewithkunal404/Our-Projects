@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0%;
+        top: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        height: 90px;
+        width: 39%;
+        background-color: tomato;
+        display: flex;
+        flex-wrap: wrap;
+
+        position: fixed;
+        
+    }
+    .cname{
+        width: 80%;
+        height: 100%;
+
+    }
+    h1{
+        color: white;
+        padding: 5% 15%;
+    }
+    .menu i{
+        font-size: 30px;
+        padding: 23% 5%;
+        color: white;
+    }
+    .menu{
+        width: 20%;
+        text-align: center;
+    }
+    .wrap{
+        width: 40%;
+        height: 100vh;
+        margin: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .bar{
+        height: 65vh;
+        background-color: rgba(87, 78, 78, 0.767);
+
+        display: none;
+        margin-top: 90px;
+        width: 100%;
+        
+
+    }
+    
+    .bar ul li{
+        list-style: none;
+        display: block;
+        width: 90%;
+        padding: 2%;
+        text-align: center;
+        transition: 0.60s;
+        margin-bottom: 20px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+    }
+    .Content{
+height: auto;
+        margin-top: 90px;
+        text-align: center;
+background-color: white;
+    }
+    .bar ul li:hover{
+        background-color: tomato;
+        transition: 0.60s;
+
+        
+
+    }
+    h2{
+        text-align: center;
+        font-size: 3em;
+    }
+    .par{
+        display: none;
+    }
+    
+    .btn1{
+        border: none;
+        border: 2px solid black;
+    }
+    .btn2{
+        border: none;
+        border: 2px solid black;
+    }
+@media (max-width:400px) {
+    /* Your adjusted CSS goes here */
+
+    .wrap{
+        width: 100%;
+    }
+    .head{
+        width: 100%;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+    
+    <div class="head">
+        <div class="cname"><h1>Welcome to MY Blog</h1></div>
+        <div class="menu"><i class="fas fa-bars"></i></div>
+    </div>
+    <div class="bar" >
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">ContactMe</a></li>
+        </ul>
+
+    </div>
+    <div class="Content">
+        <h2>Happy christmas Day to All</h2>
+        <img src="https://images.pexels.com/photos/1734436/pexels-photo-1734436.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" height="500px" >
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus id quisquam aperiam! Minima, soluta voluptatem animi voluptas ducimus asperiores mollitia alias sit quos vitae illum recusandae ab voluptatum distinctio nam fugit praesentium sed aut obcaecati? Autem ab maxime cumque iste nesciunt molestias nobis neque architecto rem odio blanditiis quasi laboriosam eveniet vitae recusandae, est illum libero magni fugiat, consequuntur consequatur? Excepturi iste amet et quis. Obcaecati quas odio praesentium minus adipisci eligendi sed perferendis pariatur ipsa, voluptatibus cum exercitationem animi consectetur autem aliquid rerum. Ducimus sunt illo unde architecto, ipsa ut eaque nulla reiciendis natus enim consequuntur quidem id tempore maiores adipisci in nemo repellat, ipsam ullam minus neque. Quas, culpa voluptatum ipsum, cumque ex et dolore officia dignissimos tenetur atque, sit velit officiis molestiae? Hic voluptates porro praesentium, culpa aspernatur repellendus temporibus optio explicabo maxime recusandae possimus rerum ea consectetur dolorem consequatur sapiente, et cupiditate. Fugit quis vero labore molestiae provident libero maxime, tenetur doloremque! Sapiente consequuntur exercitationem autem dicta quibusdam non fugit maxime a eum excepturi. Deserunt distinctio similique sint vero, laudantium, rem ratione maiores illum alias error tenetur, expedita necessitatibus dicta at eveniet nihil nostrum hic cumque saepe obcaecati culpa! Perspiciatis facilis aperiam sint. Perferendis, omnis quod.
+        </p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis inventore beatae veritatis dolor, doloremque fuga quo aperiam eligendi. Vitae voluptate, libero voluptatum qui hic ad? Dolor perspiciatis at, sapiente quos autem, expedita aperiam magnam omnis numquam, ad repellat earum molestias et. Vero, saepe. Illo modi similique laudantium esse tempore dignissimos sequi optio qui suscipit cum recusandae maiores quaerat, doloribus quos sed ut eveniet autem quo officia dolores id architecto? Incidunt corporis possimus omnis blanditiis magnam consequuntur. Quibusdam quo deleniti voluptates architecto, quisquam at perspiciatis voluptatum illum provident. Maxime, voluptas corporis. Magnam laudantium temporibus nam voluptatibus dignissimos, voluptate laboriosam explicabo officia.</p>
+        
+        <p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea esse animi fugit quia tempore, dolor facilis quaerat, ratione vitae nesciunt culpa aspernatur.
+            <img src="https://images.pexels.com/photos/10545733/pexels-photo-10545733.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" height="500px">
+            Corporis fugit harum ipsa! Dolorum exercitationem eum cupiditate vitae numquam, ex optio necessitatibus fugit possimus sit ipsam placeat perferendis sapiente, dolorem ab ratione explicabo vel, odit quaerat corrupti porro voluptatibus! Perspiciatis, accusantium! Consequatur impedit ad explicabo ratione in magnam debitis minima, laudantium a hic sed nisi recusandae, fugiat, voluptate alias expedita! Quibusdam, adipisci! Velit dolorem hic voluptatibus consequuntur delectus! Praesentium labore quibusdam eos aperiam deleniti, aut nihil sequi perferendis quam vero officia ab sunt dolorem est repudiandae atque nulla possimus necessitatibus fugiat? Aut veritatis saepe, ea perferendis asperiores hic harum nam, dicta voluptate facilis, quos cumque temporibus nesciunt? Illum veritatis similique placeat dolore? Aut natus blanditiis explicabo sunt praesentium asperiores dolor, amet facilis nam adipisci harum ab doloribus error voluptatem magnam voluptatum consequatur, quis incidunt voluptatibus consequuntur voluptate quae. Accusantium odio asperiores eos culpa eligendi temporibus deleniti voluptas ipsum, placeat inventore cum at dolorem. Aut molestias omnis, iste magni ipsa magnam explicabo blanditiis asperiores soluta porro adipisci eligendi illum. Ex nobis tempora excepturi magnam. Quibusdam natus earum quaerat illum cum quis labore consequatur delectus modi? Id voluptates nisi deleniti cum maxime ex, molestias obcaecati assumenda, quod architecto cupiditate labore pariatur consequuntur a est quaerat, exercitationem placeat amet alias possimus doloremque libero magnam reiciendis qui! Tempore blanditiis animi, odio aut labore eveniet consectetur libero eaque explicabo similique eius ullam nesciunt, porro maiores nemo dolor autem in qui molestiae ratione. Possimus libero tempora fugiat? Animi, ducimus dignissimos! Maxime quia optio molestias vitae natus, est soluta placeat voluptate enim. Unde necessitatibus praesentium omnis veniam tempora sequi illo, est aut a nostrum soluta error esse qui. Nostrum beatae sequi, dolores voluptas aliquid, expedita suscipit, dolore fuga deserunt quos eligendi consequuntur natus?</p>
+       <br>
+       <br>
+       <br>
+        <button class="btn1">View More</button>  <button class="btn2">View Less</button>
+       <br>
+       <br>
+
+    </div>
+</div>
+    
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".menu i").click(function(){
+        
+            $(".bar").slideToggle()
+            
+        })
+
+     
+
+
+
+
+
+
+        $(".btn1").click(function(){
+        
+        $(".par").show()
+
+
+    })
+
+    $(".btn2").click(function(){
+        
+        $(".par").hide()
+
+
+    })
+
+    })
+</script>
+</body>
+</html>
