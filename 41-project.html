@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filterexample</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: slateblue;
+            height: 90px;
+            color: white;
+
+
+        }
+        header h1{
+            padding: 2%;
+        }
+        .menu{
+            height: 60px;
+            width: 100%;
+            text-align: center;
+
+
+        }
+        .menu button{
+            width: 10%;
+            height: 40px;
+            margin-top: 20px;
+            background: none;
+            border-radius: 50px;
+            border: 2px solid slateblue;
+            color: slateblue;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        .wrap{
+            height: 70vh;
+            width: 80%;
+            overflow-y: scroll;
+            position: fixed;
+            background-color: whitesmoke;
+            left: 10%;
+            top: 180px;
+        }
+        img{
+            transition: 0.3s;
+            transform: scale(0.9);
+        }
+
+        img:hover{
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+            transform: scale(1);
+            transition: 0.3s;
+        }
+        button:hover{
+            background: slateblue;
+            color: whitesmoke;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header><H1>Filter gallery</H1></header>
+<div class="menu">               <button  class="btn1">ALL</button>       <button class="btn2">Car</button>        <button class="btn3">Bike</button>       <button class="btn4">Helicopter</button>       <button class="btn5">Aeroplane</button><div>
+
+<div class="wrap">
+
+
+ 
+ 
+    <img class="aero" src="https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="aero" src="https://images.pexels.com/photos/3769118/pexels-photo-3769118.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="aero" src="https://images.pexels.com/photos/747079/pexels-photo-747079.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="aero" src="https://images.pexels.com/photos/2441844/pexels-photo-2441844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="aero" src="https://images.pexels.com/photos/2315265/pexels-photo-2315265.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="aero" src="https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ 
+
+
+
+
+<!-- car -->
+
+<img class="car" src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+<img class="car" src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+<img class="car" src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+
+
+<img class="car" src="https://images.pexels.com/photos/70912/pexels-photo-70912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+<img class="car" src="https://images.pexels.com/photos/326259/pexels-photo-326259.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+
+<img class="car" src="https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+<img class="car" src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+<img class="car" src="https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+
+<img class="car" src="https://images.pexels.com/photos/1149056/pexels-photo-1149056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+
+
+
+ <!-- bike -->
+ 
+<img class="bike" src="https://images.pexels.com/photos/2393816/pexels-photo-2393816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ 
+ <img class="bike" src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+ <img class="bike" src="https://images.pexels.com/photos/750817/pexels-photo-750817.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ 
+ 
+ <img class="bike" src="https://images.pexels.com/photos/2611684/pexels-photo-2611684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="bike" src="https://images.pexels.com/photos/5794252/pexels-photo-5794252.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="bike" src="https://images.pexels.com/photos/2658995/pexels-photo-2658995.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img class="bike" src="https://images.pexels.com/photos/2658987/pexels-photo-2658987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+
+
+
+
+<!-- helicopter -->
+ <img  class="heli" src="https://images.pexels.com/photos/41174/action-air-aircraft-aviation-41174.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+ <img   class="heli" src="https://images.pexels.com/photos/90286/pexels-photo-90286.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img   class="heli" src="https://images.pexels.com/photos/914380/pexels-photo-914380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+ <img   class="heli" src="https://images.pexels.com/photos/126625/pexels-photo-126625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+ <img   class="heli" src="https://images.pexels.com/photos/90287/pexels-photo-90287.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+ <img   class="heli" src="https://images.pexels.com/photos/3098875/pexels-photo-3098875.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300px">
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+$(document).ready(function(){
+
+    $(".btn1").click(function(){
+
+        $("img").filter("*").show()
+        $(".btn1").css({
+            "background":"slateblue",
+            "color":"white"
+        })
+
+    
+        $(".btn2").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+        $(".btn3").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+        $(".btn4").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+        $(".btn5").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+
+})
+
+
+$(".btn2").click(function(){
+
+ 
+        $(".btn2").css({
+            "background":"slateblue",
+            "color":"white"
+        })
+
+        $(".btn1").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+
+        $(".btn3").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+        $(".btn4").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+        $(".btn5").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+
+
+$("img").filter(".car").show()
+$("img").filter(".bike").hide()
+$("img").filter(".heli").hide()
+$("img").filter(".aero").hide()
+
+
+
+
+
+
+})
+
+$(".btn3").click(function(){
+
+
+    $(".btn3").css({
+            "background":"slateblue",
+            "color":"white"
+        })
+
+  $(".btn1").css({
+            "background":"white",
+            "color":"slateblue"
+ })
+
+ $(".btn2").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+    
+        $(".btn4").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+        $(".btn5").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+ 
+
+
+$("img").filter(".bike").show()
+$("img").filter(".heli").hide()
+$("img").filter(".aero").hide()
+$("img").filter(".car").hide()
+
+
+
+
+})
+
+$(".btn4").click(function(){
+
+
+    $(".btn4").css({
+            "background":"slateblue",
+            "color":"white"
+        })
+
+  $(".btn1").css({
+            "background":"white",
+            "color":"slateblue"
+ })
+
+ $(".btn2").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+    
+        $(".btn3").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+        $(".btn5").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+$("img").filter(".heli").show()
+$("img").filter(".car").hide()
+$("img").filter(".bike").hide()
+$("img").filter(".aero").hide()
+
+
+
+})
+
+$(".btn5").click(function(){
+
+$("img").filter(".aero").show()
+$("img").filter(".car").hide()
+$("img").filter(".bike").hide()
+$("img").filter(".heli").hide()
+
+$(".btn5").css({
+            "background":"slateblue",
+            "color":"white"
+        })
+
+  $(".btn1").css({
+            "background":"white",
+            "color":"slateblue"
+ })
+
+ $(".btn2").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+    
+        $(".btn4").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+        $(".btn3").css({
+            "background":"white",
+            "color":"slateblue"
+        })
+
+
+})
+
+})
+
+
+
+
+    </script>
+
+</body>
+</html>
