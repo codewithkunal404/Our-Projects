@@ -189,7 +189,7 @@
 
 
 
->#### <a href="https://codewithkunal404.github.io/Our-Projects/emailertemplate.html">Emailer template1</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/emailertemplate.html">SourceCode</a> 
+>#### <a href="https://codewithkunal404.github.io/Our-Projects/emailertemplate1.html.html">Emailer template1</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/emailertemplate1.html">SourceCode</a> 
 
 
 
