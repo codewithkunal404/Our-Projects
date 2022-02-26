@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-top: 30vh;
+        }
+
+        .card{
+
+            width:250px;
+            height: 200px;
+            background-color: lightblue;
+            margin-right: 20px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.8s;
+        }
+        span{
+
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: translateY(126px);
+            top: 0%;
+            left: 0%;
+            transition: 0.8s;
+        }
+        h3{
+            color: white;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+        button{
+            background-color: white;
+            color: black;
+            border: 2px solid #000000;
+            border-radius: 15px ;
+            padding:6px 20px;
+            transition: 0.3s;
+
+        }
+
+
+        button:hover{
+            background-color: tomato;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+
+            transform: translateY(20px);
+            transition: 0.8s;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+
+        }
+
+        .card:hover span{
+
+transform: translateY(0px);
+transition: 0.8s;
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/326502/pexels-photo-326502.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" height="100%">
+
+        <span><hr>
+
+<h3>Blogpost1</h3>
+<hr>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae!</p>
+
+<button>View more</button>
+
+
+        </span>
+    </div>
+    <div class="card">
+
+        <img src="https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" height="100%">
+
+        <span><hr>
+
+            <h3>Blogpost2</h3>
+            <hr>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae!</p>
+            
+            <button>View more</button>
+            
+            
+                    </span>
+    </div>
+    <div class="card">
+
+        <img src="https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" height="100%">
+
+        <span><hr>
+
+            <h3>Blogpost3</h3>
+            <hr>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae!</p>
+            
+            <button>View more</button>
+            
+            
+                    </span>
+    </div>
+    <div class="card">
+
+
+        <img src="https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="100%" height="100%">
+
+        <span><hr>
+
+            <h3>Blogpost3</h3>
+            <hr>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae!</p>
+            
+            <button>View more</button>
+            
+            
+                    </span>
+    </div>
+</body>
+</html>
