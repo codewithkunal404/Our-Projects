@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap" rel="stylesheet">
+    <style>
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: 'Smooch Sans', sans-serif;
+    
+}
+     
+
+        .box{
+            background-color:black;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+ 
+        .box img{
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 34%);
+           
+        }
+       
+        
+
+        .box .form{
+
+            background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+
+            width: 300px;
+
+            height: 400px;
+            position: absolute;
+            line-height: 50px;
+            padding:8%;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        h1{
+
+            font-size: 5em;
+        }
+        h3{
+            font-size: 2em;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            text-indent: 10px;
+            border: 1px solid white;
+            background: rgba(0, 0, 0, 0.699);
+           color: white;
+           
+            
+        }
+        input:hover{
+            background-color: rgba(0, 0, 0, 0.849);
+            color: white;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.76);
+        }
+
+        button{
+
+           padding: 5% 10%;
+           font-size: 20px;
+           background-color: black;
+           border: none;
+           color: white;
+
+        }
+
+
+
+        button:hover{
+            background-color: white;
+            color: black;
+            transition: 0.4s;
+        }
+a{
+    color: white;
+    font-size: 18px;
+    
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+
+       <img src="https://images.pexels.com/photos/1742370/pexels-photo-1742370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+
+
+       <div class="form">
+
+        <form >
+
+            <h1>Login</h1>
+            <br>
+
+            <h3>UserID</h3><input type="text" placeholder="Enter UserID">
+            <h3>Password</h3><input type="password" placeholder="Enter Password"> <br>
+           
+            <a href="#">Forget password?</a> <br>
+            <a href="#">Signup</a>
+            <br>
+            <button>Login</button>
+
+        </form>
+
+
+       </div>
+
+
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        
+      $(document).ready(function(){
+
+
+        $(".form").mouseover(function(){
+
+
+            $(".box img").css({
+
+
+                "filter":"blur(5px)",
+                "transition":"0.1s",
+                "transform": "scale(0.90)"
+                
+                
+            })
+
+        })
+
+        $(".form").mouseleave(function(){
+
+
+$(".box img").css({
+
+
+    "filter":"blur(0px)",
+    "transition":"0.1s",
+    "transform": "scale(1)"
+})
+
+})
+
+
+
+      })
+
+
+    </script>
+
+    
+</body>
+</html>
