@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+body{
+    background-color: black;
+}
+
+        .box{
+
+            width: 280px;
+            height: 500px;
+            border: 5px groove black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 30px;
+            padding: 35px 5px;
+            background-color: rgba(145, 133, 133, 0.479);
+            text-align: center;
+
+        }
+
+        .screen1{
+
+            width: 100%;
+            height: 90%;
+            background-color: black;
+          
+        }
+
+        .screen{
+            opacity:0;
+            width: 100%;
+            height: 100%;
+            transition: "0.6s";
+            border: none;
+
+        }
+
+        button{
+
+            background-color:rgba(179, 175, 175, 0.61);
+            padding: 4% ;
+            border-radius: 50%;
+
+            border: none;
+            margin-top: 15px;
+        }
+
+
+        .head{
+            padding: 2% 15%;
+            background-color: black;
+            position: absolute;
+            border-radius: 50px;
+            top: 15px;
+            left: 105px;
+        }
+        .html{
+            position: absolute;
+            top: 10%;
+            left: 60px;
+        }
+        .css{
+            position: absolute;
+            top: 10%;
+            left: 150px;
+        }
+        .led{
+            width:4px;
+            height: 4px;
+            border-radius: 50%;
+            position: absolute;
+            right: 80px;
+            top: 17px;
+            background-color: gray;
+            animation: light 0.5s infinite ;
+        }
+
+        @keyframes light {
+
+            0%{
+
+                background-color: gray;
+            }
+            20%{
+
+                background-color: white;
+                box-shadow: 0px 0px 0px  white;
+}
+
+40%{
+
+    background-color: gray;
+
+}
+
+
+
+60%{
+
+    background-color: white;
+                box-shadow: 0px 0px 0px white;
+}
+
+
+60%{
+
+background-color: gray;
+           
+}
+
+80%{
+
+    background-color: white;
+                box-shadow: 0px 0px 0px white;
+           
+}
+
+
+       
+
+
+100%{
+                background-color: white;
+                box-shadow: 0px 0px 0px white;
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+
+        <div class="head"></div>
+
+        <div class="led"></div>
+
+       <div class="screen1">
+     <!-- <iframe src="emailertemplate.html" class="screen" ></iframe> -->
+
+     <video id="video" width="640" height="480" autoplay class="screen"></video>
+<canvas id="canvas" width="640" height="480"></canvas>
+       </div> 
+
+        <button class="btn1"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" width="20px"></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button class="btn2"> <img src="https://cdn-icons-png.flaticon.com/512/1014/1014910.png" width="20px"></button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button class="btn3"><img src="https://cdn-icons.flaticon.com/png/512/3877/premium/3877262.png?token=exp=1646499783~hmac=ef4ea4564ea77c1027506d8e13ed8ea1" width="20px"></button>
+    </div>
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+
+            $(".btn1").mouseover(function(){
+
+                $(this).css({
+                    "box-shadow":"0px 0px 10px white"
+                })
+            })
+            
+            $(".btn1").mouseleave(function(){
+
+$(this).css({
+    "box-shadow":"none"
+})
+
+
+})
+
+
+
+
+$(".btn2").mouseover(function(){
+
+$(this).css({
+    "box-shadow":"0px 0px 10px white"
+})
+})
+
+$(".btn2").mouseleave(function(){
+
+$(this).css({
+"box-shadow":"none"
+})
+})
+
+
+$(".btn3").mouseover(function(){
+
+$(this).css({
+    "box-shadow":"0px 0px 10px white"
+})
+})
+
+$(".btn3").mouseleave(function(){
+
+$(this).css({
+"box-shadow":"none"
+})
+})
+
+
+
+
+
+$(".btn2").click(function(){
+
+    $(".screen").css({
+        "opacity":"1",
+        "transition":"0.6s"
+    })
+})
+
+
+$(".btn1").click(function(){
+
+$(".screen").css({
+    "transform":"scale(0.6)",
+    "transition":"0.6s"
+})
+})
+
+
+$(".btn3").click(function(){
+
+$(".screen").css({
+    "transform":"scale(1)",
+    "transition":"0.6s"
+})
+})
+
+
+
+
+
+
+
+        })
+
+        
+ var video = document.getElementById('video');
+
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Not adding `{ audio: true }` since we only want video now
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+        //video.src = window.URL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    });
+}
+
+
+
+    </script>
+</body>
+</html>
