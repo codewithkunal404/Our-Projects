@@ -24,6 +24,7 @@
     .header1{
         color: white;
         background-color:#3D3B3C;
+        position: fixed;
         height: 10vh;
         width: 100%;
         text-indent: 30px;
@@ -38,9 +39,9 @@
     }
     .left{
         width: 40%;
-        height: 85vh;
+        height: 87vh;
         position: fixed;
-        background-color: white;
+        background-color: black;
         top: 10vh;
         left: 0%;
        
@@ -48,14 +49,14 @@
     }
      .output{
         width: 60%;
-        height: 85vh;
+        height: 87vh;
         position: fixed;
         top: 10vh;
         right: 0%;
         border-left: 3px solid black;
         box-sizing: border-box;
         overflow-y: scroll;
-        
+        padding: 1% 2%;
 
        
         
@@ -66,13 +67,15 @@
 
     .left .input{
 
-        height: 600px;
+        height: 100%;
         width: 96%;
         box-sizing: border-box;
         margin-top: 10px;
         margin-left: 3%;
         font-size: 20px;
         border: none;
+        background-color: black;
+        color: white;
     
         
 
@@ -81,7 +84,10 @@
 
     .input:focus{
     outline: 0;
+    
+    
 }
+
 
 
 
@@ -92,29 +98,32 @@
 }
 .left .run{
     font-size: 20px;
-    width: 8%;
-    height: 34px;
+    width: 120px;
+    height: 25px;
     left: 30%;
+    padding: 5px 0px;
+    
+    text-align: center;
     bottom: 12vh;
     border: none;
     background-color: #323031;
     color: white;
+    
     position: fixed;
-    border-radius: 50px;
 }
 .run:hover{
 
-    background-color: white;
-    color:black;
+    background-color: #323031d7;
+    color:white;
     transition: 0.4s;
-    border: 3px solid black;
-    box-sizing: border-box;
+    cursor: pointer;
+    
 }
 
 .footer12{
 
     width: 100%;
-    height: 5vh;
+    height: 3vh;
     background-color: #323031;
     color: white;
     font-size: 14px;
@@ -132,6 +141,10 @@
 .hh{
     color: rgb(151, 142, 206);
 }
+
+
+
+
 </style>
 
 
@@ -139,12 +152,14 @@
 <body>
 
     <header class="header1">
+        <div class="darkbtn1"></div>
+        <div class="lightbtn1"></div>
         <span class="h1"><i class="bi bi-filetype-html"></i> &nbsp;Code <span class="hh">Runner</span></span>
     </header>
     <section class="left">
-        <textarea class="input" placeholder="Write Code here......."></textarea>
+        <textarea class="input" placeholder="Write Code here......." autofocus></textarea>
 
-        <button class="run">Run <i class="bi bi-code-slash"></i> </button>
+        <div class="run">Run <i class="bi bi-code-slash"></i> </div>
     </section>
     <section class="output">
         
@@ -165,8 +180,11 @@
         $(".run").click(function(){
 
         data=$(".input").val()
+        x=0;
         $(".output").html(`${data}`)
         })
+
+       
     })
 </script>
 </html>
