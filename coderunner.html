@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+<style>
+
+    
+    
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: 0%;
+        padding: 0%;
+        text-decoration: none;
+    }
+
+    .header1{
+        color: white;
+        background-color:#3D3B3C;
+        height: 10vh;
+        width: 100%;
+        text-indent: 30px;
+    }
+
+    header .h1{
+        font-size: 2em;
+        display: inline-block;
+        margin-top: 20px;
+        
+
+    }
+    .left{
+        width: 40%;
+        height: 85vh;
+        position: fixed;
+        background-color: white;
+        top: 10vh;
+        left: 0%;
+       
+        
+    }
+     .output{
+        width: 60%;
+        height: 85vh;
+        position: fixed;
+        top: 10vh;
+        right: 0%;
+        border-left: 3px solid black;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        
+
+       
+        
+    }
+
+    
+
+
+    .left .input{
+
+        height: 600px;
+        width: 96%;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 3%;
+        font-size: 20px;
+        border: none;
+    
+        
+
+
+    }
+
+    .input:focus{
+    outline: 0;
+}
+
+
+
+
+
+.link2332{
+    color: white;
+}
+.left .run{
+    font-size: 20px;
+    width: 8%;
+    height: 34px;
+    left: 30%;
+    bottom: 12vh;
+    border: none;
+    background-color: #323031;
+    color: white;
+    position: fixed;
+    border-radius: 50px;
+}
+.run:hover{
+
+    background-color: white;
+    color:black;
+    transition: 0.4s;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.footer12{
+
+    width: 100%;
+    height: 5vh;
+    background-color: #323031;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    padding: 10px 0px;
+
+}
+
+.link2332{
+    color: rgb(144, 133, 219);
+    text-decoration: none;
+}
+.hh{
+    color: rgb(151, 142, 206);
+}
+</style>
+
+
+</head>
+<body>
+
+    <header class="header1">
+        <span class="h1"><i class="bi bi-filetype-html"></i> &nbsp;Code <span class="hh">Runner</span></span>
+    </header>
+    <section class="left">
+        <textarea class="input" placeholder="Write Code here......."></textarea>
+
+        <button class="run">Run <i class="bi bi-code-slash"></i> </button>
+    </section>
+    <section class="output">
+        
+        
+    </section>
+    <footer class="footer12">Copyright &copy; 2022 Designed by  <a class="link2332" href="https://github.com/codewithkunal404">Codewithkunal404</a></footer>
+
+
+
+  
+</body>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        $(".run").click(function(){
+
+        data=$(".input").val()
+        $(".output").html(`${data}`)
+        })
+    })
+</script>
+</html>
