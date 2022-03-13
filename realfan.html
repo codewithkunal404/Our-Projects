@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this we about how make a real fan by html css jquery">
+    <title>RealFan|Codewithkunal404</title>
+    <style>
+
+
+
+.part{
+
+    position: absolute;
+    border: 25px solid black;
+    box-shadow: 0px 0px 20px 2px gray;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            
+           
+            
+        }
+
+        @keyframes rotateon{
+
+           
+            100%{
+                transform: rotateZ(360deg);
+
+            }
+            
+        }
+       
+        @keyframes rotateoff {
+
+100%{
+    transform: rotateZ(360deg);
+
+
+}
+
+
+
+
+
+}
+
+.box1{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px gray;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.on{
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 80%;
+    width: 60px;
+    box-shadow: 0px 0px 20px 5px green;
+    height: 60px;
+}
+        
+.off{
+
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+
+    left: 50%;
+    top: 80%;
+    display: none;
+    width: 60px;
+    box-shadow: 0px 0px 10px rgb(206, 57, 57);
+    height: 60px;
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="on"><img src="power.png" width="100%"></div>
+    <div class="off"><img src="power-button.png" width="100%"></div>
+    <div class="part">
+        <div class="box">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/95/95252.png"  width="100%" height="100%">
+
+            <div class="box1"></div>
+         </div>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".on").click(function(){
+
+                $(".box").css({
+
+                    "animation":" rotateon 0.2s infinite  linear "
+
+                    
+                })
+
+                $(".on").css({
+
+                    "display":"none",
+                    "box-shadow": "0px 0px 20px 5px green"
+                })
+
+                
+                $(".off").css({
+
+                    "display":"block",
+                    "box-shadow": "0px 0px 20px 5px red"
+                })
+
+                
+
+            })
+
+
+
+
+
+
+             $(".off").click(function(){
+
+                $(".box").css({
+
+                    "animation":" rotateoff 0.280s linear ",
+
+                    
+
+
+            })
+            
+
+            
+                $(".on").css({
+
+                    "display":"block",
+                    "box-shadow": "0px 0px 20px 5px green"
+                })
+
+                
+                $(".off").css({
+
+                    "display":"none",
+                    "box-shadow": "0px 0px 20px 5px red"
+                })
+            
+        })
+    })
+    </script>
+
+</body>
+</html>
