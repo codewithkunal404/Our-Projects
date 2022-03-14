@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <style>
+
+        
+
+        img{
+            width: 400px;
+            height: 550px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        .window{
+
+            background: url(https://images.pexels.com/photos/8953361/pexels-photo-8953361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+
+            width:270px ;
+            height: 350px;
+            
+            border-radius: 50%;
+            background-size: 100vh;
+            transform: translate(-50%,-50%);
+            left: 50%;
+           
+            box-shadow: 16px 10px 20px 4px white;
+            top: 50%;
+            position: absolute;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+        <img src="https://images.pexels.com/photos/3260886/pexels-photo-3260886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" >
+    
+
+        <div class="window" id="image"></div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        data = document.querySelector("#image");
+
+  data.addEventListener("mousemove", (e) => {
+  data.style.backgroundPositionX = -e.offsetX + "px";
+  data.style.backgroundPositionY = -e.offsetY + "px";
+});
+    })
+</script>
+</html>
