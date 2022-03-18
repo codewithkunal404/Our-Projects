@@ -4,129 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eyefollow cursor</title>
+    <title>Document</title>
     <style>
-      
-      .face{
-
-        width: 300px;
-        height: 300px;
-        background-color: black;
-        border-radius: 50%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-      }
-        .box{
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: black;
-          position: absolute;
-          left: 25px;
-          top: 25px;
-
-          
-        }
-        .eye{
-
-            width:80px;
-            height: 80px;
-            border-radius: 50%;
-            position: absolute;
-            border: 1px solid black;
-            left:30px;
-            top: 60px;
-            background-color: white;
-
-          
-
-
-            
-        }
-        .eye2{
-
-            width:80px;
-            height: 80px;
-            border-radius: 50%;
-            position: absolute;
-            background-color: white;
-            border: 1px solid black;
-            right: 30px;
-
-            top: 60px;
-        }
-
-        .smile{
-            width: 100px;
-            height: 10px;
+        body{
             background-color: red;
-            position: absolute;
-            
-            bottom: 60px;
-           
-            left:100px;
-            
         }
+
+
+        .box{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+       
+
+        .eye1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            left:10px;
+            overflow: hidden;
+            top: 40px;
+            box-shadow:-1px 0px 16px 9px #660606;
+        }
+
+        .eye2{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+           right: 10px;
+            overflow: hidden;
+            top: 40px;
+            box-shadow:-1px 0px 16px 9px #660606;
+
+
+
+        }
+        
+    .ball{
+
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            border-radius: 50%;
+            border: 10px solid rgb(65, 30, 5) ;
+            box-sizing: border-box;
+
+
+        }
+
+        .footer{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 200px;
+            width: 100%;
+            border-radius: 50% 50% 0% 0%;
+            background-color: wheat;
+        }
+
+      
+       
+       
     </style>
 </head>
 <body>
 
-   <div class="face">
-    <div class="eye">
-        <div class="box"></div>
-    </div>
-    <div class="eye2">
-        <div class="box"></div>
-    </div>
-    <div class="smile">
+       <div class="box">
+
+        <!-- lefteye -->
+             <div class="eye1">
+            <div class="ball"></div>
+        </div>
+
+       <!-- righteye -->
+        <div class="eye2">
+            <div class="ball">
+            </div>
+        </div>
+
+
+       </div>
+        
+
+    <div class="footer">
+        <!-- chest -->
 
     </div>
-   </div>
-    
-    
-</body>
 
-<script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
 <script>
 
 $(document).ready(function(){
   $(document).mousemove(function(event){
-     x = event.clientX * 40  / window.innerWidth + "px";
-     y = event.clientY * 40 / window.innerHeight + "px";
+     x = event.pageX * 50  / window.innerWidth + "px";
+     y = event.pageY * 50 / window.innerHeight + "px";
+     
   
-      $(".box").css({
+      $(".ball").css({
           "left":x,
           "top":y
       })
   
-      $(".face").mouseover(function(){
-
-        $(".smile").css({
-
-            "border-radius":"50%",
-            "height":"40px",
-            "border":"8px solid white",
-            "box-sizing":"border-box"
-
-        })
-      })
-
       
-      $(".face").mouseleave(function(){
-
-        $(".smile").css({
-
-            "border-radius":"0px",
-            "height":"10px",
-            "border":"none",
-            
-
-
-        })
-      })
-  });
-});
+    });
+    
+    });
 </script>
+    
+</body>
 </html>
