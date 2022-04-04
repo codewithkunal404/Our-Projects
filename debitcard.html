@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+ <style>
+
+
+   
+
+
+    
+        body{
+            font-family: 'Orbitron', sans-serif;
+            
+            color: whitesmoke;
+            text-shadow: 2px 2px 2px black;
+
+            background-color: white;
+            
+        }
+        
+        /* card */
+        .box{
+
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            margin-top: 30vh;
+            border-radius: 10px;
+            background-image: linear-gradient(to right,rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.749));
+            box-shadow: 13px 20px 20px 0px rgba(0, 0, 0, 0.482);
+}
+
+
+            
+
+/* card */
+
+
+/* header */
+        
+        .header{
+            display: flex;
+            padding: 10px 30px;
+           
+            
+        }
+.header .name{
+    width: 50%;
+    height: 100%;
+    letter-spacing: 2px;
+
+}
+.header .logo{
+
+    width: 50%;
+    height: 100%;
+    
+    font-size: 3em;
+
+
+
+}
+
+.logo .fa-magento{
+
+    padding: 8px 0px;
+    float: right;
+
+
+}
+
+/* header */
+
+
+
+/* chip */
+.chippart{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.chip{
+    width:20%;
+    height: 100%;
+
+}
+.chip img{
+    padding: 3px 30px;
+}
+
+.wifi{
+    width: 80%;
+    height: 100%;
+}
+.wifi .fa-wifi{
+    font-size:2.2em;
+    padding: 12px 0px;
+    transform: rotate(90deg);
+    
+}
+
+/* chip */
+
+
+/* cardno */
+
+.cardno{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+/* cardno */
+
+
+
+
+/* footer */
+.footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.footer .left
+{
+
+    width: 60%;
+    height: 100%;
+    line-height: 2px;
+    letter-spacing: 3px;
+}
+.left h5{
+    padding: 0px 35px;
+}
+.left h4{
+    padding: 0px 35px;
+    font-weight: bold;
+}
+
+.footer .right{
+
+    width: 40%;
+    height: 100%;
+}
+
+.right img{
+    padding:  10px 90px;
+}
+
+/* footer */
+
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- card -->
+  
+    <div class="box">
+
+        <!-- header -->
+        <div class="header">
+            <div class="name"><h2>Credit card</h2></div>
+            <div class="logo"><i class="fa-brands fa-magento"></i></div>
+
+        </div>
+
+
+        <!-- header -->
+
+
+    <!-- chip part -->
+       <div class="chippart">
+        <div class="chip"><img src="chip-logo-png-transparent-vector-624520-removebg-preview.png" width="55px" height="55px"></div>
+        <div class="wifi">
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+     
+       </div>
+
+
+       <!-- chippart -->
+
+
+       <!-- cardno -->
+
+       <div class="cardno">
+
+        <h4>5000 2000 3000 0000</h4>
+
+       </div>
+
+
+       <!-- cardno -->
+
+
+       <!-- footerpart -->
+       <div class="footer">
+           <div class="left">
+               <h5>EXP-END : 11/22</h5>
+               <h4>MR. KUNAL SINGH</h4>
+           </div>
+           <div class="right">
+               <img src="Mastercard_logo-removebg-preview.png" width="100px">
+           </div>
+       </div>
+
+       <!-- footerpart -->
+        
+
+    </div>
+
+    <!-- card -->
+
+
+    <!-- javascript vanilla-tilt.js -->
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".box"), {
+		max: 25,
+		speed: 400,
+        "max-glare": 0.6, 
+        glare: true,
+	});
+	
+
+</script>
+    
+</body>
+</html>
