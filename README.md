@@ -229,3 +229,6 @@
 
 >#### <a href="https://codewithkunal404.github.io/Our-Projects/creditcard.html">Credit card uidesign </a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/creditcard.html">SourceCode</a> 
 
+
+>#### <a href="https://codewithkunal404.github.io/Our-Projects/calculator.html"> calculator design </a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/calculator.html">SourceCode</a>
+
