@@ -93,9 +93,9 @@ input[type='button']{
     color: white;
     background-color: transparent;
     border: none;
-    margin-top: 10px;
     text-shadow: 2px 2px 2px black;
     border-radius: 5px;
+    margin-top: 5px;
     
 }
 input[type='button']:hover{
@@ -104,8 +104,8 @@ input[type='button']:hover{
 
 
 #AC{
-    width: 320px;
-    height: 60px;
+    width: 210px;
+    height: 75px;
     margin-top: 10px;
     margin-left: 10px;
     font-size: 25px;
@@ -143,18 +143,19 @@ input[type='button']:hover{
             <input type="button" value="9" onclick="form121.textinput.value +='9'">
             <br>
             
-            <input type="button" value="+" onclick="form121.textinput.value +='+'">
+            <input type="button" value="0" onclick="form121.textinput.value +='0'">
             <input type="button" value="/" onclick="form121.textinput.value +='/'">
-            <input type="button" value="-" onclick="form121.textinput.value +='-'">
+            <input type="button" value="+" onclick="form121.textinput.value +='+'">
             
-
+            
             <br>
+            <input type="button" value="-" onclick="form121.textinput.value +='-'">
             <input type="button" value="*" onclick="form121.textinput.value +='*'">
             <input type="button" value="." onclick="form121.textinput.value +='.'">
-            <input type="button" value="=" onclick="form121.textinput.value =eval(form121.textinput.value)">
             <br>
-
-
+            
+            <input type="button" value="=" onclick="form121.textinput.value =eval(form121.textinput.value)">
+            
             <input type="button" value="Clear"  id="AC" onclick="form121.textinput.value =''">
         </form>
         
