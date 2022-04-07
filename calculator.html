@@ -27,7 +27,7 @@ body::before{
     content: "";
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    background-color: #3a86ff;
     position: absolute;
     right: 0%;
     top: 0%;
@@ -101,7 +101,8 @@ body::before{
             font-size: 24px;
             background-color: transparent;
             border: none;
-            color: white;
+            color: whitesmoke;
+            text-shadow: 0.3px 0.3px 0.3px black;
 
 
 
@@ -130,12 +131,12 @@ body::before{
     background: url(wave.svg);
     background-repeat: repeat-x;
     background-position: center;
-    animation: move 35s linear infinite ;
+    animation: move 50s linear infinite ;
     position: absolute;
     top: 0px;
     left: 0px;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.7;
 
 
 
@@ -146,12 +147,12 @@ body::before{
     background: url(wave.svg);
     background-repeat: repeat-x;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute;
     background-size: cover;
     top: 0px;
     left: 0px;
-    animation: move1 40s linear infinite;
+    animation: move1 45s linear infinite;
 
 }
 
@@ -161,12 +162,12 @@ body::before{
     background: url(wave.svg);
     background-repeat: repeat-x;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.7;
     position: absolute;
     background-size: cover;
     top: 0px;
     left: 0px;
-    animation: move2 30s linear infinite;
+    animation: move2 40s linear infinite;
 }
 
 
@@ -204,7 +205,7 @@ body::before{
     
     100%{
         
-        background-position-x: 10000px;
+        background-position-x: -10000px;
     }
     
     
@@ -226,7 +227,7 @@ body::before{
 }
 
 .logo{
-    color: blueviolet;
+    color: #3a86ff;
     font-size: 22px;
     position: absolute;
     left: 50%;
@@ -277,9 +278,9 @@ body::before{
 
             <form>
         
-                <input type="button" value="AC" style="background-color: #570bad74;border-radius: 10px;" onclick="form121.inputtext.value =''">
-                <input type="button" value="/"  style="background-color: #570bad74;border-radius: 10px;" onclick="form121.inputtext.value +='/'">
-                <input type="button" value="*"  style="background-color: #570bad74;border-radius: 10px;" onclick="form121.inputtext.value +='*'">
+                <input type="button" value="AC" style="background-color: #3a85ffba;border-radius: 10px;" onclick="form121.inputtext.value =''">
+                <input type="button" value="/"  style="background-color: #3a85ffba;border-radius: 10px;" onclick="form121.inputtext.value +='/'">
+                <input type="button" value="*"  style="background-color: #3a85ffba;border-radius: 10px;" onclick="form121.inputtext.value +='*'">
                 <br>
                 <input type="button" value="." onclick="form121.inputtext.value +='.'">
                 <input type="button" value="+" onclick="form121.inputtext.value +='+'">
