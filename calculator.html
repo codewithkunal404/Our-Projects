@@ -89,7 +89,6 @@ body::before{
             left: 0%;
             text-align: center;
             z-index: 10;
-            background-color:#570bad97;
             border-radius: 10px 10px 0px 0px ;
 
         }
@@ -136,7 +135,7 @@ body::before{
     top: 0px;
     left: 0px;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.4;
 
 
 
@@ -147,12 +146,12 @@ body::before{
     background: url(wave.svg);
     background-repeat: repeat-x;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.5;
     position: absolute;
     background-size: cover;
     top: 0px;
     left: 0px;
-    animation: move1 30s linear infinite;
+    animation: move1 40s linear infinite;
 
 }
 
@@ -162,29 +161,16 @@ body::before{
     background: url(wave.svg);
     background-repeat: repeat-x;
     background-position: center;
-    opacity: 0.3;
-    position: absolute;
-    background-size: cover;
-    top: 0px;
-    left: 0px;
-    animation: move2 25s linear infinite;
-}
-
-
-.wave4{
-    width: 100%;
-    height: 100%;
-    background: url(wave.svg);
-    background-repeat: repeat-x;
-    background-position: center;
     opacity: 0.4;
     position: absolute;
     background-size: cover;
     top: 0px;
     left: 0px;
-    animation: move3 20s linear infinite;
-
+    animation: move2 30s linear infinite;
 }
+
+
+
 
    @keyframes move {
        
@@ -193,7 +179,7 @@ body::before{
    
     100%{
         
-        background-position-x: 8000px;
+        background-position-x: 10000px;
     }
     
     
@@ -206,7 +192,7 @@ body::before{
    
     100%{
         
-        background-position-x: -8000px;
+        background-position-x: -10000px;
     }
     
     
@@ -218,7 +204,7 @@ body::before{
     
     100%{
         
-        background-position-x: 8000px;
+        background-position-x: 10000px;
     }
     
     
@@ -226,16 +212,7 @@ body::before{
 }
 
 
-@keyframes move3{
-    
-    100%{
-        
-        background-position-x: -8000px;
-    }
-    
-    
-    
-}
+
 
 .head{
     width: 100px;
@@ -295,15 +272,14 @@ body::before{
                 <div class="wave1"></div>
                 <div class="wave2"></div>
                 <div class="wave3"></div>
-                <div class="wave4"></div>
 
                 </div>
 
             <form>
         
-                <input type="button" value="AC" style="background-color: rgba(0, 0, 0, 0.264);border-radius: 10px;" onclick="form121.inputtext.value =''">
-                <input type="button" value="/" onclick="form121.inputtext.value +='/'">
-                <input type="button" value="*" onclick="form121.inputtext.value +='*'">
+                <input type="button" value="AC" style="background-color: #570bad74;border-radius: 10px;" onclick="form121.inputtext.value =''">
+                <input type="button" value="/"  style="background-color: #570bad74;border-radius: 10px;" onclick="form121.inputtext.value +='/'">
+                <input type="button" value="*"  style="background-color: #570bad74;border-radius: 10px;" onclick="form121.inputtext.value +='*'">
                 <br>
                 <input type="button" value="." onclick="form121.inputtext.value +='.'">
                 <input type="button" value="+" onclick="form121.inputtext.value +='+'">
@@ -311,7 +287,7 @@ body::before{
                 <br>
                 <input type="button" value="%" onclick="form121.inputtext.value +='%'">
                 <input type="button" value="0" onclick="form121.inputtext.value +='0'">
-                <input type="button" value="=" style="background-color: rgba(0, 0, 0, 0.264);border-radius: 10px;"  onclick="form121.inputtext.value = eval(form121.inputtext.value)">
+                <input type="button" value="=" onclick="form121.inputtext.value = eval(form121.inputtext.value)">
                 <br>
                 <input type="button" value="9" onclick="form121.inputtext.value +='9'">
                 <input type="button" value="8" onclick="form121.inputtext.value +='8'">
