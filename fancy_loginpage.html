@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+
+         body{
+             background-color: white;
+             font-family: 'Montserrat', sans-serif;
+         }
+
+        body::before{
+            content: "";
+            background-color:#2b2d42;
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            width:100%;
+            height: 100vh;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            z-index: -1;
+        
+             }
+
+
+
+                     
+
+
+            .fancybr{
+                width: 600px;
+                height:600px;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+
+        .box1{
+            width:600px;
+            height:600px;
+            background-image: linear-gradient(to right , #7500b8fd,#3a86ff,#7500b8fd);
+            position: absolute;
+            opacity: 0.3;
+            
+            
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            animation: rotate 25s linear infinite;
+
+           
+        }
+
+        .box2  {
+            width:600px;
+            height:600px;
+            background-image: linear-gradient(to right , #7500b8fd,#3a86ff,#7500b8fd);
+            position: absolute;
+            opacity: 0.3;
+
+
+           
+            
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            animation: rotate1 35s linear infinite;
+
+
+        }
+
+        
+
+
+        
+        .box3 {
+            width:600px;
+            height:600px;
+            background-image: linear-gradient(to right , #7500b8fd,#3a86ff,#7500b8fd);
+            position: absolute;
+            opacity: 0.3;
+
+
+
+           
+     
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            animation: rotate2 40s linear infinite;
+
+        }
+
+        .box4 {
+            width:600px;
+            height:600px;
+            background-image: linear-gradient(to right , #7500b8fd,#3a86ff,#7500b8fd);
+            position: absolute;
+            opacity: 0.3;
+
+
+           
+     
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+            animation: rotate3 15s linear infinite;
+
+        }
+
+
+       
+
+
+        @keyframes rotate {
+
+            100%{
+
+                transform: rotate(-360deg);
+            }
+            
+        }
+
+        
+        @keyframes rotate1 {
+
+            100%{
+
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        @keyframes rotate2  {
+            
+             100%{
+
+                transform: rotate(-360deg);
+            }
+            
+        }
+
+        @keyframes rotate3 {
+            
+            100%{
+
+               transform: rotate(360deg);
+           }
+           
+       }
+
+
+       .login{
+            width:300px;
+            border-radius: 20px;
+            text-align: center;
+            overflow: hidden;
+            height: 600px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            line-height: 40px;
+            position: absolute;
+            color:  #2b2d42;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            z-index: 10;
+        }
+
+
+
+       input[type='text']:focus-within{
+           outline: none;
+       }
+
+       input[type='password']:focus-within{
+           outline: none;
+       }
+       
+      
+
+       input[type='text']{
+           width: 250px;
+           height: 50px;
+           border-radius: 15px;
+           box-sizing: border-box;
+           text-indent: 20px;
+           border:2px solid #2b2d42;
+           margin-bottom: 20px;
+           font-size: 16px;
+           
+       }
+
+       input[type='text']:focus-within{
+           outline: none;
+       }
+
+       input[type='password']{
+        width: 250px;
+           height: 50px;
+           border-radius: 15px;
+           box-sizing: border-box;
+           text-indent: 20px;
+           border:2px solid #2b2d42;
+           margin-bottom: 20px;
+           font-size: 16px;
+
+
+       }
+
+
+    
+       button{
+
+        width: 120px;
+           height: 50px;
+           font-size: 15px;
+           border-radius: 15px;
+           background: #2b2d42;
+           color: white;
+           border: none;
+           
+       }
+
+       button:hover{
+           background-color: black;
+           
+       }
+
+
+       a{
+           color:#2b2d42;
+           font-size: 14px;
+           text-decoration: none;
+       }
+    
+       
+      
+           
+       
+
+
+
+    </style>
+</head>
+<body>
+ <!-- fancy border radius -->
+       <div class="fancybr">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+       </div>
+    <!-- fancy border radius -->
+
+
+
+
+    <!-- loginpart -->
+    <div class="login">
+
+<!-- form -->
+        <form>
+
+            <h1>Login</h1>
+            <br>
+
+
+            <label for="inputtext">Username</label> <br>
+            <i class="fa-solid fa-user"></i>&nbsp;<input type="text" id="inputtext" placeholder="Enter Username" >
+            
+
+
+            <label for="pass">Password</label> <br>
+            <i class="fa-solid fa-lock"></i>&nbsp;<input type="password" id="pass" placeholder="Enter Password">
+            
+
+
+            <button>Login</button>
+            <br>
+
+
+            
+            <a href="#">forget password?</a> <br>
+            <a href="#">Sign Up?</a>
+            <br>
+
+
+            
+            <i class="fa-brands fa-facebook-f">&nbsp;</i><i class="fa-brands fa-github"></i>&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;<i class="fa-brands fa-twitter"></i>
+            <br>
+
+
+            <a href="#">@codewithkunal404</a>
+        </form>
+<!-- form -->
+
+
+    </div>
+
+        <!-- loginpart -->
+
+
+       
+</body>
+</html>
