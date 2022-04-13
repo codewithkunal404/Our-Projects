@@ -241,6 +241,10 @@
 
 
 
-> <a href="https://codewithkunal404.github.io/Our-Projects/calculator.html">projectlink</a>
+
+>#### <a href="https://codewithkunal404.github.io/Our-Projects/gallery.html"> Simple Gallery</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/gallery.html">SourceCode</a>
+
+
+
 
 
