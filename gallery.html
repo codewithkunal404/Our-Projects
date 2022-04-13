@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | codewithkunal404</title>
+
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            width: 100%;
+            height:100vh;
+            background: url(https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(5px);
+        }
+
+        .box{
+            width:550px;
+            height:500px;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            background: url(https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+               
+        
+        
+        }
+
+        .sc{
+            position: absolute;
+            width:100%;
+            height:100vh;
+            background-color: rgba(0, 0, 0, 0.244);
+        }
+
+        .top{
+            height:60px;
+            width:100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            top:-60px;
+            left:0px;
+        }
+
+        .top img{
+            border-radius: 10px;
+            border: 2px solid white;
+            box-sizing: border-box;
+           
+        }
+
+        .top img:hover{
+
+            box-shadow: 0px 0px 10px black;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sc"></div>
+    </div>
+    <div class="box">
+
+        <div class="top">
+            <img id="image1" src="https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px" height="50px">
+            <img   id="image2"   src="https://images.pexels.com/photos/3181458/pexels-photo-3181458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+            <img   id="image3"  src="https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+            <img   id="image4"  src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+            <img   id="image5"  src="https://images.pexels.com/photos/53957/striped-core-butterflies-butterfly-brown-53957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+            <img   id="image6"  src="https://images.pexels.com/photos/275538/pexels-photo-275538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+            <img   id="image7"  src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+            <img   id="image8"  src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="50px"  height="50px">
+    
+       </div>
+       
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#image1").click(function(){
+
+
+
+
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+            })
+
+
+
+                
+
+                 $("#image2").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/3181458/pexels-photo-3181458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/3181458/pexels-photo-3181458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+
+            })
+
+
+
+
+
+
+                  $("#image3").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+                
+            })
+
+
+            
+
+
+
+                  $("#image4").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+                
+            })
+
+
+
+
+               $("#image5").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/53957/striped-core-butterflies-butterfly-brown-53957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/53957/striped-core-butterflies-butterfly-brown-53957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+                
+            })
+
+
+
+               $("#image6").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/275538/pexels-photo-275538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/275538/pexels-photo-275538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+                
+            })
+
+
+
+               $("#image7").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+                
+            })
+
+
+               $("#image8").click(function(){
+
+                $(".box").css({
+                    "background":"url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover"
+                
+                })
+
+                $(".container").css({
+                    "background":"url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
+                    "background-position": "center",
+                    "background-repeat": "no-repeat",
+                    "background-size": "cover",
+                    
+                
+                })
+
+                
+            })
+
+       
+       
+
+
+       
+       
+       
+       
+       
+       
+       
+
+                
+
+
+
+            
+
+
+            })
+        
+    </script>
+    
+</body>
+</html>
