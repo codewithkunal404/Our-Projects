@@ -241,6 +241,6 @@
 
 
 
-> <a href="https://codewithkunal404.github.io/Our-Projects/08-project.html">project link</a>
+> <a href="https://codewithkunal404.github.io/Our-Projects/calculator.html">projectlink</a>
 
 
