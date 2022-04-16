@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">  
+  <style>
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+ body::before{
+   content: '';
+   width:500px;
+   height: 500px;
+   position: absolute;
+   background-color: white;
+   opacity: 0.2;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+   animation: rotate 2s linear infinite;
+ }
+
+
+ 
+ 
+
+
+    body{
+      background-color: #ba1b1d;
+      display:flex;
+      flex-direction: column;
+      justify-content: center ;
+      align-items: center;
+      font-family: 'Lobster', cursive;
+    }
+    input{
+      width: 200px;
+      border: 5px solid white;
+      background-color: white;
+      box-sizing: border-box;
+      height: 80px;
+      text-align: center;
+      border-radius: 20px;
+      font-size: 30px;
+      font-weight: bolder;
+      margin-top: 30vh;
+
+    }
+
+    input:focus-within{
+      outline: none;
+    }
+
+
+    button{
+
+width: 80px;
+height: 80px;
+font-size:50px;
+background-color: black;
+border: none;
+color: white;
+border-radius: 50%;
+transform: rotate(0deg);
+transition: 0.2s transform;
+margin-left: 10px;
+margin-top: 20px;
+
+
+}
+   
+
+button:active{
+
+      width: 80px;
+      height: 80px;
+      font-size:50px;
+      background-color: black;
+      border: none;
+      color: white;
+      border-radius: 50%;
+      transform: rotate(-180deg) scale(0.8);
+      transition: 0.2s transform;
+      margin-top: 20px;
+      
+
+      
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+ <h1 style=" color: white;letter-spacing: 2px;position: absolute;top:50px;text-shadow: 1px 1px 1px black;"> Quick Color&nbsp;<i class="fa-solid fa-brush"></i></h1>
+ 
+ 
+  <form>
+    <input type="text" id="hex" value="#FF206E" > 
+  </form>
+
+  <button onclick="random()"><i class="fa-solid fa-dice-four"></i></button>
+  <button onclick="copy()"><i class="fa-solid fa-copy"></i></button>
+
+  <script>
+  
+
+
+  function copy(){
+
+    var x=document.getElementById('hex');
+    x.select();
+    x.setSelectionRange(0,99999);
+    document.execCommand('copy');
+  }
+
+
+
+    function random(){
+
+      var symbol="0123456789ABCDEF";
+      var color="#"
+
+      for(var i=0;i<6;i++){
+
+        color=color + symbol[Math.floor(Math.random() * 16)];
+      }
+      document.body.style.background=color;
+      document.getElementById('hex').value=color;
+
+      
+
+    }
+
+    
+  </script>
+
+
+
+  
+</body>
+</html>
