@@ -252,3 +252,7 @@
 
 >#### <a href="https://codewithkunal404.github.io/Our-Projects/Todo_List_App.html">Todo_list_app</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/Todo_List_App.html">SourceCode</a>
 
+
+
+>#### <a href="https://codewithkunal404.github.io/Our-Projects/password_gen.html">Password_generator</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/password_gen.html">SourceCode</a>
+
