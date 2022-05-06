@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch | codewithkunal404</title>
+    <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body::before{
+    width:430px;
+    height:400px;
+    background-image: linear-gradient(to right,#4e148c,#ff0054);
+    opacity: 0.850;
+    border-radius:30% 70% 57% 43% / 30% 44% 56% 70% ;
+    content:"";
+    position: fixed;
+    z-index: -10;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+
+        .front{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width:250px;
+            height:300px;
+            background-color: black;
+            transform: translate(-50%,-50%);
+            border-radius: 40px;
+            box-shadow:inset 0px 0px 23px 0px white, 0px 0px 0px 2px whitesmoke;
+    
+            box-sizing: border-box;
+            border: 6px solid black ;
+        }
+
+        .back{
+
+
+            width: 180px;
+            background-color: black;
+            height:45vh;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.83);
+            
+
+
+        }
+
+       
+        .belt{
+
+            width: 150px;
+            background-color: #252422;
+            height:65vh;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            z-index: -2;
+            border-radius: 10px;
+            box-shadow: inset 0px 1px 20px 7px black;
+
+        }
+
+        .btn{
+            width: 15px;
+            height: 40px;
+            border-radius:50px;
+            position: absolute;
+            background-color: black;
+            box-shadow: inset 0px 0px 6px 4px grey;
+            border: 1px solid black;
+            box-sizing: border-box;
+            right:-18px;
+            top:100px;
+
+        }
+        .glass{
+            width:250px;
+            height:300px;
+            border-radius: 40px;
+            clip-path: polygon(99% 0, 0 0, 0 100%);
+            background-color: rgba(128, 128, 128, 0.149);
+            position: absolute;
+            left:0%;
+            top:0%;
+            z-index: -1;
+
+        }
+
+        .fa-circle-notch
+        {
+            position: absolute;
+            color: rgba(211, 211, 211, 0.593);
+            bottom: 12px;
+            left: 90px;
+            font-size: 0.8em;
+            letter-spacing: 3px;
+
+        }
+
+        .front .stopwatch{
+
+            position: absolute;
+            width: 250px;
+            height:150px;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+
+
+        }
+
+        .number{
+
+            font-size: 25px;
+            color: white;
+
+        }
+        .txt{
+            color: aquamarine;
+            font-size: 10px;
+
+
+        }
+
+        #count{
+            color: yellow;
+            font-size: 22px;
+        }
+
+        #pause{
+            position: absolute;
+            color: lightblue;
+            left: 90px;
+            bottom: 20px;
+            display: none;
+            font-size: 20px;
+            
+
+        }
+        #start{
+            position: absolute;
+            color: lightblue;
+            left:90px;
+            bottom: 20px;
+            font-size: 20px;
+
+
+
+
+        }
+
+        .fa-arrow-rotate-right{
+            position: absolute;
+            left: 150px;
+            color: lightblue;
+            bottom: 20px;
+            font-size: 20px;
+
+
+            
+        }
+
+
+       
+
+
+        
+
+        
+   
+    </style>
+</head>
+<body>
+
+
+
+
+    <h2 style="text-align: center;margin-top: 40px;margin-bottom: 5px;"><i class="fa-solid fa-stopwatch"></i> Stopwatch</h2>
+    
+    <h6  style="text-align: center">fast your life <i class="fa-solid fa-person-running"></i> <br> follow me <a href="https://github.com/codewithkunal404" style="text-decoration: none;">codewithkunal404</a></h6>
+   
+   
+
+    <!-- front -->
+   
+   
+    <div class="front">
+
+
+    <div class="btn"></div>
+    <i class="fa-solid fa-circle-notch">node</i>
+
+
+
+
+
+
+    <!-- stopwatch -->
+
+    <div class="stopwatch">
+
+        <span id="count" >00</span>
+        <br>
+        <br>
+
+
+        <span id="hr" class="number">00</span><span class="txt">hr</span>
+
+
+        <span id="min" class="number">00</span><span class="txt">min</span>
+
+        <span id="sec" class="number">00</span><span class="txt">sec</span>
+
+        
+ <br>
+ <br>
+
+
+
+
+        
+    <i class="fa-solid fa-pause" onclick="stop()" id="pause"></i>
+    <i class="fa-solid fa-play"  onclick="start()" id="start"></i>
+    <i class="fa-solid fa-arrow-rotate-right" onclick="reset()"></i>
+
+
+    </div>
+
+
+
+
+    <!-- stopwatch -->
+
+
+
+
+
+
+
+
+
+    <div class="glass"></div>
+
+    </div>
+
+
+
+    <!-- front -->
+
+
+
+
+    <div class="back"></div>
+    <div class="belt"></div>
+
+
+
+
+    <script>
+
+        var hr=0;
+        var min=0;
+        var sec=0;
+        var count=0;
+
+        var time=false;
+
+
+
+        // start
+
+
+        function start(){
+
+            time=true;
+            stopwatch();
+            document.getElementById('start').style.display="none";
+            document.getElementById('pause').style.display="block";
+        
+            
+         
+
+
+
+
+        }
+
+
+        // stop
+
+        function stop(){
+
+            time=false;
+            document.getElementById('start').style.display="block";
+            document.getElementById('pause').style.display="none";
+            
+
+        }
+
+        // reset
+
+        function reset(){
+            time=false;
+
+            hr=0;
+            min=0;
+            sec=0;
+            count=0;
+
+            document.getElementById("count").innerHTML="00";
+                document.getElementById("sec").innerHTML="00";
+                document.getElementById("min").innerHTML="00";
+                document.getElementById("hr").innerHTML="00";
+                document.getElementById('start').style.display="block";
+                document.getElementById('pause').style.display="none";
+            
+
+        }
+
+
+
+        // watch
+
+
+
+        function stopwatch(){
+
+
+            
+            if(time==true){
+
+               count=count+1;
+                
+            if(count==100){
+
+                sec=sec+1;
+                count=0;
+
+
+                
+             }
+
+             if(sec==60){
+
+                min=min+1;
+                sec=0;
+
+
+                
+             }
+
+             if(min==60){
+
+                min=0;
+                hr=hr+1;
+                sec=0;
+
+
+                
+             }
+
+
+
+
+
+             var hrstr=hr;
+             var minstr=min;
+             var secstr=sec;
+             var countstr=count;
+
+             if(hr<10){
+             hrstr="0"+ hrstr;
+            }
+
+            if(min<10){
+             minstr="0"+ minstr;
+            }
+            if(sec<10){
+             secstr="0"+ secstr;
+            }
+            if(count<10){
+             countstr="0"+ countstr;
+            }
+
+
+
+                document.getElementById("count").innerHTML=countstr;
+                document.getElementById("sec").innerHTML=secstr;
+                document.getElementById("min").innerHTML=minstr;
+                document.getElementById("hr").innerHTML=hrstr;
+                setTimeout("stopwatch()",10);
+
+            }
+
+      
+
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
