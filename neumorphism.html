@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+    <style>
+
+        body{
+            background-color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        .box{
+
+            width: 280px;
+            height: 550px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 20px;
+            transform: translate(-50%,-50%);
+            box-shadow:14px 14px 20px rgba(0, 0, 0, 0.155), -14px -14px 20px white;
+
+
+        }
+
+        input[type='text']:focus{
+
+            box-shadow: inset 6px 6px 6px rgb(0 0 0 / 16%), inset -6px -6px 6px white;
+
+
+        }
+
+        input[type='password']:focus{
+
+            box-shadow: inset 6px 6px 6px rgb(0 0 0 / 16%), inset -6px -6px 6px white;
+
+
+        }
+
+        input[type='text']{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            left: 40px;
+            top: 180px;
+            outline: none;
+            border: none;
+            text-indent: 15px;
+            color: black;
+            background-color: whitesmoke;
+            font-size: 16px;
+            border-radius: 30px;
+            box-shadow:14px 14px 20px rgba(0, 0, 0, 0.155), -14px -14px 20px white;
+
+            
+        }
+
+        
+
+        input[type='password']{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            margin-top: 55px;
+            left: 40px;
+            top: 200px;
+            outline: none;
+            border: none;
+            color: black;
+            font-size: 16px;
+
+            
+
+            text-indent: 15px;
+            background-color:whitesmoke;
+            border-radius: 30px;
+            box-shadow:14px 14px 20px rgba(0, 0, 0, 0.155), -14px -14px 20px white;
+            
+            
+        }
+
+        input[type='text']:focus{
+
+            box-shadow: inset 6px 6px 6px rgb(0 0 0 / 16%), inset -6px -6px 6px white;
+
+
+        }
+
+        input[type='password']:focus{
+
+            box-shadow: inset 6px 6px 6px rgb(0 0 0 / 16%), inset -6px -6px 6px white;
+
+
+        }
+
+        .login{
+            position: absolute;
+            left: 90px;
+            top: 340px;
+            padding: 10px 30px;
+            border: none;
+            box-shadow:14px 14px 20px rgba(0, 0, 0, 0.155), -14px -14px 20px white;
+            background-color: whitesmoke;
+
+            border-radius: 30px;
+            font-size: 20px;
+            color: darkcyan;
+
+
+        }
+        .login:active{
+
+            box-shadow: inset 6px 6px 6px rgb(0 0 0 / 16%), inset -6px -6px 6px white;
+            color: aqua;
+           
+
+
+        }
+
+        a{
+            text-decoration: none;
+            position: absolute;
+            left: 95px;
+            bottom: 120px;
+            font-size: 13px;
+            color: red;
+       }
+
+      .logo{
+          width: 80px;
+          height: 80px;
+          font-size: 50px;
+          background-color: whitesmoke;
+          text-align: center;
+          border-radius: 50%;
+          position: absolute;
+          color: gray;
+          left: 100px;
+          top: 20px;
+          box-shadow:14px 14px 20px rgba(0, 0, 0, 0.155), -14px -14px 20px white;
+
+          
+      }
+      .logo i{
+          padding: 5px 0px;
+      }
+
+      .logo h3{
+          font-size: 20px;
+          letter-spacing: 3px;
+      }
+
+
+      .social{
+          width: 280px;
+          height: 40px;
+          position: absolute;
+          bottom: 50px;
+          text-align: center;
+      }
+
+      .icon{
+          width: 40px;
+          height:40px;
+          border-radius: 50%;
+          border: none;
+          box-shadow:14px 14px 20px rgba(0, 0, 0, 0.155), -14px -14px 20px white;
+
+          font-size: 16px;
+          color: grey;
+
+
+
+      }
+
+
+      .icon:active{
+
+        box-shadow: inset 6px 6px 6px rgb(0 0 0 / 16%), inset -6px -6px 6px white;
+        color: aqua;
+
+
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+
+        <div class="logo"><i class="fa-solid fa-user"></i>
+            <h3>Login</h3>
+        </div>
+
+        <input type="text" placeholder="Enter Username">
+        
+        <input type="password" placeholder="Enter password">
+
+        <button class="login">Login</button>
+
+        <a href="#">forget password?</a>
+
+
+        <div class="social">
+        <button class="icon"><i class="fa-brands fa-facebook-f"></i></button> &nbsp;
+        <button class="icon"><i class="fa-brands fa-twitter"></i></button> &nbsp;
+        <button class="icon"><i class="fa-brands fa-instagram"></i></button>
+        </div>
+
+        
+    </div>
+
+
+    
+</body>
+</html>
