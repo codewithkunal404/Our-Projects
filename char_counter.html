@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character_counter | codewithkunal404</title>
+  <style>
+    body{
+      background-color: #d90429;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0%;
+      padding: 0%;
+      
+    }
+
+    .container{
+      width: 280px;
+      height: 500px;
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+    }
+    textarea{
+      outline: none;
+      overflow: auto;
+      width: 250px;
+      height: 300px;
+      font-size: 16px;
+      padding: 20px 0px;
+      resize: none;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Character Counter</h2>
+    <textarea placeholder="Write your text here..." onkeyup="countLetters();"></textarea>
+    <p style="font-size:20px;font-weight: bold;">Total Character : <span class="count">0</span></p>
+  </div>
+
+
+
+
+<!-- javascript part -->
+  <script>
+    const textarea = document.querySelector('textarea');
+    const count = document.querySelector('.count');
+    
+    function countLetters() {
+      const textLength = textarea.value.length;
+      count.innerText = `${textLength}`;
+    }
+  </script>
+
+  
+</body>
+</html>
+
