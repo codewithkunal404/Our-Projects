@@ -262,3 +262,7 @@
 
 >#### <a href="https://codewithkunal404.github.io/Our-Projects/neumorphism.html">Neumorphism_loginpage</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/neumorphism.html">SourceCode</a>
 
+
+
+>#### <a href="https://codewithkunal404.github.io/Our-Projects/char_counter.html">character_counter</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/char_counter.html">SourceCode</a>
+
