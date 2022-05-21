@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #222222;
+        }
+
+        #clickme {
+
+
+            width: 200px;
+            height: 60px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: transparent;
+            color: #222222;
+            border-radius: 20px;
+            background-color: white;
+            border: none;
+
+
+
+
+
+        }
+
+
+
+        #clickme:active {
+            background-image: linear-gradient(to right, #004e98, #e71d36);
+            border: none;
+            color: white;
+            transform: translate(-50%, -50%)scale(0.9);
+            transition: transform 0.2s;
+
+
+
+        }
+
+
+
+
+
+        .box {
+
+            width: 400px;
+            height: 500px;
+            background-image: linear-gradient(to right, #004e98, #e71d36);
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            display: none;
+
+
+
+        }
+
+        input {
+            width: 250px;
+            height: 40px;
+            border: none;
+            margin-bottom: 30px;
+            font-size: 16px;
+            text-indent: 20px;
+            border-radius: 20px;
+            outline: none;
+
+        }
+
+        #login {
+
+            width: 90px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            color: black;
+            background-color: whitesmoke;
+            border: none;
+        }
+
+        #login:active {
+
+            transform: scale(0.9);
+            transition: transform 0.2s;
+
+
+
+        }
+
+
+
+
+        .fa-circle-xmark {
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            color: red;
+            padding: 5px;
+            font-size: 2.5em;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.2s;
+
+        }
+
+        .fa-circle-xmark:active {
+
+            transform: scale(0.9);
+            transition: transform 0.2s;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <button id="clickme"> 👋 Open modal </button>
+
+
+
+    <div class="box">
+
+        <i class="fa-solid fa-circle-xmark"></i>
+
+
+
+
+        <form>
+            <h1>Login</h1>
+            <hr style="background:white;">
+            <br>
+            <i class="fa-solid fa-user"></i>&nbsp;<input type="text" placeholder="User ID" autofocus required>
+            <br>
+            <i class="fa-solid fa-key"></i>&nbsp;<input type="password" placeholder="Password" required>
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+        <button id="login">Login</button>
+        <br>
+        <br>
+        <br>
+        <a href="#" style="text-decoration:none;color: white;">forget password? | </a>
+
+        <a href="#" style="text-decoration:none;color: white;">SignUp?</a>
+        <br>
+        <br>
+        <br>
+        <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;<i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;<i
+            class="fa-brands fa-github"></i>&nbsp;&nbsp;<i class="fa-brands fa-twitter"></i>
+
+        <h6>@codewithkunal404</h6>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $("#clickme").click(function () {
+
+                $('.box').fadeIn(500)
+                $(this).fadeOut(500)
+            })
+
+
+
+            $(".fa-circle-xmark").click(function () {
+
+                $('.box').fadeOut(500)
+
+                $('#clickme').fadeIn(500)
+            })
+
+
+
+
+
+        })
+    </script>
+
+</body>
+
+</html>
