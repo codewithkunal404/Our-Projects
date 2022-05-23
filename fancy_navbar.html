@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy navbar | Codewithkunal404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+
+        }
+
+        
+
+        .nav {
+
+            width: 900px;
+            height: 200px;
+            background-image: linear-gradient(to bottom, #7209b7, #4361ee);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+
+            overflow: hidden;
+
+
+        }
+
+        .nav .searchbar {
+            width: 550px;
+            height: 40px;
+            background-color: #222222;
+            border-radius: 20px;
+            position: absolute;
+            left: 170px;
+            top: 40px;
+            overflow: hidden;
+
+        }
+
+        .searchbar input {
+            width: 460px;
+            height: 40px;
+            font-size: 15px;
+            text-indent: 45px;
+            color: white;
+            background-color: transparent;
+
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            letter-spacing: 2px;
+
+        }
+
+        .nav .menu {
+            width: 700px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top: 85px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
+
+        .nav span {
+
+            font-size: 25px;
+            width: 55px;
+            height: 55px;
+            background-color: rgba(255, 255, 255, 0.216);
+            text-align: center;
+            border-radius: 50%;
+            color: white;
+            transform: scale(0.9) rotate(0deg);
+            transition: transform 0.2s;
+
+
+
+
+
+        }
+
+
+
+
+        span i {
+
+            margin-top: 15px;
+            transform: rotate(0deg);
+            transition: 0.4s;
+
+        }
+
+
+        span:hover i {
+            transform: rotate(360deg);
+            transition: 0.4s;
+        }
+
+        span:nth-child(1):hover {
+            background-color: white;
+            color: slateblue;
+            transform: scale(1);
+            transition: transform 0.2s;
+
+        }
+
+        span:nth-child(2):hover {
+            background-color: white;
+            color: #ef233c;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span:nth-child(3):hover {
+            background-color: white;
+            color: #264653;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span:nth-child(4):hover {
+            background-color: whitesmoke;
+            color: #04a777;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span:nth-child(5):hover {
+            background-color: whitesmoke;
+            color: #820263;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span:nth-child(6):hover {
+            background-color: white;
+            color: #111d13;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span:nth-child(7):hover {
+            background-color: white;
+            color: #4361ee;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span:nth-child(8):hover {
+            background-color: white;
+            color: #bc6c25;
+            transform: scale(1);
+            transition: transform 0.2s;
+        }
+
+        span .tooltip {
+            visibility: hidden;
+            width: 120px;
+            text-align: center;
+            border-radius: 50px;
+            padding: 10px 0;
+            background-color: white;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+
+            /* Position the tooltip */
+            position: absolute;
+            left: -30px;
+            top: 120px;
+            z-index: 1;
+            transition: 0.4s;
+
+           
+        }
+
+        span:hover .tooltip {
+            visibility: visible;
+            top: 60px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:black;letter-spacing: 2px;text-align: center;margin-top: 16vh;">Fancy Navigation Bar</h3>
+    <h5 style="text-align: center">Designed by <a href="#" style="color:red;letter-spacing: 2px;;text-decoration: none;">Codewithkunal404</a></h5>
+ 
+ 
+        <div class="nav">
+
+
+
+        <div class="searchbar">
+            <form>
+                <i class="fa-solid fa-magnifying-glass" style="color: gray;position: absolute;left: 15px;top: 12px;"></i>
+                <input type="search"placeholder="Search your Content here.."> 
+                <i class="fa-solid fa-camera" style="color: gray;position: absolute;right: 50px;top: 12px;"></i> 
+                <i class="fa-solid fa-microphone" style="color: gray;position: absolute;right: 20px;top: 12px;"></i>
+            </form>
+        </div>
+
+
+        <div class="menu">
+
+            <span><i class="fa-solid fa-house"></i><span class="tooltip" style=" color: slateblue;">Home</span></span>
+            <span><i class="fa-solid fa-heart"></i><span class="tooltip" style=" color: #ef233c;">Fav</span> </span>
+            <span><i class="fa-solid fa-video"></i> <span class="tooltip" style="color: #264653;">Videos</span></span>
+            <span><i class="fa-solid fa-database"></i><span class="tooltip" style="color: #04a777;">Data</span></span>
+            <span><i class="fa-solid fa-bullhorn"></i><span class="tooltip" style="color: #820263;">Marketing</span></span>
+            <span><i class="fa-solid fa-briefcase"></i><span class="tooltip" style="color:#111d13;">Office</span></span>
+            <span><i class="fa-solid fa-comment-dots"></i><span class="tooltip"style="color:#4361ee;">Feedback</span></span>
+            <span><i class="fa-solid fa-ellipsis"></i><span class="tooltip"style="color:#bc6c25;">More</span></span>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
