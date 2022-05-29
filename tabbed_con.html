@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Tabbed Container | codewithkunal404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            background-color: #1982c4;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .box {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 28%);
+        }
+
+        .header {
+            width: 500px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+
+        }
+
+        .header button {
+            width: 160px;
+            height: 50px;
+            background-color: transparent;
+            font-size: 18px;
+            border: none;
+            color:#3a86ff;
+            background-color:transparent;
+            border-radius: 10px;
+            z-index: 10;
+            font-weight: 600;
+
+
+        }
+
+      
+
+        span {
+            position: absolute;
+            width: 160px;
+            height: 50px;
+            background-color:#3a85ff34;
+            border-radius: 10px;
+            left: 10px;
+            z-index: -1;
+        }
+
+        .txt{
+            padding: 25px;
+            text-align: justify;
+            font-size: 16px;
+
+        }
+        .next{
+            background-color: #1982c4;
+            color: white;
+            padding: 10px;
+            letter-spacing: 2px;
+            border: none;
+            float: right;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="header">
+            <span></span>
+            <button id="btn1" >About</button>
+            <button id="btn2">Services</button>
+            <button id="btn3">Product</button>
+
+        </div>
+        <hr>
+
+
+             <!--about  -->
+            <div id="txt1" class="txt" >
+                <h1 style="color:gray;">About  😎 </h1> <br> 
+               <p>Lorem ipsum dolor sit amet consctetur adipisicing elit. Odit provident, dicta, ex assumenda magnam commodi corporis ipsa deleniti adipisci eos tempora libero modi odio consectetur molestias eum blanditiis! Est, animi.</p> 
+               <br>
+               <button id="next1" class="next">Next >></button>
+               <br>
+               <br>
+            
+            </div>
+
+
+
+            <!-- services -->
+            <div id="txt2" style="display:none;" class="txt">
+                <h1 style="color:gray;">Services 🥸</h1> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi aspernatur et consectetur perferendis sunt. Delectus nihil quibusdam, provident accusantium nostrum obcaecati quae sit earum dolorum qui itaque quos ullam?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut cumque rerum labore modi velit ad provident, in vero sint voluptas neque nihil fugit, a tenetur eos maxime illo molestias.</p>
+                <br>
+                <button id="next2" class="next">Next >></button>
+                <br>
+                <br>
+                
+            </div>
+
+            <!-- product -->
+
+            <div id="txt3" style="display:none;" class="txt">
+                <h1 style="color:gray;">Product 🤩</h1> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi aspernatur et consectetur perferendis sunt. Delectus nihil quibusdam, provident accusantium nostrum obcaecati quae sit earum dolorum qui itaque quos ullam?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut cumque rerum labore modi velit ad provident, in vero sint voluptas neque nihil fugit, a tenetur eos maxime illo molestias.</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, voluptates!</p>
+                <br>
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <br>
+               <button id="next3" class="next">Restart</button>
+               <br>
+               <br>
+            </div>
+
+            
+
+    </div>
+
+    <!-- jquery part -->
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            // button
+
+            $("#btn1").click(function () {
+
+                $("span").animate({
+                    "left": "10px",
+
+                })
+                    $("#txt1").fadeIn(300)
+                    $("#txt2").hide()
+                    $("#txt3").hide()
+
+               
+            })
+
+
+              $("#btn2").click(function () {
+                    $("span").animate({
+                        "left": "170px"
+
+                    })
+
+                    $("#txt1").hide()
+                    $("#txt2").fadeIn(300)
+                    $("#txt3").hide()
+                    
+                
+                })
+                
+
+                $("#btn3").click(function () {
+                    $("span").animate({
+                        "left": "330px"
+
+                    })
+                    $("#txt1").hide()
+                    $("#txt2").hide()
+                    $("#txt3").fadeIn(300)
+
+                 
+                })
+
+
+                // next btn
+                
+
+                $("#next1").click(function(){
+
+                    $("span").animate({
+                        "left": "170px"
+
+                    })
+
+                    $("#txt1").hide()
+                    $("#txt2").fadeIn(300)
+                    $("#txt3").hide()
+                })
+
+                  $("#next2").click(function(){
+
+                    $("span").animate({
+                        "left": "330px"
+
+                    })
+                    $("#txt1").hide()
+                    $("#txt2").hide()
+                    $("#txt3").fadeIn(300)
+
+                })
+
+                $("#next3").click(function(){
+
+                    $("span").animate({
+                    "left": "10px",
+
+                })
+                    $("#txt1").fadeIn(300)
+                    $("#txt2").hide()
+                    $("#txt3").hide()
+
+
+                   
+
+                })
+
+
+                    
+
+            })
+    </script>
+</body>
+
+</html>
