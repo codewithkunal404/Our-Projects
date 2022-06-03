@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: #023047;
+    }
+
+    .box {
+
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) ;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: rotate 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+
+
+
+
+    }
+
+    
+
+    .load:nth-child(1) {
+
+        width: 120px;
+        height: 120px;
+        background-color: #023047;
+        border: 1px solid #023047;
+        border-top: 4px solid #ff006e;
+    }
+
+    .load:nth-child(2) {
+
+        width: 105px;
+        height: 105px;
+        background-color: #023047;
+        border: 1px solid #023047;
+        border-top: 4px solid #e85d04;
+
+    }
+
+    .load:nth-child(3) {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color: #023047;
+        border: 1px solid #023047;
+        border-top: 4px solid #4361ee;
+
+    }
+
+    .load:nth-child(4) {
+
+        width: 75px;
+        height: 75px;
+        background-color: #023047;
+        border: 1px solid #023047;
+        border-top: 4px solid #ffbe0b;
+
+    }
+
+
+    .load:nth-child(5) {
+        width: 60px;
+        height: 60px;
+        background-color: #023047;
+        border: 1px solid #023047;
+        border-top: 4px solid #ffff;
+
+    }
+
+    @keyframes rotate {
+
+        0%,15%{
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        
+
+        100%{
+
+            transform: translate(-50%, -50%) rotate(360deg);
+
+
+        }
+
+    }
+
+
+    .load:nth-child(1) {
+        animation-delay: -50ms;
+    }
+
+    .load:nth-child(2) {
+        animation-delay: -100ms;
+    }
+
+    .load:nth-child(3) {
+        animation-delay: -150ms;
+    }
+
+    .load:nth-child(4) {
+        animation-delay: -200ms;
+    }
+
+    .load:nth-child(5) {
+        animation-delay: -250ms;
+    }
+</style>
+     
+</head>
+
+<body>
+
+    <div class="load box"></div>
+    <div class="load box"></div>
+    <div class="load box"></div>
+    <div class="load box"></div>
+    <div class="load box"></div>
+    
+
+
+</body>
+
+</html>
