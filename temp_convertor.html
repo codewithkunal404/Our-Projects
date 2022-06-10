@@ -70,11 +70,11 @@
 
             <br>
             <br>
-            <label for="Fahrenheit">Fahrenheit</label> 
+            <label for="Fahrenheit">Fahrenheit (°F)</label> 
             <input type="number" placeholder="Fahrenheit" id="fh" oninput="Fahrenheit(this.value)"> <br><br>
-            <label for="Celsius">Celsius</label> 
+            <label for="Celsius">Celsius (°C)</label> 
             <input type="number" placeholder="Celsius" id="cs" oninput="Celsius(this.value)"> <br><br>
-            <label for="Kelvin">Kelvin</label> 
+            <label for="Kelvin">Kelvin (K)</label> 
             <input type="number" placeholder="Kelvin" id="kl" oninput="Kelvin(this.value)"> 
 
 
@@ -88,7 +88,7 @@
 
         function Fahrenheit(val){
             val = parseFloat(val);
-            document.getElementById("cs").value=(val-32)/1.8;
+            document.getElementById("cs").value=(val-32)/1.8 ;
             document.getElementById("kl").value=((val-32)/1.8)+273.15;
         }
 
