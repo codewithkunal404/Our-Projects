@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: #a2d2ff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .box{
+            width: 280px;
+            height:400px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.204);
+            
+
+        }
+
+        .head{
+            background-color: #ef233c;
+            width:100%;
+            padding: 20px 0px;
+            color:whitesmoke;
+            font-size: 20px;
+        }
+        input{
+            width: 200px;
+            height: 40px;
+            border: 2px solid gray;
+            font-size: 16px;
+            text-indent: 10px;
+            border-radius: 10px;
+
+        }
+
+        input:focus-within{
+            outline-color: #ef233c;
+        }
+        
+        label{
+            margin-bottom: 5px;
+            display: block;
+            color: #ef233c;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <div class="head" style="text-align:center;">Temperature Converter</div>
+        <form>
+
+            <br>
+            <br>
+            <label for="Fahrenheit">Fahrenheit</label> 
+            <input type="number" placeholder="Fahrenheit" id="fh" oninput="Fahrenheit(this.value)"> <br><br>
+            <label for="Celsius">Celsius</label> 
+            <input type="number" placeholder="Celsius" id="cs" oninput="Celsius(this.value)"> <br><br>
+            <label for="Kelvin">Kelvin</label> 
+            <input type="number" placeholder="Kelvin" id="kl" oninput="Kelvin(this.value)"> 
+
+
+        </form>
+
+    </div>
+
+    <script>
+
+        // Fahrenheit to other
+
+        function Fahrenheit(val){
+            val = parseFloat(val);
+            document.getElementById("cs").value=(val-32)/1.8;
+            document.getElementById("kl").value=((val-32)/1.8)+273.15;
+        }
+
+        function Celsius(val){
+            val = parseFloat(val);
+            document.getElementById("fh").value=(val*1.8)+32;
+            document.getElementById("kl").value=val+273.15;
+
+
+
+        }
+
+        function Kelvin(val){
+            val = parseFloat(val);
+            document.getElementById("fh").value=((val-273.15)*1.8)+32;
+            document.getElementById("cs").value=val-273.15;
+
+        }
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
