@@ -13,12 +13,15 @@
         body{
             margin: 0%;
             padding: 0%;
-            background-color: #a2d2ff;
+
             font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to right,#7209b7,#4361ee);
+            width:100%;
+            height:100vh;
         }
         .box{
-            width: 280px;
-            height:400px;
+            width: 270px;
+            height:480px;
             position: absolute;
             left:50%;
             top:50%;
@@ -32,17 +35,11 @@
 
         }
 
-        .head{
-            background-color: #ef233c;
-            width:100%;
-            padding: 20px 0px;
-            color:whitesmoke;
-            font-size: 20px;
-        }
+       
         input{
             width: 200px;
             height: 40px;
-            border: 2px solid gray;
+            border: 2px solid rgba(128, 128, 128, 0.564);
             font-size: 16px;
             text-indent: 10px;
             border-radius: 10px;
@@ -65,10 +62,14 @@
 
 
     <div class="box">
-        <div class="head" style="text-align:center;">Temperature Converter</div>
+        <div style="color:#ef233c;width:100%;padding: 10px 0px;font-size: 20px;font-weight:bold;">Temperature Convertor</div>
+        <div style="background:url(undraw_weather_app_re_kcb1\ \(1\).svg);width:100%;height:100px;background-size: 40%;background-position: center;background-repeat: no-repeat;margin-top: 10px;">
+        </div>
+
+
         <form>
 
-            <br>
+            
             <br>
             <label for="Fahrenheit">Fahrenheit (°F)</label> 
             <input type="number" placeholder="Fahrenheit" id="fh" oninput="Fahrenheit(this.value)"> <br><br>
@@ -80,6 +81,7 @@
 
         </form>
 
+
     </div>
 
     <script>
@@ -90,12 +92,21 @@
             val = parseFloat(val);
             document.getElementById("cs").value=(val-32)/1.8 ;
             document.getElementById("kl").value=((val-32)/1.8)+273.15;
+            document.getElementById("cs").style.color="green";
+            document.getElementById("kl").style.color="green";
+            document.getElementById("fh").style.color="black";
+
         }
 
         function Celsius(val){
             val = parseFloat(val);
             document.getElementById("fh").value=(val*1.8)+32;
             document.getElementById("kl").value=val+273.15;
+            document.getElementById("fh").style.color="green";
+            document.getElementById("kl").style.color="green";
+            document.getElementById("cs").style.color="black";
+
+
 
 
 
@@ -105,6 +116,11 @@
             val = parseFloat(val);
             document.getElementById("fh").value=((val-273.15)*1.8)+32;
             document.getElementById("cs").value=val-273.15;
+            document.getElementById("fh").style.color="green";
+            document.getElementById("cs").style.color="green";
+            document.getElementById("kl").style.color="black";
+
+
 
         }
 
