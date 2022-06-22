@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Anek Latin', sans-serif;
+            
+        }
+
+       body{
+        background-color: #293241;
+       }
+        body::before{
+            width:500px;
+            height:500px;
+            content:"";
+            position: fixed;
+            top:-30px;
+            left:30px;
+            border-radius: 50%;
+            background-image: linear-gradient(to top ,#264653,#3a86ff);
+            
+
+        }
+        
+        body::after{
+            width:400px;
+            height:400px;
+            content:"";
+            position: fixed;
+            bottom:-30px;
+            right:20px;
+            border-radius: 50%;
+            background-image: linear-gradient(to top ,#264653,#3a86ff);
+            z-index: -1;
+            
+
+        }
+        
+
+        .con{
+            width: 1000px;
+            height:600px;
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 20px;
+            box-shadow: 0px 0px 0px black;
+            overflow: hidden;
+            display: flex;
+        }
+        .box:nth-child(1){
+
+            width:50%;
+            height:100%;
+            background-color: white;
+
+
+        }
+        
+        .box:nth-child(2){
+
+            width:50%;
+            height:100%;
+            background-color:#3a86ff;
+            text-align: left;
+            color:white;
+
+
+        }
+
+          
+            
+
+
+
+        
+        ::placeholder{
+            color: white;
+            position: absolute;
+            top:10px;
+            transition: 0.3s;
+
+            
+        }
+        ::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+        input:focus-within::placeholder{
+            top:15px;
+            transition: 0.3s;
+
+
+        }
+        input{
+            width:400px;
+            height:50px;
+            color: white;
+            font-size: 18px;
+            border: 2px solid white;
+            border-radius:50px;
+            background-color: transparent;
+            text-indent:20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            outline: none;
+            z-index: 10;
+        }
+        input[type='textarea']{
+
+            width:400px;
+            height:150px;
+            border-radius:30px;
+
+        }
+      
+        button{
+            padding: 15px 30px;
+            background-color: white;
+            border: none;
+            color:#3a86ff;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+        i{
+            color: #3a86ff;
+            font-size: 24px;
+        }
+        li{
+            padding: 10px 30px;
+        }
+        .icon{
+            width:100%;
+            height:50px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="con">
+        <div class="box">
+            <h1 style="color:#3a86ff;padding:30px">Let's get in touch</h1>
+            <p style="color:#264653;padding:20px 30px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio ducimus maxime enim distinctio accusantium quam explicabo quidem ex perferendis, eveniet corporis veniam asperiores. Beatae velit quasi error magnam sed.</p>
+            <ul>
+                <li><i class="fa-solid fa-map-location-dot"></i> &nbsp;<span style="font-weight:bold;">34-A Lorem, ipsum. Ny121111</span>  </li>
+                <li><i class="fa-solid fa-envelope"></i> &nbsp;<span style="font-weight:bold;"> lorem@gmail.com</span></li>
+                <li><i class="fa-solid fa-phone-volume"></i> &nbsp;<span style="font-weight:bold;">  1200-12625225</span></li>
+            </ul>
+
+            <br>
+            <br>
+            <h1 style="color:#3a86ff;padding:30px">Contact with us</h1>
+            <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-instagram"></i>
+            </div>
+
+        </div>
+        <div class="box">
+            <form >
+                <h1 style="text-align:left;padding:20px;">Contact us</h1>
+                <input type="text" placeholder="Username"> 
+                <input type="email" placeholder="Email"> 
+                <input type="number" placeholder="phone"> 
+                <input type="textarea" placeholder="Message"> 
+            </form>
+            <button>Send</button>
+
+        </div>
+    </div>
+    
+
+</body>
+</html>
