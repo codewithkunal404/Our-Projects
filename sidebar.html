@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slidebar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8ca07b5eb.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0%;
+            padding: 0%;
+        }
+        body{
+            background-color:white;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .box{
+            width:220px;
+            height:600px;
+            background-color:#001d3d;
+            position: absolute;
+            padding:10px;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 20px;
+            overflow: hidden;
+
+
+        }
+
+        .profile{
+
+            width:100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+
+        }
+       
+
+        input[type='search']{
+
+            width:180px;
+            height:35px;
+            padding: 0px 20px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+        
+       .fa-magnifying-glass{
+        color: white;
+       }
+
+
+       .menu{
+            width:100%;
+            height: 70%;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+
+        ul li{
+            width:100%;
+            height:35px;
+            color: white;
+            list-style:none;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 18px;
+            border-radius: 50px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        span{
+            padding: 0px 10px;
+
+        }
+        i{
+            padding: 0px 10px;
+        }
+
+        ul li:hover{
+            background-color: white;
+            color:#001d3d;
+            justify-content: center;
+            font-weight: bold;
+                
+            
+
+        }
+
+     
+
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="profile"><img src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="75px" height="75px"  style="border-radius:50px;"><h3>Elvin John</div>
+            <hr style="border:0.3px solid white;margin:10px;background-color: white;">
+        
+            <input type="search" placeholder="Search here"><i class="fa-solid fa-magnifying-glass"></i>
+        
+            <div class="menu">
+
+            <ul>
+                <li><i class="fa-sharp fa-solid fa-house"></i><span>Home</span></li>
+                <li><i class="fa-solid fa-phone"></i><span>Contact</span></li>
+                <li><i class="fa-solid fa-user"></i><span>About</span></li>
+                <li><i class="fa-solid fa-gear"></i><span>Setting</span></li>
+                <li><i class="fa-solid fa-message"></i><span>Message</span></li>
+                <li><i class="fa-solid fa-circle-info"></i><span>Help </span></li>
+                <li><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></li>
+            </ul>
+            <br>
+            <br>
+            <h6 style="color:white;text-align:center;">@Evlin John</h6>
+
+
+
+        </div>
+
+       
+
+        
+    
+
+    
+</body>
+</html>
