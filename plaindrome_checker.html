@@ -16,7 +16,7 @@
         <h6 class="text-success">Example: 'rar' its reverse is 'rar' is called plaindrome</h6>
        
         <input type="text" id="input121" class="form-control" >
-        <button class="btn btn-outline-danger px-5 mt-3"  onclick="reverseString(document.getElementById('input121').value)">Check</button>
+        <button class="btn btn-outline-danger px-5 mt-3"  onclick="reverseString(document.getElementById('input121').value.toLowerCase())">Check</button>
         <br><br> <br><span class="text-warning h6" id="output"></span>
         
        </div>
@@ -35,10 +35,10 @@
 
 if(str){
     if(result == str){
-    x.innerText= str +" is an plaindrome text";
+    x.innerText= "Yeah this word is an plaindrome ";
   }
    else{
-    x.innerText= str +" is not plaindrome text ";
+    x.innerText= " Opp's this word is not plaindrome";
 
 }
   }
