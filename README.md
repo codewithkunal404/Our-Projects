@@ -307,4 +307,4 @@
 
 
 
->#### <a href="https://codewithkunal404.github.io/Our-Projects/plaindrome_checker.html">plaindrome_checker</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/plaindrome_checker.html">SourceCode</a>
+>#### <a href="https://codewithkunal404.github.io/Our-Projects/palindrome_checker.html">palindrome_checker</a><img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" width="30px"> <a href="https://github.com/codewithkunal404/Our-Projects/blob/main/palindrome_checker.html">SourceCode</a>
