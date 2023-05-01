@@ -31,9 +31,13 @@
        <div class="container-fluid mt-3 fixed-bottom text-center" style="bottom:20px">
         <a  class="btn btn-primary btn-sm " href="#in">Input</a>
         <a  class="btn btn-primary btn-sm " href="#content">Output</a>
-        <a  class="btn btn-primary btn-sm " href="#cheatcode">Cheatcode</a>
+      <button class="btn btn-primary btn-sm"  onclick="triggerExample()" >Copycode</button>
+
+       
+        
         
        </div>
+
     <div class="row p-3">
       <div id="cheatcode" class="col-xxl-4 p-3 px-2 col-lg-4 text-dark bg-white   overflow-auto  col-sm-12" style="height:600px; border:1px solid white;box-sizing: border-box;">
 
@@ -685,6 +689,12 @@ window.onbeforeunload = function (e) {
 };
 
 
+function triggerExample() {
+  const element = document.querySelector('#in');
+  element.select();
+  element.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+}
 
 
 
